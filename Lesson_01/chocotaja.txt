@@ -1,0 +1,20 @@
+PROYECTO CHOCOTAJÁ
+
+precioChocolate
+precioTaja
+dineroDisponible
+
+gustoChocolate
+gustoTaja
+
+SI gustoChocolate es VERDADERO Y gustoTaja es VERDADERO ENTONCES
+	gasto = precioChocolate + precioTaja
+	SI gasto es MENOR O IGUAL QUE dineroDisponible ENTONCES
+		IMPRIMIR "se puede hacer chocotajá"
+	SI NO:
+		IMPRIMIR "no se puede hacer chocotajá porque no tienes dinero suficiente"
+SI NO:
+	SI gustoChocolate es VERDADERO ENTONCES
+    	IMPRIMIR "no se puede hacer chocotajá porque no gusta la tajá"
+	SI NO:
+		IMPRIMIR "no se puede hacer chocotajá porque no gusta el chocolate"
