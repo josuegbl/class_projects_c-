@@ -1,0 +1,14 @@
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_04\bin\Debug\net8.0\Lesson_04.exe
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_04\bin\Debug\net8.0\Lesson_04.deps.json
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_04\bin\Debug\net8.0\Lesson_04.runtimeconfig.json
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_04\bin\Debug\net8.0\Lesson_04.dll
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_04\bin\Debug\net8.0\Lesson_04.pdb
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_04\obj\Debug\net8.0\Lesson_04.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_04\obj\Debug\net8.0\Lesson_04.AssemblyInfoInputs.cache
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_04\obj\Debug\net8.0\Lesson_04.AssemblyInfo.cs
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_04\obj\Debug\net8.0\Lesson_04.csproj.CoreCompileInputs.cache
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_04\obj\Debug\net8.0\Lesson_04.dll
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_04\obj\Debug\net8.0\refint\Lesson_04.dll
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_04\obj\Debug\net8.0\Lesson_04.pdb
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_04\obj\Debug\net8.0\Lesson_04.genruntimeconfig.cache
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_04\obj\Debug\net8.0\ref\Lesson_04.dll

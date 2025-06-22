@@ -1,0 +1,14 @@
+C:\Users\CursosTardes\Documents\PROJECTS\introProg\bin\Debug\net8.0\introProg.exe
+C:\Users\CursosTardes\Documents\PROJECTS\introProg\bin\Debug\net8.0\introProg.deps.json
+C:\Users\CursosTardes\Documents\PROJECTS\introProg\bin\Debug\net8.0\introProg.runtimeconfig.json
+C:\Users\CursosTardes\Documents\PROJECTS\introProg\bin\Debug\net8.0\introProg.dll
+C:\Users\CursosTardes\Documents\PROJECTS\introProg\bin\Debug\net8.0\introProg.pdb
+C:\Users\CursosTardes\Documents\PROJECTS\introProg\obj\Debug\net8.0\introProg.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CursosTardes\Documents\PROJECTS\introProg\obj\Debug\net8.0\introProg.AssemblyInfoInputs.cache
+C:\Users\CursosTardes\Documents\PROJECTS\introProg\obj\Debug\net8.0\introProg.AssemblyInfo.cs
+C:\Users\CursosTardes\Documents\PROJECTS\introProg\obj\Debug\net8.0\introProg.csproj.CoreCompileInputs.cache
+C:\Users\CursosTardes\Documents\PROJECTS\introProg\obj\Debug\net8.0\introProg.dll
+C:\Users\CursosTardes\Documents\PROJECTS\introProg\obj\Debug\net8.0\refint\introProg.dll
+C:\Users\CursosTardes\Documents\PROJECTS\introProg\obj\Debug\net8.0\introProg.pdb
+C:\Users\CursosTardes\Documents\PROJECTS\introProg\obj\Debug\net8.0\introProg.genruntimeconfig.cache
+C:\Users\CursosTardes\Documents\PROJECTS\introProg\obj\Debug\net8.0\ref\introProg.dll
