@@ -1,0 +1,14 @@
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_05\obj\Debug\net8.0\Lesson_05.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_05\obj\Debug\net8.0\Lesson_05.AssemblyInfoInputs.cache
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_05\obj\Debug\net8.0\Lesson_05.AssemblyInfo.cs
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_05\obj\Debug\net8.0\Lesson_05.csproj.CoreCompileInputs.cache
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_05\bin\Debug\net8.0\Lesson_05.exe
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_05\bin\Debug\net8.0\Lesson_05.deps.json
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_05\bin\Debug\net8.0\Lesson_05.runtimeconfig.json
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_05\bin\Debug\net8.0\Lesson_05.dll
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_05\bin\Debug\net8.0\Lesson_05.pdb
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_05\obj\Debug\net8.0\Lesson_05.dll
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_05\obj\Debug\net8.0\refint\Lesson_05.dll
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_05\obj\Debug\net8.0\Lesson_05.pdb
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_05\obj\Debug\net8.0\Lesson_05.genruntimeconfig.cache
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_05\obj\Debug\net8.0\ref\Lesson_05.dll

@@ -1,0 +1,14 @@
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_06_Functions\bin\Debug\net8.0\Lesson_06_Functions.exe
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_06_Functions\bin\Debug\net8.0\Lesson_06_Functions.deps.json
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_06_Functions\bin\Debug\net8.0\Lesson_06_Functions.runtimeconfig.json
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_06_Functions\bin\Debug\net8.0\Lesson_06_Functions.dll
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_06_Functions\bin\Debug\net8.0\Lesson_06_Functions.pdb
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_06_Functions\obj\Debug\net8.0\Lesson_06_Functions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_06_Functions\obj\Debug\net8.0\Lesson_06_Functions.AssemblyInfoInputs.cache
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_06_Functions\obj\Debug\net8.0\Lesson_06_Functions.AssemblyInfo.cs
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_06_Functions\obj\Debug\net8.0\Lesson_06_Functions.csproj.CoreCompileInputs.cache
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_06_Functions\obj\Debug\net8.0\Lesson_06_Functions.dll
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_06_Functions\obj\Debug\net8.0\refint\Lesson_06_Functions.dll
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_06_Functions\obj\Debug\net8.0\Lesson_06_Functions.pdb
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_06_Functions\obj\Debug\net8.0\Lesson_06_Functions.genruntimeconfig.cache
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_06_Functions\obj\Debug\net8.0\ref\Lesson_06_Functions.dll
