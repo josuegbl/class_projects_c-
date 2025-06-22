@@ -1,0 +1,16 @@
+C:\Users\CursosTardes\Documents\PROJECTS\Snake_Game\bin\Debug\net8.0-windows\Snake_Game.exe
+C:\Users\CursosTardes\Documents\PROJECTS\Snake_Game\bin\Debug\net8.0-windows\Snake_Game.deps.json
+C:\Users\CursosTardes\Documents\PROJECTS\Snake_Game\bin\Debug\net8.0-windows\Snake_Game.runtimeconfig.json
+C:\Users\CursosTardes\Documents\PROJECTS\Snake_Game\bin\Debug\net8.0-windows\Snake_Game.dll
+C:\Users\CursosTardes\Documents\PROJECTS\Snake_Game\bin\Debug\net8.0-windows\Snake_Game.pdb
+C:\Users\CursosTardes\Documents\PROJECTS\Snake_Game\obj\Debug\net8.0-windows\Snake_Game.Form1.resources
+C:\Users\CursosTardes\Documents\PROJECTS\Snake_Game\obj\Debug\net8.0-windows\Snake_Game.csproj.GenerateResource.cache
+C:\Users\CursosTardes\Documents\PROJECTS\Snake_Game\obj\Debug\net8.0-windows\Snake_Game.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CursosTardes\Documents\PROJECTS\Snake_Game\obj\Debug\net8.0-windows\Snake_Game.AssemblyInfoInputs.cache
+C:\Users\CursosTardes\Documents\PROJECTS\Snake_Game\obj\Debug\net8.0-windows\Snake_Game.AssemblyInfo.cs
+C:\Users\CursosTardes\Documents\PROJECTS\Snake_Game\obj\Debug\net8.0-windows\Snake_Game.csproj.CoreCompileInputs.cache
+C:\Users\CursosTardes\Documents\PROJECTS\Snake_Game\obj\Debug\net8.0-windows\Snake_Game.dll
+C:\Users\CursosTardes\Documents\PROJECTS\Snake_Game\obj\Debug\net8.0-windows\refint\Snake_Game.dll
+C:\Users\CursosTardes\Documents\PROJECTS\Snake_Game\obj\Debug\net8.0-windows\Snake_Game.pdb
+C:\Users\CursosTardes\Documents\PROJECTS\Snake_Game\obj\Debug\net8.0-windows\Snake_Game.genruntimeconfig.cache
+C:\Users\CursosTardes\Documents\PROJECTS\Snake_Game\obj\Debug\net8.0-windows\ref\Snake_Game.dll
