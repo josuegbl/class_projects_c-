@@ -42,20 +42,64 @@ public class functions_final_boss
 {
     public static void Main(string[] args)
     {
-        functions_final_boss.masterMindMain(args);
+        bool doPlay = true;
+        do
+        {
+            functions_final_boss.masterMindMain(args);
+            Console.Clear();
+            Console.WriteLine("Do you want to play again?");
+            string doPlayString = Console.ReadLine().ToUpper();
+            if (doPlayString == "NO") doPlay = false;
+
+        } while (doPlay);
+
     }
 
     public static void masterMindMain(string[] args)
     {
-        int chances = 6;
-        int level = 4;
-        int[] secretColors = functions_final_boss.generateRandomColorNumbers(level);
+        int[] dificultyParameters = functions_final_boss.defineLevel();
+        int[] secretColors = functions_final_boss.generateRandomColorNumbers(dificultyParameters[1]);
 
-        functions_final_boss.generateWinnerSeq(secretColors, level);
-        functions_final_boss.drawBoard(chances);
-        functions_final_boss.generateColorSelector(chances, level);
-        functions_final_boss.rounds(chances, level, secretColors);
+        //functions_final_boss.generateWinnerSeq(secretColors, level);
+        functions_final_boss.drawBoard(dificultyParameters[0]);
+        functions_final_boss.generateColorSelector(dificultyParameters[0], dificultyParameters[1]);
+        bool userWin = functions_final_boss.rounds(dificultyParameters[0], dificultyParameters[1], secretColors);
+        functions_final_boss.finalMsj(userWin);
     }
+
+    public static int[] defineLevel()
+    {
+        int initRow = functions_final_boss.getInitialCoords()[0];
+        int initCol = functions_final_boss.getInitialCoords()[1];
+        int rounds = 0;
+        int colors = 0;
+        Console.SetCursorPosition(0, initRow);
+        Console.WriteLine("Welcome to MASTERMIND");
+        Console.WriteLine("Which level do you want to play, EASY, NORMAL or HARD?");
+        string leveldefined = Console.ReadLine().ToUpper();
+        Console.Clear();
+        switch (leveldefined)
+        {
+            case "EASY":
+                rounds = 8;
+                colors = 2;
+                break;
+            case "NORMAL":
+                rounds = 6;
+                colors = 4;
+                break;
+            case "HARD":
+                rounds = 4;
+                colors = 6;
+                break;
+            default:
+                rounds = 6;
+                colors = 4;
+                break;
+        }
+        return [rounds, colors];
+    }
+
 
     public static int[] generateRandomColorNumbers(int dificultyLevel)
     {
@@ -74,6 +118,11 @@ public class functions_final_boss
     {
         int rows = functions_final_boss.getInitialCoords()[0];
         int cols = functions_final_boss.getInitialCoords()[1];
+        Console.SetCursorPosition(cols, rows - 2);
+        Console.WriteLine("MASTERMIND");
+        Console.SetCursorPosition(cols, rows - 1);
+        Console.WriteLine(functions_final_boss.getLevel(chancesNumber));
+
 
         for (int i = 0; i < 9; i++)
         {
@@ -124,11 +173,11 @@ public class functions_final_boss
         }
     }
 
-    public static void rounds(int chances, int level, int[] secretColors)
+    public static bool rounds(int chances, int level, int[] secretColors)
     {
+        bool userWin = false;
         for (int i = 0; i < chances; i++)
         {
-            bool userWin = false;
             int[] userColorPicks = functions_final_boss.userRound(chances, level, i);
             int[] checkOut = functions_final_boss.evaluateUserGuess(secretColors, userColorPicks);
             functions_final_boss.paintCheckOut(checkOut, i);
@@ -136,9 +185,9 @@ public class functions_final_boss
             if (userWin)
             {
                 i = chances;
-                functions_final_boss.winnerMsj();
             }
         }
+        return userWin;
     }
 
     public static int[] getColorPalete(int dificultyLevel)
@@ -230,7 +279,6 @@ public class functions_final_boss
         int cols = functions_final_boss.getInitialCoords()[1];
         int[] userColorPicks = new int[4];
 
-        //Console.SetCursorPosition(cols, currentRow);
         for (int j = 0; j < 4; j++)
         {
             Console.SetCursorPosition(cols, currentRow);
@@ -281,16 +329,44 @@ public class functions_final_boss
         }
 
     }
-    public static void winnerMsj()
+    public static void finalMsj(bool userWin)
     {
         int currentRow = functions_final_boss.getInitialCoords()[0];
         int cols = functions_final_boss.getInitialCoords()[1];
         Console.SetCursorPosition(cols, currentRow + 20);
-        Console.ForegroundColor = ConsoleColor.Green;
-        Console.WriteLine("YOU WON! Congratulations!! ");
-        Console.ResetColor();
-        Thread.Sleep(500);
+        if (userWin)
+        {
+            
+            Console.ForegroundColor = (ConsoleColor)functions_final_boss.getColorCheckout(2);
+            Console.WriteLine("YOU WON! Congratulations!! ");
+            Console.ResetColor();
+        }
+        else
+        {
+            Console.ForegroundColor = (ConsoleColor)functions_final_boss.getColorCheckout(0);
+            Console.WriteLine("GAME OVER");
+            Console.SetCursorPosition(cols, currentRow + 21);
+            Console.WriteLine("You lost!");
+            Console.ResetColor();
+        }
+        Thread.Sleep(2000);
     }
 
-
+    public static string getLevel(int chances)
+    {
+        string levelString = "";
+        switch (chances)
+        {
+            case 4:
+                levelString = "Level: HARD";
+                break;
+            case 6:
+                levelString = "Level: NORMAL";
+                break;
+            case 8:
+                levelString = "Level: EASY";
+                break;
+        }
+        return levelString;
+    }
 }
