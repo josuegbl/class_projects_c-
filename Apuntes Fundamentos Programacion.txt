@@ -1,0 +1,804 @@
+namespace introProg;
+
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        /*
+            int x = 4;
+            int y = 2;
+
+            Console.WriteLine("La suma de x e y es:");
+            Console.WriteLine(x + y);
+
+            Console.WriteLine("\nLa resta de x e y es:");
+            Console.WriteLine(x - y);
+
+            Console.WriteLine("\nLa multiplicacion de x e y es:");
+            Console.WriteLine(x * y);
+
+            Console.WriteLine("\nLa division de x e y es:");
+            Console.WriteLine(x / y);
+
+
+            int bocadilloMorcilla = 4;
+            int bocadilloChorizo = 5;
+            int bocadilloSalchichon = 6;
+            int bocadillo = 0;
+            int personas = 5;
+
+            Console.WriteLine("la cantidad de bocadillos del que dispones es:");
+            Console.WriteLine(bocadillo = bocadilloSalchichon + bocadilloChorizo + bocadilloMorcilla);
+
+            Console.WriteLine("\nLa cantidad de personas que quieren un bocadillo es:");
+            Console.WriteLine(personas);
+
+            Console.WriteLine("\nRepartiendo un bocadillo por persona, te quedarias con esta cantidad de bocadillos:");
+            Console.WriteLine(bocadillo - personas);
+
+            
+        //integrales
+        byte aByte = 1; // 8 bits
+        short aShort = 2; //16 bits
+        int aInt = 3; //32 bits
+        long aLong = 4; //64 bits
+
+        Console.WriteLine("Mi byte vale " + aByte);
+        Console.WriteLine("Mi short vale " + aShort);
+        Console.WriteLine("Mi int vale " + aInt);
+        Console.WriteLine("Mi long vale " +aLong);
+
+
+
+        //Flotaing point
+        float afloat = 5.4F; //32 bits
+        double aDouble = 6.6D; //64 bits
+        decimal aDecimal = 7.4M; //128 bits
+
+        Console.WriteLine("Mi float vale " + afloat);
+        Console.WriteLine("mi double vale " + aDouble);
+        Console.WriteLine("mi decimal vale " + aDecimal);
+
+
+        //text
+        char achar = 'B'; //16 bits UNICODE
+        string aString = "Guillermo"; //
+
+        Console.WriteLine("Mi char vale " + achar);
+        Console.WriteLine("mi string vale " +aString);
+
+
+
+        bool aBoolean1 = true; //1 bit
+        bool aBoolean2 = false;//1 bit
+        Console.WriteLine("mi bool vale " + aBoolean1);
+        Console.WriteLine("mi bool vale " + aBoolean2);
+
+        Console.WriteLine($"Mi bool vale {aBoolean1}");
+        Console.WriteLine(string.Format("mi bool vale {0} y no {1}", aBoolean1, aBoolean2));
+
+        Console.WriteLine(@"c:\path\to\something");
+        Console.WriteLine("c:\"path\\to\\something");
+
+        string s = """
+
+            asdfasdf
+            asdf
+            asdf
+            asdf
+            asd
+            """;
+        Console.WriteLine(s);
+
+
+        //this_is_snake_case
+
+        const float THIS_IS_CONSTANT = 3.14159264F;
+        //PI = 3; NO ES POSIBLE CAMBIAR SU VALOR PORQUE ES UNA CONSTANTE
+
+
+        double moleculasVasoAgua = 0;
+        byte dedosMano = 5;
+        const Decimal PI = 3.14M;
+        string numCuenta = "123456789";
+        long numHojasArbol = 123412;
+        float longDistanciaCometa = 123412341;
+        string numTelf = "123123123";
+        decimal pesoAtomoH= 0.000001M;
+        char letra = 'a';
+        string tipoHormiga = "hormiga de fuego";
+        string plantillaFutbol = "B";
+        string tallaCamisa = "M";
+        Boolean hoyHaceSol = true;
+        short eloAjedrez = 1500;
+        short volumenAguaFuente = 80;
+        float sueldoMedio = 1200;
+        Boolean gustaTortillaPatataCebolla = true;
+        string deudaSoberanaPais = "AAA";
+        float tempSol = 12345.234F;
+        int cantLentejasGuiso = 500;
+        char inicialNombre = 'G';
+        double numArenaPlaya = 123412341234;
+        Boolean eresFeliz = false;
+        string problemaHabitatProcesionaria = "x";
+        short añoGregoriano = 2025;
+        float precioKGSalmon = 20;
+        string aprecioRobustianoComarcaAlcornoque = "mucho";
+        byte numTurnoCarniceria = 45;
+        byte horasReelsVistas = 4;
+        short handicapGolf = 500;
+        const byte gemasGuanteleteInf = 6;
+        string ingredienteAtascaburras = "ajo";
+        byte mayoriaCualificadaVecinos = 1;
+        float interesAnualprestamo = 2.2345f;
+        const byte numTeclasQWERTY = 104;
+        const int numCaracteresQuijote1Edicion = 1687570;
+        Boolean planchaEncendida = true;
+
+
+
+
+
+
+
+        //OPERADORES
+        // = Asignacion
+
+
+        // + suma
+        // - Resta
+        // * Multiplicacion
+        // / division
+        // % Modulo
+
+
+        //Aritmetico logicos
+        // +=
+        // -=
+        // *=
+        // /=
+
+
+        int a = 2;
+        int b = 1;
+
+        Console.WriteLine("\nAl principio");
+        Console.WriteLine("a es "+a);
+        Console.WriteLine("b es "+b);
+
+        a = a + b;
+        Console.WriteLine("\nTras la suma");
+        Console.WriteLine("a es " + a);
+        Console.WriteLine("b es " + b);
+
+        b = a - b;
+        Console.WriteLine("\nTras la resta");
+        Console.WriteLine("a es " + a);
+        Console.WriteLine("b es " + b);
+
+        a = a * b;
+        Console.WriteLine("\nTras la multiplicacion");
+        Console.WriteLine("a es " + a);
+        Console.WriteLine("b es " + b);
+
+        b = a/ b;
+        Console.WriteLine("\nTras la division");
+        Console.WriteLine("a es " + a);
+        Console.WriteLine("b es " + b);
+
+        a += b;
+        //a = a + b;
+        Console.WriteLine("\nTras la suma");
+        Console.WriteLine("a es " + a);
+        Console.WriteLine("b es " + b);
+
+        a = a % b;
+        Console.WriteLine("El resto de dividir a entre b es "  + a);
+
+        a = 2;
+        b = 3;
+        
+        Console.WriteLine("\na es " + a);
+        Console.WriteLine("b es " + b);
+        
+        a = a + a * b;
+        Console.WriteLine("a es " + a);
+
+
+        //+
+        //-
+        // ++ post incremento, pre incremento
+        // --
+
+        a = 0;
+        Console.WriteLine("\na es " + a);
+
+        a++;
+        Console.WriteLine("a es " + a);
+
+        ++a;
+        Console.WriteLine("a es " +a);
+
+        Console.WriteLine(a++);
+        Console.WriteLine(a);
+        Console.WriteLine(++a);
+
+        //>>>
+        //<<
+        
+        */
+        /*
+
+        //1
+        int x = 0;
+        int y = 1;
+        int z = 0;
+        int v = 0;
+
+        x = x + y;
+        Console.WriteLine(x);
+
+        //2
+        x = 4;
+        y = 3;
+        z = 5;
+        x = x - y - z;
+        Console.WriteLine(x);
+
+        //3
+        x = 2;
+        y = 3;
+        z = 10;
+        x = x + y - z;
+        Console.WriteLine(x);
+
+        //4
+        x = 7;
+        y = 3;
+        z = 21;
+        x = x * y * z;
+        Console.WriteLine(x);
+
+        //5
+        x = 9;
+        y = 3;
+        x = x / y;
+        Console.WriteLine(x);
+
+        //6
+        x = 5;
+        y = 3;
+        z = 3;
+        x = x * y - z;
+        Console.WriteLine(x);
+
+        //7
+        x = 25;
+        y = 31;
+        z = 10;
+        v = 2;
+        x = x + y - z - v;
+        Console.WriteLine(x);
+
+        //8
+        x = 3;
+        y = 4;
+        z = 12;
+        v = 8;
+        x = x * y * z / v;
+        Console.WriteLine(x);
+
+        //9
+        x = 4;
+        y = 3;
+        z = 10;
+        v = 5;
+        x = x + y + z / v;
+        Console.WriteLine(x);
+
+        //10
+        x = 4;
+        y = 2;
+        z = 25;
+        v = 3 - 6;
+        x = (x / y + z) + v;
+        Console.WriteLine(x);
+
+
+        //11
+        x = 3 - 5;
+        y = 10 - 2;
+        z = 3 - 1;
+        x = x + y + z;
+        Console.WriteLine(x);
+
+        //12
+        x = (8 / 4) - (35 / 3);
+        y = 3 * 8;
+        x = x + y;
+        Console.WriteLine(x);
+
+
+        //13
+        x = 3 * 8 / 2;
+        y = 10 + 22;
+        x = x + y;
+        Console.WriteLine(x);
+
+
+        //14
+        x = 11 * 3 / 2 - 1;
+        Console.WriteLine(x);
+
+        //15
+        x = (10 + 218) + (1 - 3 - 8);
+        Console.WriteLine(x);
+
+        //16
+        x = ((30 / 6 + 10 * 4)-100) - 20 / 5;
+        Console.WriteLine(x);
+
+        //17
+        x = (1 + 2 + 10) - 3 * 4;
+        Console.WriteLine(x);
+        
+        //18
+        x = (3 + 5 + (10 - 23)) * 4;
+        Console.WriteLine(x);
+
+         
+         *Declara variables si es necesario
+         *utilizar pseudocodigo para generar el programa pedido
+         *se puede utilizar visual studio
+         *el pseudocodigo se puede poner en comentarios
+         *Se puede sacar informacion directamente por consola
+         
+         
+         Si x MAYOR QUE y
+         Console.writeline("x mayor que y")
+        
+         SI caracter1 IGUAL QUE caracter2 ENTONCES
+        console.writeline("es igual")
+            SINO   
+            console.writeline("No es igual")
+        
+-------------------------------------------------------------
+        int x
+        int y
+        Si x + y MAYOR QUE 10
+        cw("La suma es mayor de 10")
+        SI x - y menor que 10
+        cw("La suma es menor de 10")
+--------------------------------------------------------------
+        int x
+        int y
+        SI x + y MAYOR QUE 10:
+        cw("la suma es mayor de 10")
+        SI x - y MAYOR QUE 10:
+        cw("La resta es mayor de 10")
+--------------------------------------------------------------
+
+        char Caracter1
+        
+        SI Caracter IGUAL QUE 'a','e','i','o','u':
+            cw("Es una vocal")
+        SINO
+            cw("No es una vocal")
+-----------------------------------------------------------------
+
+        char caracter
+        int x 
+        int y
+        SI caracter IGUAL QUE 'S':
+             SI x-y MAYOR QUE 0
+             CW("OK")
+                O
+             SI x-y MENOR QUE 0
+             CW("Casi OK")
+        SINO
+            CW("OTRO CASO")
+----------------------------------------------------------------
+        int x
+        int y
+        string Texto
+
+
+        
+----------------------------------------------------------------
+
+Si una cadena de texto es igual que otra, indicarlo. para cada una de las cadenas de tecto anteriores, 
+compararla con otra distinta, si alguna es igual, indicarlo por pantalla
+Se busca un programa que indique si hay alguna igualdad en las cadenas
+
+
+        string Texto1
+        String Texto2
+
+
+
+
+-------------------------------------------------------------------
+
+        Si la division de dos numeros da como resultado uno,, sacar por pantalla "MISMO NUMERO". Si esa misma division da como resutlado un 4
+        sacar por pantalla "EL RESULTADO ES 4"
+
+        Int x=5
+        int y=5
+        
+        SI x / y IGUAL QUE 1:
+            cw("Mismo numero")
+        SI x / y IGUAL QUE 4:
+            cw("El resultado es 4)
+
+-----------------------------------------------------------------------
+
+        Si al multiplicar 3 numeros el resultado fuera menor o igual a 100, comprobar entonces si alguno de los numeros es mayor que 10 y, si alguno lo es, sacar por pantalla
+        "un numero es mayor que 10". En caso de que no sea menor o igual a 100, sacar por pantalla "Otro resultado"
+
+        int x
+        int y
+        int z
+        Si x*y*z MENOR QUE 100:
+            SI x MAYOR QUE 10:
+                CW("Un numero es mayor que 10")
+            SI Y MAYOR QUE 10:
+                CW("Un numero es mayor que 10")
+            SI Z MAYOR QUE 10:
+                CW("Un numero es mayor que 10")
+        SINO
+        CW("OTRO RESULTADO")
+          
+----------------------------------------------------------------------
+Dados dos numeros enteros y dos caracteres."EMPAREJAR" cada numero con un caracter. Dado otro caracter, si es igual que alguno de los otros
+dos caracteres, imprimir su numero "emparejado" por pantalla
+        int x
+        int y
+        
+        char Letra1
+        char Letra2
+        char Letra3
+        SI Letra3 IGUAL QUE Letra1
+            CW(int x)
+        SI Letra3 IGUAL QUE Letra2
+            CW(int y)
+----------------------------------------------------------------------
+Si una cadena de texto es "Ajustar", entonces si dos numeros suman mas de 150 mostrar el mensaje "Ajuste pendiente", si no, mostrar el mensaje "Ajuste no necesario"
+Si la cadena no es "Ajustar" mostrar el mensaje "Ajuste no solicitado"
+
+        String Texto
+        int x
+        int y
+
+        Si Texto IGUAL QUE "Ajustar" Y x+y MAYOR O IGUAL QUE 150
+            CW("Ajuste pendiente")
+        SINO
+            CW("Ajuste no necesario")
+
+        Si Texto DISTINTO DE "Ajustar"
+            CW("Ajuste no solicitado"
+
+----------------------------------------------------------------------
+Si la division de dos numeros enteros da como resultado un numero mayor que 5,si dos cadenas de texto son iguales, indicarlo
+si no lo son, indicarlo tambien, en caso de que sea 5 el resultado de la division, indicarlo
+
+        int x
+        int y
+        String Texto1
+        String Texto2
+
+        SI x/y MAYOR QUE 5
+            CW("resultado mayor que 5")
+        SI Texto1 IGUAL Texto2
+            CW("son iguales")
+        SI x/y IGUAL QUE 5
+            CW("El resultado es 5")
+--------------------------------------------------------------------------
+Combinar lo aprendido hasta ahora:definir variables, utilizar pseudocodigo y mensajes por pantalla.
+Añadiremos a los programas la posibilidad de asignar variables
+Ademas de declarar las variables se podran cambiar sus valores usando codigo
+
+El programa recibe una altura expresada en coma flotante y ha de, en base a un umbral de altura minimo, decidir si una persona puede subir o no
+        a una atraccion, lo que ha de indicar la pantalla
+
+        float altura = 1.90F;
+        float alturaMinima = 1.30F;
+
+        Si altura MAYOR O IGUAL QUE alturaMinima ENTONCES
+        Consol.writeLine("Se puede subir a la atraccion");
+        SINO
+        Console writeline("No se puede subir a la atraccion")
+
+------------------------------------------------------------------------------
+
+Un programa recibe un volumen de arena en kilos. si es invierno, el volumen de la arena habrá de incrementarse en un diez por ciento.
+mostrar por pantalla la cantidad de arena total
+
+
+        float VolumenArena
+        Bool Invierno= x
+
+        SI Invierno=true
+            cw(Volumenarena *1,10+ " kg")
+        SINO
+            cw(VolumenArena)
+
+-----------------------------------------------------------------------------
+Tenemos un botijo, que tiene una capacidad de agua en litros. Se van a hacer tres extracciones de agua del botijo, cada una de un numero de litros determinado, si tras alguna
+de ellas, el botijo se queda sin agua, indicarlo por consola; si no es asi cambiar la cantidad de agua que queda en el botijo, si tras las tres extracciones sigue
+quedando agua, mostrarlo por consola e indicar cuanto queda
+
+
+        float LitrosBotijo
+        float extraccion3
+        float extraccion1
+        float extraccion2
+
+        SI LitrosBotijo MAYOR QUE extraccion1
+            LitrosBotijo-=extraccion1
+            Si LitrosBotijo MAYOR QUE extraccion2
+                    LitrosBotijo-=extraccion2
+                 Si LitrosBotijo MAYOR QUE extraccion3
+                            LitrosBotijo-=extraccion3
+                  SI LitrosBotijo MAYOR QUE 0
+                    cw("Aun queda agua")
+                 SINO
+                    CW("No queda agua")
+       SINO
+            ("No queda agua")
+
+    
+
+-------------------------------------------------------------------------------------------
+Un avion depende para poder dirigirse a la pista de despegue de que dos banderas de una persona de tierra esten levantadas.Indicar por
+pantalla si el avion puede ir hacia la pista de despegue o no
+        
+Boolean BanderasLevantadas= x
+
+        SI BanderasLevantadas IGUAL True
+            cw("puede ir a la pista de despegue")
+
+
+
+
+
+
+-------------------------------------------------------------------------------
+Un programa ha de gestionar las compras en una tienda. hay 4 productos disponibles,
+cada uno con un precio asociado. se podran hacer dos compras,
+cada una de un solo producto, pero del que se puede comprar varias unidades. 
+El programa mostrara al final las compras realizadas, incluyendola cantidad
+de cada producto, el dinero gastado en cada compra y el dinero total gastado
+
+        float producto1 = 5;
+        float producto2 = 10;
+        float producto3 = 15;
+        float producto4 = 20;
+        
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------------------
+Un piano tiene 5 teclas, cada una asociada a una nota distina. el sistema registrara una sola pulsacion de tres teclas al mismo tiempo. Si las notas de las tecls pulsadas son
+ "DO","RE","MI" indicar por pantalla que es "ESCALA", en otro caso, unir en otra cadena las notas tocadas y mostrarlas por pantalla.
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------------------
+Una cuenta corriente puede ser de tres tipos: adulto, joven y tercera edad. Cada cuenta tiene unas comisiones asociadas segun su tipo. 
+Indicando el programa una cantidad de cuentas a contratar de cada tipo y las comisiones asociadas a cada tipo de cuenta. 
+Entonces calcular el total de comisiones y mostrarlo por pantalla
+        
+        
+
+
+
+--------------------------------------------------------------------------------
+
+Vamos a hacer una tortilla de patata, sin cebolla, si al programa le indicamos que tenemos todos los ingredientes(HUEVOS Y PATATAS) mostrar por pantalla el mensaje
+"Se puede hacer la tortilla", en caso contrario sacar por pantalla, "no se puede hacer la tortilla" y tambien sacar por pantalla los ingredientes que falten
+
+        boolean hayHuevos = true;
+        boolean hayPatatas = true;
+
+        SI hayHuevos == true || hayPatatas == true;
+        cw("Se puede hacer la tortilla")
+        
+        SI HayHuevos==false;
+        cw("faltan huevos")
+        SI hayPatatas==false;
+        cw("faltan patatas")
+
+--------------------------------------------------------------------------------
+Simularemos el calculo de horas invertidas en jornadas al mes para una persona. La persona trabajara un total de cuatro jornadas al mes. Si estas jornadas son en un dia de
+diario, el total de horas sera de 8; en el caso de ser un fin de semana, sera de 4. El programa recibira indicadas las cuatro jornadas que haya trabajado la persona
+segun hayan sido o no fin de semana, tendra que asociar entonces el numero de horas trabajadas en ese dia y tendria que calcular y mostrar el total de horas trabajadas ese mes
+        //1 diario
+        //2 finde
+
+        byte jornada1 = 1
+        byte jornada2 = 2
+        byte jornada3 = 2
+        byte jornada4 = 1
+        int horasTotal= 0
+
+        IF jornada1 = 1
+        horasTotal + 8
+        cw("la jornada 1 ha sido un dia de diario")
+        ELSE 
+        horasTotal + 4
+        cw("La jornada 1 ha sido un fin de semana")
+        
+        
+        IF jornada2 = 1
+        horasTotal + 8
+        cw("la jornada 2 ha sido un dia de diario")
+        ELSE 
+        horasTotal + 4
+        cw("La jornada 2 ha sido un fin de semana")
+        
+        
+        IF jornada3 = 1
+        horasTotal + 8
+        cw("la jornada 3 ha sido un dia de diario")
+        ELSE 
+        horasTotal + 4
+        cw("La jornada 3 ha sido un fin de semana")
+
+
+        cw("la cantidad de horas total trabajadas es" +horasTotal)
+
+
+
+-------------------------------------------------------------------------------
+Si al numero de KM recorridos supera un umbral indicado al programa, mostrarlo con un mensaje adecuado. Usando un consumo de gasolina por KM indicando el programa,
+determinar si el consumo total hasta ahora supera el 90% del tamaño del deposito indicando al programa, en el caso de que sea asi, mostrar un mensaje
+"Entrando en reserva de gasolina"
+
+        float deposito = 70;
+        float umbral = 
+
+
+     
+      
+       
+      
+
+
+
+------------------------------------------------------------------------------
+Un monitor tiene dos tipos de señales disponibles: HDMI y DisplayPort. El monitor podra estar recibiendo señal por ninguna, una, o ambas fuentes. 
+Si recibe señal por ambas fuentes, escogera que señal muestra en base a una señal preferida que tendra definida; asi recibe la señal por una sola fuente,
+usara esa. Mostrar por pantalla las distintas combinaciones posibles, indicando si el monitor esta recibiendo señal o no y, en caso de que recibiera, cual usara
+
+
+        boolean conexionHDMI
+        boolean conexionDisplayPort
+        float conexiones=0
+        string conexionFavorita== "conexionHDMI"
+
+
+        if
+        conexionHDMI == true
+        conexiones++
+        if conexionDisplayPort == true
+        conexiones++
+
+
+        if conexiones=0
+            cw("no recibe ningun tipo de señal")
+
+        if conexiones == 1
+            if conexionHDMI==true;
+                cw("la conexiones HDMI")
+            if conexionDisplayPort == true;
+                cw("la conexiones DisplayPort")
+
+        if conexiones == 2
+            cw("esta recibiendo las dos señales, HDMI y DisplayPort")
+            cw("la señal usada sera la favorita, la cual es: " +conexionFavorita")
+
+
+-------------------------------------------------------------------------------
+
+Se quiere simular un sistema de control del peso de un ascensor. Al ascensor subiran 4 personas, cada una con un peso en kilos. El ascensor tendra un limite de peso en kilos.
+Diseñar el programa de tal manera que las personas vayan subiendo de una a una al ascensor, indicando este si se supera el umbral de peso y la cantidad de peso total con 
+la que se ha superado, con lo que no podran subir mas personas; si no se supera el umbral, seguir haciendo que suba gente hasta que el ascensor se llene, si el ascensor se llena
+y no se supera el peso maximo, indicar por pantalla la cantidad de peso total de las personas que hay subidas y cuanto falto para alcanzar el umbral maximo de peso.
+
+        float limitePesoAscensor = 250;
+        float pesoPersona1 = 60;
+        float pesoPersona2 = 70;
+        float pesoPersona3 = 80;
+        float pesoPersona4 = 65;
+        
+         
+        IF limitePesoAscensor > 0
+
+            cw("va a entrar la primera persona")
+            IF limitePesoAscensor <= 0
+            ("no cabe nadie mas")
+            else
+            limitePesoAscensor -= pesoPersona1
+            
+
+        IF limitePesoAscensor > 0
+            cw("va a entrar la segunda persona")
+            IF limitePesoAscensor <= 0
+            ("no cabe nadie mas")
+            ELSE
+            limitePesoAscensor -= pesoPersona2
+        
+
+        IF  limitePesoAscensor > 0
+            cw("va a entrar la tercera persona")
+            IF limitePesoAscensor <= 0
+            ("no cabe nadie mas")
+            ELSE
+            limitePesoAscensor -= pesoPersona3
+
+
+
+            
+
+
+
+
+-------------------------------------------------------------------------------
+        Tenemos un botijo, que tiene una capacidad de agua en litros. Se van a hacer tres extracciones de agua del botijo, cada una de un numero de litros determinado, si tras alguna
+de ellas, el botijo se queda sin agua, indicarlo por consola; si no es asi cambiar la cantidad de agua que queda en el botijo, si tras las tres extracciones sigue
+quedando agua, mostrarlo por consola e indicar cuanto queda
+
+
+         */
+
+        float extraccion1 = 3;
+        float extraccion2 = 3;
+        float extraccion3 = 1;
+        float litrosBotijo = 5;
+
+
+        if (litrosBotijo > 0)
+        {
+            if (litrosBotijo >= extraccion1)
+            {
+                litrosBotijo = litrosBotijo - extraccion1;
+                Console.WriteLine("En la primera extraccion han quedado " + litrosBotijo + "L");
+
+                if(litrosBotijo >= extraccion2)
+                {
+                    litrosBotijo -= extraccion2;
+                    Console.WriteLine("En la segunda extraccion han quedado " + litrosBotijo + "L");
+
+                    if (litrosBotijo >= extraccion3)
+                    {
+                        litrosBotijo -= extraccion3;
+                        Console.WriteLine("En la tercera extraccion han quedado "+litrosBotijo + "L");
+                    }
+                    else
+                        Console.WriteLine("No hay agua suficiente para la tercera extraccion");
+                }
+                else
+                    Console.WriteLine("No hay agua suficiente para la segunda extraccion");
+            }
+            else
+                Console.WriteLine("No hay agua suficiente para la primera extraccion");
+
+        }
+        
+
+
+    }
+}

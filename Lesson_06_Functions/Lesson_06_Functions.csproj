@@ -5,7 +5,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-	<StartupObject>Lesson_06_Functions.functions_lesson_7</StartupObject>
+	<StartupObject>Lesson_06_Functions.functions_final_boss</StartupObject>
   </PropertyGroup>
 
 </Project>
