@@ -27,3 +27,4 @@ C:\Users\josue\OneDrive\Documentos\Josue\Curso Dev Web C#\PROJECTS\Lesson_06_Fun
 C:\Users\josue\OneDrive\Documentos\Josue\Curso Dev Web C#\PROJECTS\Lesson_06_Functions\obj\Debug\net8.0\Lesson_06_Functions.pdb
 C:\Users\josue\OneDrive\Documentos\Josue\Curso Dev Web C#\PROJECTS\Lesson_06_Functions\obj\Debug\net8.0\Lesson_06_Functions.genruntimeconfig.cache
 C:\Users\josue\OneDrive\Documentos\Josue\Curso Dev Web C#\PROJECTS\Lesson_06_Functions\obj\Debug\net8.0\ref\Lesson_06_Functions.dll
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_06_Functions\obj\Debug\net8.0\Lesson_06_Functions.sourcelink.json

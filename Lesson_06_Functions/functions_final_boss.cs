@@ -4,6 +4,7 @@ using System.Linq;
 using System.Reflection.Emit;
 using System.Runtime.Serialization.Formatters;
 using System.Text;
+using System.Threading.Channels;
 using System.Threading.Tasks;
 
 namespace Lesson_06_Functions;
@@ -17,7 +18,7 @@ namespace Lesson_06_Functions;
 /// . Si se adivina la combinacion antes de que se pasen los 6 intentos, se gana el juego.
 /// . Si se agotan los intentos y no se ha adivinado la combinación, se pierde el juego.
 /// . Tras cada intento, el sistema mostrará pistas de la combinacion.
-/// . Si el color se correcponde con el de la combinación secreta en esa posicion,
+/// . Si el color se corresponde con el de la combinación secreta en esa posicion,
 /// aparecerá en las pistas para esa posición en verde.
 /// . Si el color está en la combinación secreta, pero en otra posición, 
 /// aparecerá en las pistas para esa posición en amarillo.
@@ -27,7 +28,7 @@ namespace Lesson_06_Functions;
 /// válido del lenguaje.
 /// . PISTA: existe  Console.ReadKey() y Consolekey.
 /// . EXTRA: Realizar el juego pintando el tablero y la interfaz gráfica.
-/// . EXTRA: Realizar el juego parametrizando el cófigo de forma que se pueda 
+/// . EXTRA: Realizar el juego parametrizando el código de forma que se pueda 
 /// poner un selector de dificultad al principio (en el propio código). Este
 /// selector permitirá elegir entre dificultad fácil, normal y díficil. En
 /// normal, el juego se mantiene igual; en fácil solo hay 2 colores posibles
@@ -46,26 +47,14 @@ public class functions_final_boss
 
     public static void masterMindMain(string[] args)
     {
-        int chances = 4;
+        int chances = 6;
         int level = 4;
-        int[] secretColors = functions_final_boss.generateRandomColorNumbers(chances);
+        int[] secretColors = functions_final_boss.generateRandomColorNumbers(level);
 
+        functions_final_boss.generateWinnerSeq(secretColors, level);
         functions_final_boss.drawBoard(chances);
         functions_final_boss.generateColorSelector(chances, level);
-        functions_final_boss.userRounds(chances, level);
-    }
-
-    public static int[] getColorPalete(int dificultyLevel)
-    // dificultyLevel is 2, 4 or 6.
-    {
-        int[] colorPalete =  [9, 12, 10, 14, 13, 11];
-        int[] colorNumbers = new int[dificultyLevel];
-
-        for (int i = 0; i < dificultyLevel; i++)
-        {
-            colorNumbers[i] = colorPalete[i];
-        }
-        return colorNumbers;
+        functions_final_boss.rounds(chances, level, secretColors);
     }
 
     public static int[] generateRandomColorNumbers(int dificultyLevel)
@@ -81,13 +70,6 @@ public class functions_final_boss
         return randomColor;
     }
 
-    public static int[] getInitialCoords()
-    {
-        int rows = Console.BufferHeight/8;
-        int cols = (Console.BufferWidth/2)-5;
-
-        return [rows, cols];
-    }
     public static void drawBoard(int chancesNumber)
     {
         int rows = functions_final_boss.getInitialCoords()[0];
@@ -95,7 +77,7 @@ public class functions_final_boss
 
         for (int i = 0; i < 9; i++)
         {
-            for (int j = 0; j < 2*chancesNumber+1; j++)
+            for (int j = 0; j < 2 * chancesNumber + 1; j++)
             {
                 Console.SetCursorPosition(cols + i, rows + j);
                 if (j % 2 == 0)
@@ -117,11 +99,16 @@ public class functions_final_boss
         }
     }
 
-    public static void paintColorIcon(int colorNumber)
+    public static void generateWinnerSeq(int[] secretColors, int level)
     {
-        Console.ForegroundColor = (ConsoleColor)colorNumber;
-        Console.Write("█");
-        Console.ResetColor();
+        int currentRow = functions_final_boss.getInitialCoords()[0] - 2;
+        int cols = functions_final_boss.getInitialCoords()[1];
+
+        for (int i = 0; i < level; i++)
+        {
+            Console.SetCursorPosition(cols + 2 * i, currentRow);
+            functions_final_boss.paintColorIcon(secretColors[i]);
+        }
     }
 
     public static void generateColorSelector(int chancesNumber, int level)
@@ -135,6 +122,57 @@ public class functions_final_boss
             Console.SetCursorPosition(cols + 2*i, currentRow);
             functions_final_boss.paintColorIcon(colorNumbers[i]);
         }
+    }
+
+    public static void rounds(int chances, int level, int[] secretColors)
+    {
+        for (int i = 0; i < chances; i++)
+        {
+            bool userWin = false;
+            int[] userColorPicks = functions_final_boss.userRound(chances, level, i);
+            int[] checkOut = functions_final_boss.evaluateUserGuess(secretColors, userColorPicks);
+            functions_final_boss.paintCheckOut(checkOut, i);
+            userWin = (checkOut[0] == 2 && checkOut[1] == 2 && checkOut[2] == 2 && checkOut[3] == 2);
+            if (userWin)
+            {
+                i = chances;
+                functions_final_boss.winnerMsj();
+            }
+        }
+    }
+
+    public static int[] getColorPalete(int dificultyLevel)
+    // dificultyLevel is 2, 4 or 6.
+    {
+        int[] colorPalete =  [9, 12, 10, 14, 13, 11];
+        int[] colorNumbers = new int[dificultyLevel];
+
+        for (int i = 0; i < dificultyLevel; i++)
+        {
+            colorNumbers[i] = colorPalete[i];
+        }
+        return colorNumbers;
+    }
+    public static int getColorCheckout(int index)
+    {
+        int[] colorPalete = [12, 14, 10];
+
+        return colorPalete[index];
+    }
+
+    public static int[] getInitialCoords()
+    {
+        int rows = Console.BufferHeight/8;
+        int cols = (Console.BufferWidth/2)-5;
+
+        return [rows, cols];
+    }
+
+    public static void paintColorIcon(int colorNumber)
+    {
+        Console.ForegroundColor = (ConsoleColor)colorNumber;
+        Console.Write("█");
+        Console.ResetColor();
     }
 
     public static int manualColorSelect(int chancesNumber, int level)
@@ -185,30 +223,73 @@ public class functions_final_boss
         return colorNumbers[(cols - leftCorner) / 2];
     }
 
-    public static void userRounds(int chances, int level)
+    public static int[] userRound(int chances, int level, int rowPos)
     {
         int initialRow = functions_final_boss.getInitialCoords()[0];
         int currentRow = initialRow + 2 * chances + 2;
         int cols = functions_final_boss.getInitialCoords()[1];
-        Console.SetCursorPosition(cols, currentRow);
+        int[] userColorPicks = new int[4];
 
-        for (int i = 0; i < chances; i++)
+        //Console.SetCursorPosition(cols, currentRow);
+        for (int j = 0; j < 4; j++)
         {
-
-            for (int j = 0; j < 4; j++)
-            {
-                Console.SetCursorPosition(cols, currentRow);
-                Console.Write("color {0}", j+1);
-                int colorNumber = functions_final_boss.manualColorSelect(chances, level);
-                Console.SetCursorPosition(cols + 2 * j + 1, initialRow + 2* i + 1);
-                functions_final_boss.paintColorIcon(colorNumber);
-            }
+            Console.SetCursorPosition(cols, currentRow);
+            Console.Write("color {0}", j+1);
+            userColorPicks[j] = functions_final_boss.manualColorSelect(chances, level);
+            Console.SetCursorPosition(cols + 2 * j + 1, initialRow + 2 * rowPos + 1);
+            functions_final_boss.paintColorIcon(userColorPicks[j]);
         }
+        return userColorPicks;
     }
 
-    public static void checkUserResponse(int[] secretColors, int[] userColors)
+    public static int[] evaluateUserGuess(int[] secretColors, int[] userColors)
     {
+        int[] userResponse = new int[userColors.Length];
+        for (int i = 0; i < userColors.Length; i++)
+        {
+            userResponse[i] = 0;
+            bool colorIsThere = false;
+            bool isInPosition = false;
 
+            for (int j = 0; j < secretColors.Length; j++)
+            {
+                if (userColors[i] == secretColors[j])
+                {
+                    colorIsThere = true;
+                    if (i == j) isInPosition = true;
+                }
+            }
+
+            if (colorIsThere)
+            {
+                userResponse[i] += 1;
+                if (isInPosition) userResponse[i] += 1;
+            }
+        }
+        return userResponse;
+    }
+
+    public static void paintCheckOut(int[] checkOut, int roundNumber)
+    {
+        int currentRow = functions_final_boss.getInitialCoords()[0]+1;
+        int cols = functions_final_boss.getInitialCoords()[1];
+
+        for (int i = 0; i < 4; i++)
+        {
+            Console.SetCursorPosition(cols + 12 + 2*i, currentRow + 2 * roundNumber);
+            functions_final_boss.paintColorIcon(functions_final_boss.getColorCheckout(checkOut[i]));
+        }
+
+    }
+    public static void winnerMsj()
+    {
+        int currentRow = functions_final_boss.getInitialCoords()[0];
+        int cols = functions_final_boss.getInitialCoords()[1];
+        Console.SetCursorPosition(cols, currentRow + 20);
+        Console.ForegroundColor = ConsoleColor.Green;
+        Console.WriteLine("YOU WON! Congratulations!! ");
+        Console.ResetColor();
+        Thread.Sleep(500);
     }
 
 
