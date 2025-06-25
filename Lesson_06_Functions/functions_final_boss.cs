@@ -57,13 +57,13 @@ public class functions_final_boss
 
     public static void masterMindMain(string[] args)
     {
-        int[] dificultyParameters = functions_final_boss.defineLevel();
-        int[] secretColors = functions_final_boss.generateRandomColorNumbers(dificultyParameters[1]);
+        int[] difficultyParameters = functions_final_boss.defineLevel();
+        int[] secretColors = functions_final_boss.generateRandomColorNumbers(difficultyParameters[1]);
 
-        //functions_final_boss.generateWinnerSeq(secretColors, level);
-        functions_final_boss.drawBoard(dificultyParameters[0]);
-        functions_final_boss.generateColorSelector(dificultyParameters[0], dificultyParameters[1]);
-        bool userWin = functions_final_boss.rounds(dificultyParameters[0], dificultyParameters[1], secretColors);
+        //functions_final_boss.shoWinnerSeq(secretColors, difficultyParameters[1]);
+        functions_final_boss.printBoard(difficultyParameters[0]);
+        functions_final_boss.generateColorSelector(difficultyParameters[0], difficultyParameters[1]);
+        bool userWin = functions_final_boss.rounds(difficultyParameters[0], difficultyParameters[1], secretColors);
         functions_final_boss.finalMsj(userWin);
     }
 
@@ -100,7 +100,6 @@ public class functions_final_boss
         return [rounds, colors];
     }
 
-
     public static int[] generateRandomColorNumbers(int dificultyLevel)
     {
         Random randomValue = new Random();
@@ -114,7 +113,7 @@ public class functions_final_boss
         return randomColor;
     }
 
-    public static void drawBoard(int chancesNumber)
+    public static void printBoard(int chancesNumber)
     {
         int rows = functions_final_boss.getInitialCoords()[0];
         int cols = functions_final_boss.getInitialCoords()[1];
@@ -148,9 +147,9 @@ public class functions_final_boss
         }
     }
 
-    public static void generateWinnerSeq(int[] secretColors, int level)
+    public static void shoWinnerSeq(int[] secretColors, int level)
     {
-        int currentRow = functions_final_boss.getInitialCoords()[0] - 2;
+        int currentRow = functions_final_boss.getInitialCoords()[0] - 3;
         int cols = functions_final_boss.getInitialCoords()[1];
 
         for (int i = 0; i < level; i++)
@@ -179,9 +178,9 @@ public class functions_final_boss
         for (int i = 0; i < chances; i++)
         {
             int[] userColorPicks = functions_final_boss.userRound(chances, level, i);
-            int[] checkOut = functions_final_boss.evaluateUserGuess(secretColors, userColorPicks);
-            functions_final_boss.paintCheckOut(checkOut, i);
-            userWin = (checkOut[0] == 2 && checkOut[1] == 2 && checkOut[2] == 2 && checkOut[3] == 2);
+            int[] colorsChekout = functions_final_boss.evaluateUserGuess(secretColors, userColorPicks);
+            functions_final_boss.paintCheckOut(colorsChekout, i);
+            userWin = functions_final_boss.checkWin(colorsChekout);
             if (userWin)
             {
                 i = chances;
@@ -211,7 +210,7 @@ public class functions_final_boss
 
     public static int[] getInitialCoords()
     {
-        int rows = Console.BufferHeight/8;
+        int rows = Console.WindowHeight/8;
         int cols = (Console.BufferWidth/2)-5;
 
         return [rows, cols];
@@ -269,6 +268,7 @@ public class functions_final_boss
                 break;
             }
         } while (!Console.KeyAvailable);
+
         return colorNumbers[(cols - leftCorner) / 2];
     }
 
@@ -290,34 +290,53 @@ public class functions_final_boss
         return userColorPicks;
     }
 
-    public static int[] evaluateUserGuess(int[] secretColors, int[] userColors)
+    public static bool checkWin(int[] colorsChekout)
     {
-        int[] userResponse = new int[userColors.Length];
-        for (int i = 0; i < userColors.Length; i++)
-        {
-            userResponse[i] = 0;
-            bool colorIsThere = false;
-            bool isInPosition = false;
-
-            for (int j = 0; j < secretColors.Length; j++)
-            {
-                if (userColors[i] == secretColors[j])
-                {
-                    colorIsThere = true;
-                    if (i == j) isInPosition = true;
-                }
-            }
-
-            if (colorIsThere)
-            {
-                userResponse[i] += 1;
-                if (isInPosition) userResponse[i] += 1;
-            }
-        }
-        return userResponse;
+        return (colorsChekout[0] == 10 
+             && colorsChekout[1] == 10
+             && colorsChekout[2] == 10 
+             && colorsChekout[3] == 10);
     }
 
-    public static void paintCheckOut(int[] checkOut, int roundNumber)
+    public static int[] evaluateUserGuess(int[] hiddenColors, int[] userColors)
+    {
+        bool[] takenIndex = new bool[4];
+        Array.Fill(takenIndex, false);
+        int[] colorCheck = new int[userColors.Length];
+        Array.Fill(colorCheck, functions_final_boss.getColorCheckout(0));
+
+        for (int i = 0; i < userColors.Length; i++)
+        {
+            if (userColors[i] == hiddenColors[i])
+            {
+                takenIndex[i] = true;
+                colorCheck[i] = functions_final_boss.getColorCheckout(2);
+            }
+        }
+
+        if (!functions_final_boss.checkWin(colorCheck))
+        {
+            for (int i = 0; i < userColors.Length; i++)
+            {
+                for (int j = 0; j < hiddenColors.Length; j++)
+                {
+                    if (!takenIndex[j])
+                    {
+                        if (userColors[i] == hiddenColors[j])
+                        {
+                            takenIndex[j] = true;
+                            colorCheck[i] = functions_final_boss.getColorCheckout(1);
+                        }
+                    }
+                }
+
+            }
+        }
+
+        return colorCheck;
+    }
+
+    public static void paintCheckOut(int[] colorCheckout, int roundNumber)
     {
         int currentRow = functions_final_boss.getInitialCoords()[0]+1;
         int cols = functions_final_boss.getInitialCoords()[1];
@@ -325,10 +344,11 @@ public class functions_final_boss
         for (int i = 0; i < 4; i++)
         {
             Console.SetCursorPosition(cols + 12 + 2*i, currentRow + 2 * roundNumber);
-            functions_final_boss.paintColorIcon(functions_final_boss.getColorCheckout(checkOut[i]));
+            functions_final_boss.paintColorIcon(colorCheckout[i]);
         }
 
     }
+
     public static void finalMsj(bool userWin)
     {
         int currentRow = functions_final_boss.getInitialCoords()[0];
