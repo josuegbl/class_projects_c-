@@ -320,13 +320,10 @@ public class functions_final_boss
             {
                 for (int j = 0; j < hiddenColors.Length; j++)
                 {
-                    if (!takenIndex[j])
+                    if (!takenIndex[j] && colorCheck[i] == functions_final_boss.getColorCheckout(0) && userColors[i] == hiddenColors[j])
                     {
-                        if (userColors[i] == hiddenColors[j])
-                        {
-                            takenIndex[j] = true;
-                            colorCheck[i] = functions_final_boss.getColorCheckout(1);
-                        }
+                        takenIndex[j] = true;
+                        colorCheck[i] = functions_final_boss.getColorCheckout(1);
                     }
                 }
 
