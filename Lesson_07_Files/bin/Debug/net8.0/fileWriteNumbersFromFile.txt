@@ -1,0 +1,10 @@
+CERO
+El número 1 es impar
+DOS
+El número 3 es impar
+CUATRO
+El número 5 es impar
+SEIS
+El número 7 es impar
+OCHO
+El número 9 es impar

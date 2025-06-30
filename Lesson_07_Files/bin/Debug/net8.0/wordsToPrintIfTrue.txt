@@ -1,0 +1,14 @@
+hola
+esto
+es
+una
+historia
+para
+hacer
+diez
+cadenas
+de
+texto
+para
+un
+ejercicio

@@ -1,0 +1,15 @@
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_07_Files\bin\Debug\net8.0\Lesson_07_Files.exe
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_07_Files\bin\Debug\net8.0\Lesson_07_Files.deps.json
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_07_Files\bin\Debug\net8.0\Lesson_07_Files.runtimeconfig.json
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_07_Files\bin\Debug\net8.0\Lesson_07_Files.dll
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_07_Files\bin\Debug\net8.0\Lesson_07_Files.pdb
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_07_Files\obj\Debug\net8.0\Lesson_07_Files.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_07_Files\obj\Debug\net8.0\Lesson_07_Files.AssemblyInfoInputs.cache
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_07_Files\obj\Debug\net8.0\Lesson_07_Files.AssemblyInfo.cs
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_07_Files\obj\Debug\net8.0\Lesson_07_Files.csproj.CoreCompileInputs.cache
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_07_Files\obj\Debug\net8.0\Lesson_07_Files.sourcelink.json
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_07_Files\obj\Debug\net8.0\Lesson_07_Files.dll
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_07_Files\obj\Debug\net8.0\refint\Lesson_07_Files.dll
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_07_Files\obj\Debug\net8.0\Lesson_07_Files.pdb
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_07_Files\obj\Debug\net8.0\Lesson_07_Files.genruntimeconfig.cache
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_07_Files\obj\Debug\net8.0\ref\Lesson_07_Files.dll
