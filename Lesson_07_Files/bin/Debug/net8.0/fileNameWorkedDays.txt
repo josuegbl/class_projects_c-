@@ -1,0 +1,4 @@
+Pepe: Martes, Jueves
+Vivian: Lunes, Jueves, Viernes
+Jesus: Lunes, Martes, Miércoles, Jueves, Viernes
+Arturo: Sabado

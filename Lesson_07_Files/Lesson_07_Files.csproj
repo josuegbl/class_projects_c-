@@ -5,7 +5,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-	  <StartupObject>Lesson_07_Files.Lesson_07_Files_02</StartupObject>
+	  <StartupObject>Lesson_07_Files.Lesson_07_Files_03</StartupObject>
   </PropertyGroup>
 
 </Project>
