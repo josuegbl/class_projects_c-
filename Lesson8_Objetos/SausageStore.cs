@@ -1,0 +1,137 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data.SqlTypes;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Lesson8_Objetos;
+/// <summary>
+///  * Crear una clase para gestionar una tienda de embutidos.
+///  - La tienda vende salchichones, chorizos y morcillas, de los 
+///  cuales tiene una cantidad en la tienda para ir vendiendo.
+///  - La tienda podrá hacer ventas, para lo que habrá que indicar qué 
+///  se vende y la cantidad que se va a vender.
+///  - En cada venta se podrán vender varios tipos de productos, cada uno
+///  con una cantidad asociada, pero no se podrá repetir en la misma venta
+///  más de una vez el mismo producto.
+///  - Por ejemplo se podrá hacer una venta de 3 salchichones. Otra venta
+///  podrían ser 2 salchichones, 5 chorizos y 1 morcilla, pero no puede
+///  venderse 1 salchichón, 1 salchichñon, 2 morcillas.
+///  - Cuando se haga una venta, se actualizará el stock de cada embutido.
+///  - Si al ir a hacer una venta, no hubiera cantidad suficiente de algún
+///  producto, esta no se podrá hacer y se indicará por pantalla.
+///  - No hacer falta guardar las ventas en sí, solo hay que ir actualzando
+///  la cantidad si y solo sí toda la venta se puede hacer.
+///  Por último, la tienda podrá consultar las cantidades de cada producto,
+///  para ello podrá llamar a una función que muestre las cantidades 
+///  restantes todas a la vez.
+/// </summary>
+
+public class SausageStore
+{
+    Sausage[] products;
+    int productCounter;
+
+    public SausageStore()
+    {
+        this.products = new Sausage[3];
+        this.productCounter = 0;
+    }
+
+    public void addProductStock(Sausage product)
+    {
+        if (this.productCounter < 3)
+        {
+            this.products[productCounter] = product;
+            this.productCounter++;
+        }
+    }
+
+    public void doSale(Sausage[] productsToSale)
+    {
+        bool invalidSale = false;
+        bool permitSale = true;
+        Sausage invalidProduct = new Sausage("default", 0);
+
+        for (int i = 0; i < productsToSale.Length; i++)
+        {
+            for (int j = 0; j != i && j < productsToSale.Length; j++)
+            {
+                if (productsToSale[i].getName() == productsToSale[j].getName())
+                {
+                    invalidProduct = productsToSale[i];
+                    invalidSale = true;
+                }
+            }
+        }
+
+        if (!invalidSale)
+        {
+            for (int i = 0; i < productsToSale.Length; i++)
+            {
+                for (int j = 0; j < this.products.Length; j++)
+                {
+
+                    if (productsToSale[i].getName() == this.products[j].getName())
+                    {
+                        if (productsToSale[i].getAmount() > this.products[j].getAmount())
+                        {
+                            permitSale = false;
+                            invalidProduct = productsToSale[i];
+                            i = productsToSale.Length;
+                        }
+                        j = this.products.Length;
+                    }
+                }
+            }
+        }
+
+        if (invalidSale) 
+        {
+            Console.WriteLine("La venta no se corresponde con las reglas de negocio. ");
+            Console.WriteLine($"No se pueden vender más de {invalidProduct.getName()} al mismo tiempo.");
+        }
+        else
+        {
+            if (!permitSale)
+            {
+                Console.WriteLine("La venta no se puede realizar");
+                Console.WriteLine($"No hay stock suficiente de {invalidProduct.getName()}.");
+            }
+            else
+            {
+                foreach (Sausage product in productsToSale)
+                {
+                    retireFromStock(product);
+                }
+            }
+        }
+    }
+
+    public void retireFromStock(Sausage product)
+    {
+        for (int i = 0; i < this.productCounter; i++)
+        {
+            if (product.getName() == this.products[i].getName())
+            {
+                if (product.getAmount() <= this.products[i].getAmount())
+                {
+                    this.products[i].retireFromStock(product.getAmount());
+                }
+                break;
+            }
+        }
+
+    }
+
+    public void getStorage()
+    {
+        foreach (Sausage product in this.products)
+        {
+            Console.WriteLine($" producto: {product.getName()}, stock: {product.getAmount()}");
+        }
+    }
+
+}

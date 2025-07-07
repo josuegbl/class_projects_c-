@@ -1,0 +1,127 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson8_objetos\\sausagestore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|solutionrelative:sausagestore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson8_objetos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson8_objetos\\sausage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|solutionrelative:sausage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson8_objetos\\lesson8_objetos.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|solutionrelative:lesson8_objetos.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson8_objetos\\ejemploclase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|solutionrelative:ejemploclase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson8_objetos\\door.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|solutionrelative:door.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 187,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Door.cs",
+              "DocumentMoniker": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\Door.cs",
+              "RelativeDocumentMoniker": "Door.cs",
+              "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\Door.cs",
+              "RelativeToolTip": "Door.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAgwD8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T18:38:13.479Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Lesson8_Objetos.csproj",
+              "DocumentMoniker": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\Lesson8_Objetos.csproj",
+              "RelativeDocumentMoniker": "Lesson8_Objetos.csproj",
+              "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\Lesson8_Objetos.csproj",
+              "RelativeToolTip": "Lesson8_Objetos.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-02T17:16:22.213Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAYwFsAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-03T19:32:58.057Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Sausage.cs",
+              "DocumentMoniker": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\Sausage.cs",
+              "RelativeDocumentMoniker": "Sausage.cs",
+              "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\Sausage.cs",
+              "RelativeToolTip": "Sausage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T17:39:45.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SausageStore.cs",
+              "DocumentMoniker": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\SausageStore.cs",
+              "RelativeDocumentMoniker": "SausageStore.cs",
+              "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\SausageStore.cs",
+              "RelativeToolTip": "SausageStore.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAcwEkAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T17:22:08.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ejemploClase.cs",
+              "DocumentMoniker": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\ejemploClase.cs",
+              "RelativeDocumentMoniker": "ejemploClase.cs",
+              "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\ejemploClase.cs",
+              "RelativeToolTip": "ejemploClase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-03T15:46:49.311Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
