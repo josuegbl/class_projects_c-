@@ -73,7 +73,7 @@ public class SausageStore
             {
                 for (int j = 0; j < this.products.Length; j++)
                 {
-
+                    Console.WriteLine($"i: {i} y j: {j}");
                     if (productsToSale[i].getName() == this.products[j].getName())
                     {
                         if (productsToSale[i].getAmount() > this.products[j].getAmount())
@@ -104,7 +104,7 @@ public class SausageStore
             {
                 foreach (Sausage product in productsToSale)
                 {
-                    retireFromStock(product);
+                    retireFromStock(product)
                 }
             }
         }

@@ -9,7 +9,7 @@ namespace Lesson8_Objetos;
 public class Sausage
 {
     string name;
-    static int amount;
+    int amount;
    
 
     public Sausage()
@@ -20,7 +20,7 @@ public class Sausage
     public Sausage(string name, int amount)
     {
         this.name = name;
-        Sausage.amount = amount;
+        this.amount = amount;
     }
 
     public string getName()
@@ -30,14 +30,14 @@ public class Sausage
 
     public int getAmount()
     {
-        return Sausage.amount;
+        return this.amount;
     }
 
     public void retireFromStock(int amount)
     {
-        if ((amount - Sausage.amount) > 0 )
+        if ((amount - this.amount) > 0 )
         {
-            Sausage.amount -= amount;
+            this.amount -= amount;
         }
     }
 
