@@ -13,3 +13,18 @@ C:\Users\CursosTardes\Documents\PROJECTS\Lesson8_Objetos\obj\Debug\net8.0\refint
 C:\Users\CursosTardes\Documents\PROJECTS\Lesson8_Objetos\obj\Debug\net8.0\Lesson8_Objetos.pdb
 C:\Users\CursosTardes\Documents\PROJECTS\Lesson8_Objetos\obj\Debug\net8.0\Lesson8_Objetos.genruntimeconfig.cache
 C:\Users\CursosTardes\Documents\PROJECTS\Lesson8_Objetos\obj\Debug\net8.0\ref\Lesson8_Objetos.dll
+C:\Users\josue\OneDrive\Documentos\Josue\Curso Dev Web C#\PROJECTS\Lesson8_Objetos\obj\Debug\net8.0\Lesson8_Objetos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\josue\OneDrive\Documentos\Josue\Curso Dev Web C#\PROJECTS\Lesson8_Objetos\obj\Debug\net8.0\Lesson8_Objetos.AssemblyInfoInputs.cache
+C:\Users\josue\OneDrive\Documentos\Josue\Curso Dev Web C#\PROJECTS\Lesson8_Objetos\obj\Debug\net8.0\Lesson8_Objetos.AssemblyInfo.cs
+C:\Users\josue\OneDrive\Documentos\Josue\Curso Dev Web C#\PROJECTS\Lesson8_Objetos\obj\Debug\net8.0\Lesson8_Objetos.csproj.CoreCompileInputs.cache
+C:\Users\josue\OneDrive\Documentos\Josue\Curso Dev Web C#\PROJECTS\Lesson8_Objetos\obj\Debug\net8.0\Lesson8_Objetos.sourcelink.json
+C:\Users\josue\OneDrive\Documentos\Josue\Curso Dev Web C#\PROJECTS\Lesson8_Objetos\obj\Debug\net8.0\Lesson8_Objetos.dll
+C:\Users\josue\OneDrive\Documentos\Josue\Curso Dev Web C#\PROJECTS\Lesson8_Objetos\obj\Debug\net8.0\refint\Lesson8_Objetos.dll
+C:\Users\josue\OneDrive\Documentos\Josue\Curso Dev Web C#\PROJECTS\Lesson8_Objetos\obj\Debug\net8.0\Lesson8_Objetos.pdb
+C:\Users\josue\OneDrive\Documentos\Josue\Curso Dev Web C#\PROJECTS\Lesson8_Objetos\bin\Debug\net8.0\Lesson8_Objetos.exe
+C:\Users\josue\OneDrive\Documentos\Josue\Curso Dev Web C#\PROJECTS\Lesson8_Objetos\bin\Debug\net8.0\Lesson8_Objetos.deps.json
+C:\Users\josue\OneDrive\Documentos\Josue\Curso Dev Web C#\PROJECTS\Lesson8_Objetos\bin\Debug\net8.0\Lesson8_Objetos.runtimeconfig.json
+C:\Users\josue\OneDrive\Documentos\Josue\Curso Dev Web C#\PROJECTS\Lesson8_Objetos\bin\Debug\net8.0\Lesson8_Objetos.dll
+C:\Users\josue\OneDrive\Documentos\Josue\Curso Dev Web C#\PROJECTS\Lesson8_Objetos\bin\Debug\net8.0\Lesson8_Objetos.pdb
+C:\Users\josue\OneDrive\Documentos\Josue\Curso Dev Web C#\PROJECTS\Lesson8_Objetos\obj\Debug\net8.0\Lesson8_Objetos.genruntimeconfig.cache
+C:\Users\josue\OneDrive\Documentos\Josue\Curso Dev Web C#\PROJECTS\Lesson8_Objetos\obj\Debug\net8.0\ref\Lesson8_Objetos.dll

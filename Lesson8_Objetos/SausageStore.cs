@@ -18,7 +18,7 @@ namespace Lesson8_Objetos;
 ///  más de una vez el mismo producto.
 ///  - Por ejemplo se podrá hacer una venta de 3 salchichones. Otra venta
 ///  podrían ser 2 salchichones, 5 chorizos y 1 morcilla, pero no puede
-///  venderse 1 salchichón, 1 salchichñon, 2 morcillas.
+///  venderse 1 salchichón, 1 salchichon, 2 morcillas.
 ///  - Cuando se haga una venta, se actualizará el stock de cada embutido.
 ///  - Si al ir a hacer una venta, no hubiera cantidad suficiente de algún
 ///  producto, esta no se podrá hacer y se indicará por pantalla.
@@ -42,75 +42,60 @@ public class SausageStore
 
     public void addProductStock(Sausage product)
     {
-        if (this.productCounter < 3)
+        if (this.productCounter == 0)
         {
-            this.products[productCounter] = product;
+            this.products[0] = product;
+            this.productCounter++;
+        }
+        else if (this.productCounter < 3)
+        {
+            this.products[this.productCounter] = product;
             this.productCounter++;
         }
     }
 
-    public void doSale(Sausage[] productsToSale)
+    public void doSale(Sale sale)
     {
-        bool invalidSale = false;
-        bool permitSale = true;
-        Sausage invalidProduct = new Sausage("default", 0);
-
-        for (int i = 0; i < productsToSale.Length; i++)
+        bool allowSale = this.allowSale(sale.getProducts());
+        if (allowSale) 
         {
-            for (int j = 0; j != i && j < productsToSale.Length; j++)
+            foreach (Sausage product in sale.getProducts())
             {
-                if (productsToSale[i].getName() == productsToSale[j].getName())
-                {
-                    invalidProduct = productsToSale[i];
-                    invalidSale = true;
-                }
-            }
-        }
-
-        if (!invalidSale)
-        {
-            for (int i = 0; i < productsToSale.Length; i++)
-            {
-                for (int j = 0; j < this.products.Length; j++)
-                {
-                    Console.WriteLine($"i: {i} y j: {j}");
-                    if (productsToSale[i].getName() == this.products[j].getName())
-                    {
-                        if (productsToSale[i].getAmount() > this.products[j].getAmount())
-                        {
-                            permitSale = false;
-                            invalidProduct = productsToSale[i];
-                            i = productsToSale.Length;
-                        }
-                        j = this.products.Length;
-                    }
-                }
-            }
-        }
-
-        if (invalidSale) 
-        {
-            Console.WriteLine("La venta no se corresponde con las reglas de negocio. ");
-            Console.WriteLine($"No se pueden vender más de {invalidProduct.getName()} al mismo tiempo.");
-        }
-        else
-        {
-            if (!permitSale)
-            {
-                Console.WriteLine("La venta no se puede realizar");
-                Console.WriteLine($"No hay stock suficiente de {invalidProduct.getName()}.");
-            }
-            else
-            {
-                foreach (Sausage product in productsToSale)
-                {
-                    retireFromStock(product)
-                }
+                retireFromStock(product);
             }
         }
     }
 
-    public void retireFromStock(Sausage product)
+    private bool allowSale(Sausage[] productsToSale)
+    {
+        bool allowSale = true;
+        Sausage invalidProduct = new Sausage("default", 0);
+
+        for (int i = 0; i < productsToSale.Length; i++)
+        {
+            for (int j = 0; j < this.products.Length; j++)
+            {
+                if (productsToSale[i].getName() == this.products[j].getName())
+                {
+                    if (productsToSale[i].getAmount() > this.products[j].getAmount())
+                    {
+                        allowSale = false;
+                        invalidProduct = productsToSale[i];
+                        i = productsToSale.Length;
+                    }
+                    j = this.products.Length;
+                }
+            }
+        }
+        if (!allowSale)
+        {
+            Console.WriteLine("La venta no se puede realizar");
+            Console.WriteLine($"No hay stock suficiente de {invalidProduct.getName()}.\n");
+        }
+        return allowSale; 
+    }
+
+    private void retireFromStock(Sausage product)
     {
         for (int i = 0; i < this.productCounter; i++)
         {
@@ -118,7 +103,7 @@ public class SausageStore
             {
                 if (product.getAmount() <= this.products[i].getAmount())
                 {
-                    this.products[i].retireFromStock(product.getAmount());
+                    this.products[i] = this.products[i].retireFromAmount(product);
                 }
                 break;
             }
@@ -132,6 +117,6 @@ public class SausageStore
         {
             Console.WriteLine($" producto: {product.getName()}, stock: {product.getAmount()}");
         }
+        Console.WriteLine();
     }
-
 }

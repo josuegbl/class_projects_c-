@@ -87,17 +87,18 @@ public class Program
         store.addProductStock(chorizo);
         store.addProductStock(morcilla);
 
+        store.getStorage();
+
         //Sausage salchichasToBuy = new Sausage("salchicha", 1);
         //Sausage chorizoToBuy = new Sausage("chorizo", 6);
         //Sausage morcillaToBuy = new Sausage("morcilla", 2);
 
+        Sausage[] toBuy = { new Sausage("chorizo", 2) , new Sausage("morcilla", 10), new Sausage("salchicha", 1) };
+        Sale sale = new Sale(toBuy);
 
-        Sausage[] toBuy = { new Sausage("chorizo", 2), new Sausage("morcilla", 2), new Sausage("salchicha", 1) };
+        store.doSale(sale);
 
         store.getStorage();
-        store.doSale(toBuy);
-        store.getStorage();
-
 
     }
 }

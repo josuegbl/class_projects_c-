@@ -28,22 +28,28 @@ public class Sausage
         return this.name;
     }
 
+    public void setName(string name)
+    {
+        this.name = name;
+    }
+
     public int getAmount()
     {
         return this.amount;
     }
 
-    public void retireFromStock(int amount)
+    public void setAmount(int amount)
     {
-        if ((amount - this.amount) > 0 )
-        {
-            this.amount -= amount;
-        }
+        this.amount = amount;
     }
 
-
-
-
-
-
+    public Sausage retireFromAmount(Sausage sausage)
+    {
+        if ((this.amount - sausage.amount) >= 0)
+        {
+            int newStock = getAmount() - sausage.amount;
+            setAmount(newStock);
+        }
+        return this;
+    }
 }
