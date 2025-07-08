@@ -19,41 +19,8 @@ public class Sale
 
     public Sale(Sausage[] sausages)
     {
-
-        bool isValidSale = validateSale(sausages);
-        if (isValidSale)
-        {
-            this.products = sausages;
-            this.productCounter = sausages.Length;
-        }
-        else
-        {
-            Console.WriteLine("No es una compra válida.");
-            Console.WriteLine("por favor, compruebe la lista de productos.");
-        }
-    }
-
-    private bool validateSale(Sausage[] productsToSale)
-    {
-        bool validSale = true;
-
-        if (productsToSale.Length > 0)
-        {
-            for (int i = 0; i < productsToSale.Length; i++)
-            {
-                for (int j = 0; j != i && j < productsToSale.Length; j++)
-                {
-                    if (productsToSale[i].getName() == productsToSale[j].getName())
-                    {
-                        validSale = false;
-                        i = productsToSale.Length;
-                        j = productsToSale.Length;
-                    }
-                }
-            }
-        }
-
-        return validSale;
+        this.products = sausages;
+        this.productCounter = sausages.Length;
     }
 
     public void addProductToSale(Sausage product)
@@ -65,7 +32,6 @@ public class Sale
         }
         else if (this.productCounter < 3)
         {
-            bool isValidSale = validateSale(this.products);
             this.products[this.productCounter] = product;
             this.productCounter++;
         }

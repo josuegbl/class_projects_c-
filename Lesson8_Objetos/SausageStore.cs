@@ -56,9 +56,12 @@ public class SausageStore
 
     public void doSale(Sale sale)
     {
-        bool allowSale = this.allowSale(sale.getProducts());
-        if (allowSale) 
+        bool isValidSale = validateSale(sale.getProducts());
+        bool allowSale = this.saleAllow(sale.getProducts());
+
+        if (allowSale && isValidSale) 
         {
+            Console.WriteLine("¡Enhorabuena por comprar en esta tienda!\n");
             foreach (Sausage product in sale.getProducts())
             {
                 retireFromStock(product);
@@ -66,7 +69,7 @@ public class SausageStore
         }
     }
 
-    private bool allowSale(Sausage[] productsToSale)
+    private bool saleAllow(Sausage[] productsToSale)
     {
         bool allowSale = true;
         Sausage invalidProduct = new Sausage("default", 0);
@@ -95,6 +98,34 @@ public class SausageStore
         return allowSale; 
     }
 
+    private bool validateSale(Sausage[] productsToSale)
+    {
+        bool validSale = true;
+
+        if (productsToSale.Length > 0)
+        {
+            for (int i = 0; i < productsToSale.Length; i++)
+            {
+                for (int j = 0; j != i && j < productsToSale.Length; j++)
+                {
+                    if (productsToSale[i].getName() == productsToSale[j].getName())
+                    {
+                        validSale = false;
+                        i = productsToSale.Length;
+                        j = productsToSale.Length;
+                    }
+                }
+            }
+        }
+        if (!validSale)
+        {
+            Console.WriteLine("No es una compra válida.");
+            Console.WriteLine("por favor, compruebe la lista de productos.");
+        }
+        return validSale;
+    }
+
+
     private void retireFromStock(Sausage product)
     {
         for (int i = 0; i < this.productCounter; i++)
@@ -111,8 +142,9 @@ public class SausageStore
 
     }
 
-    public void getStorage()
+    public void getStock()
     {
+        Console.WriteLine("El inventario en tienda es el siguiente: \n");
         foreach (Sausage product in this.products)
         {
             Console.WriteLine($" producto: {product.getName()}, stock: {product.getAmount()}");

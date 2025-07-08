@@ -77,7 +77,7 @@ public class Program
         //Console.WriteLine(recipe1.recipe());
         //Console.WriteLine(recipe1.hasSusbtance());
 
-        Sausage salchichas = new Sausage("salchicha", 10);
+        Sausage salchichas = new Sausage("salchichon", 10);
         Sausage chorizo = new Sausage("chorizo", 4);
         Sausage morcilla = new Sausage("morcilla", 6);
 
@@ -87,18 +87,14 @@ public class Program
         store.addProductStock(chorizo);
         store.addProductStock(morcilla);
 
-        store.getStorage();
+        store.getStock();
 
-        //Sausage salchichasToBuy = new Sausage("salchicha", 1);
-        //Sausage chorizoToBuy = new Sausage("chorizo", 6);
-        //Sausage morcillaToBuy = new Sausage("morcilla", 2);
-
-        Sausage[] toBuy = { new Sausage("chorizo", 2) , new Sausage("morcilla", 10), new Sausage("salchicha", 1) };
+        Sausage[] toBuy = { new Sausage("chorizo", 2) , new Sausage("morcilla", 5), new Sausage("salchichon", 1) };
         Sale sale = new Sale(toBuy);
 
         store.doSale(sale);
 
-        store.getStorage();
+        store.getStock();
 
     }
 }
