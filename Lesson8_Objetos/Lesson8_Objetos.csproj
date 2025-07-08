@@ -5,7 +5,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>Lesson8_Objetos.Program</StartupObject>
+    <StartupObject>Lesson8_Objetos.EjemploHerencia</StartupObject>
   </PropertyGroup>
 
 </Project>

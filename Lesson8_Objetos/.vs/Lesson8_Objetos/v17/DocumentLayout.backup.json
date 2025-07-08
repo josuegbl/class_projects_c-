@@ -3,28 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson8_objetos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson8_objetos\\frigopie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|solutionrelative:frigopie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson8_objetos\\sale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|solutionrelative:sale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson8_objetos\\sanwichnada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|solutionrelative:sanwichnada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson8_objetos\\sausagestore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|solutionrelative:sausagestore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson8_objetos\\calipo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|solutionrelative:calipo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson8_objetos\\helado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|solutionrelative:helado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson8_objetos\\ejemploherencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|solutionrelative:ejemploherencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson8_objetos\\lesson8_objetos.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|solutionrelative:lesson8_objetos.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson8_objetos\\sausage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|solutionrelative:sausage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson8_objetos\\ejemploclase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|solutionrelative:ejemploclase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -33,8 +33,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 187,
-          "SelectedChildIndex": 2,
+          "DockedWidth": 292,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,80 +42,81 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Lesson8_Objetos.csproj",
-              "DocumentMoniker": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\Lesson8_Objetos.csproj",
-              "RelativeDocumentMoniker": "Lesson8_Objetos.csproj",
-              "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\Lesson8_Objetos.csproj",
-              "RelativeToolTip": "Lesson8_Objetos.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-07-02T17:16:22.213Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAYwFsAAABMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T19:32:58.057Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "SausageStore.cs",
-              "DocumentMoniker": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\SausageStore.cs",
-              "RelativeDocumentMoniker": "SausageStore.cs",
-              "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\SausageStore.cs",
-              "RelativeToolTip": "SausageStore.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAIwEUAAAAAAAAAAAAAAA==",
+              "Title": "Calipo.cs",
+              "DocumentMoniker": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\Calipo.cs",
+              "RelativeDocumentMoniker": "Calipo.cs",
+              "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\Calipo.cs",
+              "RelativeToolTip": "Calipo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T17:22:08.016Z",
+              "WhenOpened": "2025-07-08T18:14:04.25Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Sale.cs",
-              "DocumentMoniker": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\Sale.cs",
-              "RelativeDocumentMoniker": "Sale.cs",
-              "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\Sale.cs",
-              "RelativeToolTip": "Sale.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Title": "SanwichNada.cs",
+              "DocumentMoniker": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\SanwichNada.cs",
+              "RelativeDocumentMoniker": "SanwichNada.cs",
+              "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\SanwichNada.cs",
+              "RelativeToolTip": "SanwichNada.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBMAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-08T14:23:12.58Z",
+              "WhenOpened": "2025-07-08T18:10:47.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Frigopie.cs",
+              "DocumentMoniker": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\Frigopie.cs",
+              "RelativeDocumentMoniker": "Frigopie.cs",
+              "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\Frigopie.cs",
+              "RelativeToolTip": "Frigopie.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T18:05:39.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Helado.cs",
+              "DocumentMoniker": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\Helado.cs",
+              "RelativeDocumentMoniker": "Helado.cs",
+              "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\Helado.cs",
+              "RelativeToolTip": "Helado.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACYAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T17:59:37.424Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Sausage.cs",
-              "DocumentMoniker": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\Sausage.cs",
-              "RelativeDocumentMoniker": "Sausage.cs",
-              "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\Sausage.cs",
-              "RelativeToolTip": "Sausage.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAwwCUAAAAbAAAAAAAAAA==",
+              "Title": "EjemploHerencia.cs",
+              "DocumentMoniker": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\EjemploHerencia.cs",
+              "RelativeDocumentMoniker": "EjemploHerencia.cs",
+              "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\EjemploHerencia.cs",
+              "RelativeToolTip": "EjemploHerencia.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T19:33:54.914Z",
+              "WhenOpened": "2025-07-08T15:39:10.795Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "ejemploClase.cs",
-              "DocumentMoniker": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\ejemploClase.cs",
-              "RelativeDocumentMoniker": "ejemploClase.cs",
-              "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\ejemploClase.cs",
-              "RelativeToolTip": "ejemploClase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T15:46:49.311Z"
+              "Title": "Lesson8_Objetos.csproj",
+              "DocumentMoniker": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\Lesson8_Objetos.csproj",
+              "RelativeDocumentMoniker": "Lesson8_Objetos.csproj",
+              "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\Lesson8_Objetos.csproj",
+              "RelativeToolTip": "Lesson8_Objetos.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-02T17:16:22.213Z",
+              "EditorCaption": ""
             }
           ]
         }
