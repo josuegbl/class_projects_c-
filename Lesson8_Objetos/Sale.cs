@@ -8,22 +8,22 @@ namespace Lesson8_Objetos;
 
 public class Sale
 {
-    Sausage[] products;
+    Product[] products;
     int productCounter;
 
     public Sale()
     {
-        this.products = new Sausage[3];
+        this.products = new Product[3];
         this.productCounter = 0;
     }
 
-    public Sale(Sausage[] sausages)
+    public Sale(Product[] products)
     {
-        this.products = sausages;
-        this.productCounter = sausages.Length;
+        this.products = products;
+        this.productCounter = products.Length;
     }
 
-    public void addProductToSale(Sausage product)
+    public void addProductToSale(Product product)
     {
         if (this.productCounter == 0)
         {
@@ -37,7 +37,7 @@ public class Sale
         }
     }
 
-    public Sausage[] getProducts()
+    public Product[] getProducts()
     {
         return this.products;
     }

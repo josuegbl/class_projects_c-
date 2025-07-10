@@ -29,18 +29,18 @@ namespace Lesson8_Objetos;
 ///  restantes todas a la vez.
 /// </summary>
 
-public class SausageStore
+public class Store
 {
-    Sausage[] products;
+    Product[] products;
     int productCounter;
 
-    public SausageStore()
+    public Store(int numberOfProducts)
     {
-        this.products = new Sausage[3];
+        this.products = new Product[numberOfProducts];
         this.productCounter = 0;
     }
 
-    public void addProductStock(Sausage product)
+    public void addProductStock(Product product)
     {
         if (this.productCounter == 0)
         {
@@ -62,17 +62,17 @@ public class SausageStore
         if (allowSale && isValidSale) 
         {
             Console.WriteLine("¡Enhorabuena por comprar en esta tienda!\n");
-            foreach (Sausage product in sale.getProducts())
+            foreach (Product product in sale.getProducts())
             {
                 retireFromStock(product);
             }
         }
     }
 
-    private bool saleAllow(Sausage[] productsToSale)
+    private bool saleAllow(Product[] productsToSale)
     {
         bool allowSale = true;
-        Sausage invalidProduct = new Sausage("default", 0);
+        Product invalidProduct = new Product("default", 0);
 
         for (int i = 0; i < productsToSale.Length; i++)
         {
@@ -98,7 +98,7 @@ public class SausageStore
         return allowSale; 
     }
 
-    private bool validateSale(Sausage[] productsToSale)
+    private bool validateSale(Product[] productsToSale)
     {
         bool validSale = true;
 
@@ -126,7 +126,7 @@ public class SausageStore
     }
 
 
-    private void retireFromStock(Sausage product)
+    private void retireFromStock(Product product)
     {
         for (int i = 0; i < this.productCounter; i++)
         {
@@ -145,7 +145,7 @@ public class SausageStore
     public void getStock()
     {
         Console.WriteLine("El inventario en tienda es el siguiente: \n");
-        foreach (Sausage product in this.products)
+        foreach (Product product in this.products)
         {
             Console.WriteLine($" producto: {product.getName()}, stock: {product.getAmount()}");
         }

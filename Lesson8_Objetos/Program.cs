@@ -77,11 +77,11 @@ public class Program
         //Console.WriteLine(recipe1.recipe());
         //Console.WriteLine(recipe1.hasSusbtance());
 
-        Sausage salchichas = new Sausage("salchichon", 10);
-        Sausage chorizo = new Sausage("chorizo", 4);
-        Sausage morcilla = new Sausage("morcilla", 6);
+        Product salchichas = new Product("salchichon", 10);
+        Product chorizo = new Product("chorizo", 4);
+        Product morcilla = new Product("morcilla", 6);
 
-        SausageStore store = new SausageStore();
+        Store store = new Store(3);
 
         store.addProductStock(salchichas);
         store.addProductStock(chorizo);
@@ -89,7 +89,7 @@ public class Program
 
         store.getStock();
 
-        Sausage[] toBuy = { new Sausage("chorizo", 2) , new Sausage("morcilla", 5), new Sausage("salchichon", 1) };
+        Product[] toBuy = { new Product("chorizo", 2) , new Product("morcilla", 5), new Product("salchichon", 1) };
         Sale sale = new Sale(toBuy);
 
         store.doSale(sale);

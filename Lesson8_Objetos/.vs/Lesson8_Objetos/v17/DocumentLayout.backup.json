@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson8_objetos\\frigopie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|solutionrelative:frigopie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson8_objetos\\sanwichnada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|solutionrelative:sanwichnada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson8_objetos\\calipo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|solutionrelative:calipo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson8_objetos\\helado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|solutionrelative:helado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson8_objetos\\ejemploherencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|solutionrelative:ejemploherencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson8_objetos\\sheepcheese.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|solutionrelative:sheepcheese.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson8_objetos\\goatcheese.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|solutionrelative:goatcheese.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson8_objetos\\cowcheese.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|solutionrelative:cowcheese.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson8_objetos\\tastingnote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|solutionrelative:tastingnote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson8_objetos\\cheese.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|solutionrelative:cheese.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson8_objetos\\lesson8_objetos.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -34,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 292,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,72 +46,85 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Calipo.cs",
-              "DocumentMoniker": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\Calipo.cs",
-              "RelativeDocumentMoniker": "Calipo.cs",
-              "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\Calipo.cs",
-              "RelativeToolTip": "Calipo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA1AAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "TastingNote.cs",
+              "DocumentMoniker": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\TastingNote.cs",
+              "RelativeDocumentMoniker": "TastingNote.cs",
+              "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\TastingNote.cs",
+              "RelativeToolTip": "TastingNote.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-08T18:14:04.25Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SanwichNada.cs",
-              "DocumentMoniker": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\SanwichNada.cs",
-              "RelativeDocumentMoniker": "SanwichNada.cs",
-              "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\SanwichNada.cs",
-              "RelativeToolTip": "SanwichNada.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBMAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-08T18:10:47.3Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Frigopie.cs",
-              "DocumentMoniker": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\Frigopie.cs",
-              "RelativeDocumentMoniker": "Frigopie.cs",
-              "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\Frigopie.cs",
-              "RelativeToolTip": "Frigopie.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-08T18:05:39.944Z",
+              "WhenOpened": "2025-07-10T18:04:33.219Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Helado.cs",
-              "DocumentMoniker": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\Helado.cs",
-              "RelativeDocumentMoniker": "Helado.cs",
-              "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\Helado.cs",
-              "RelativeToolTip": "Helado.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACYAAAAkAAAAAAAAAA==",
+              "Title": "CowCheese.cs",
+              "DocumentMoniker": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\CowCheese.cs",
+              "RelativeDocumentMoniker": "CowCheese.cs",
+              "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\CowCheese.cs",
+              "RelativeToolTip": "CowCheese.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwCkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-08T17:59:37.424Z",
+              "WhenOpened": "2025-07-10T14:55:53.267Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
+              "Title": "SheepCheese.cs",
+              "DocumentMoniker": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\SheepCheese.cs",
+              "RelativeDocumentMoniker": "SheepCheese.cs",
+              "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\SheepCheese.cs",
+              "RelativeToolTip": "SheepCheese.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T14:54:37.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GoatCheese.cs",
+              "DocumentMoniker": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\GoatCheese.cs",
+              "RelativeDocumentMoniker": "GoatCheese.cs",
+              "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\GoatCheese.cs",
+              "RelativeToolTip": "GoatCheese.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T14:54:23.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Cheese.cs",
+              "DocumentMoniker": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\Cheese.cs",
+              "RelativeDocumentMoniker": "Cheese.cs",
+              "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\Cheese.cs",
+              "RelativeToolTip": "Cheese.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAEAAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T14:20:34.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "EjemploHerencia.cs",
               "DocumentMoniker": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\EjemploHerencia.cs",
               "RelativeDocumentMoniker": "EjemploHerencia.cs",
-              "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\EjemploHerencia.cs",
-              "RelativeToolTip": "EjemploHerencia.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAvAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\EjemploHerencia.cs*",
+              "RelativeToolTip": "EjemploHerencia.cs*",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAYwFsAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-08T15:39:10.795Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Lesson8_Objetos.csproj",
               "DocumentMoniker": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\Lesson8_Objetos.csproj",
               "RelativeDocumentMoniker": "Lesson8_Objetos.csproj",
