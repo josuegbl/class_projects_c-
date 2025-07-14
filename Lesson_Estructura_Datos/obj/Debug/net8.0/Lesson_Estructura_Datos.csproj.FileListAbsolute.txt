@@ -1,0 +1,15 @@
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_Estructura_Datos\bin\Debug\net8.0\Lesson_Estructura_Datos.exe
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_Estructura_Datos\bin\Debug\net8.0\Lesson_Estructura_Datos.deps.json
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_Estructura_Datos\bin\Debug\net8.0\Lesson_Estructura_Datos.runtimeconfig.json
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_Estructura_Datos\bin\Debug\net8.0\Lesson_Estructura_Datos.dll
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_Estructura_Datos\bin\Debug\net8.0\Lesson_Estructura_Datos.pdb
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_Estructura_Datos\obj\Debug\net8.0\Lesson_Estructura_Datos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_Estructura_Datos\obj\Debug\net8.0\Lesson_Estructura_Datos.AssemblyInfoInputs.cache
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_Estructura_Datos\obj\Debug\net8.0\Lesson_Estructura_Datos.AssemblyInfo.cs
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_Estructura_Datos\obj\Debug\net8.0\Lesson_Estructura_Datos.csproj.CoreCompileInputs.cache
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_Estructura_Datos\obj\Debug\net8.0\Lesson_Estructura_Datos.sourcelink.json
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_Estructura_Datos\obj\Debug\net8.0\Lesson_Estructura_Datos.dll
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_Estructura_Datos\obj\Debug\net8.0\refint\Lesson_Estructura_Datos.dll
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_Estructura_Datos\obj\Debug\net8.0\Lesson_Estructura_Datos.pdb
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_Estructura_Datos\obj\Debug\net8.0\Lesson_Estructura_Datos.genruntimeconfig.cache
+C:\Users\CursosTardes\Documents\PROJECTS\Lesson_Estructura_Datos\obj\Debug\net8.0\ref\Lesson_Estructura_Datos.dll
