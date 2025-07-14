@@ -38,11 +38,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 292,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             },
             {
               "$type": "Document",
@@ -54,8 +58,7 @@
               "RelativeToolTip": "TastingNote.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T18:04:33.219Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-10T18:04:33.219Z"
             },
             {
               "$type": "Document",
@@ -67,8 +70,7 @@
               "RelativeToolTip": "CowCheese.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAgwCkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T14:55:53.267Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-10T14:55:53.267Z"
             },
             {
               "$type": "Document",
@@ -80,8 +82,7 @@
               "RelativeToolTip": "SheepCheese.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T14:54:37.596Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-10T14:54:37.596Z"
             },
             {
               "$type": "Document",
@@ -93,8 +94,7 @@
               "RelativeToolTip": "GoatCheese.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T14:54:23.87Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-10T14:54:23.87Z"
             },
             {
               "$type": "Document",
@@ -106,8 +106,7 @@
               "RelativeToolTip": "Cheese.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAAAEAAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T14:20:34.272Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-10T14:20:34.272Z"
             },
             {
               "$type": "Document",
@@ -115,9 +114,9 @@
               "Title": "EjemploHerencia.cs",
               "DocumentMoniker": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\EjemploHerencia.cs",
               "RelativeDocumentMoniker": "EjemploHerencia.cs",
-              "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\EjemploHerencia.cs*",
-              "RelativeToolTip": "EjemploHerencia.cs*",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAYwFsAAAAmAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\EjemploHerencia.cs",
+              "RelativeToolTip": "EjemploHerencia.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAYwFgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-08T15:39:10.795Z",
               "EditorCaption": ""
@@ -132,8 +131,7 @@
               "RelativeToolTip": "Lesson8_Objetos.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-07-02T17:16:22.213Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-02T17:16:22.213Z"
             }
           ]
         }

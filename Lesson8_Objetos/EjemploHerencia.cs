@@ -86,7 +86,6 @@ public class EjemploHerencia
 
         //store.getStock();
 
-
         GoatCheese goat = new GoatCheese(10, 25);
         SheepCheese sheep = new SheepCheese(10, "churras", 30);
         CowCheese cow = new CowCheese(14, 53);
