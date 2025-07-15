@@ -36,6 +36,27 @@ public class Film
         return this.stock;
     }
 
+    public void setStock(int stock)
+    {
+        this.stock = stock;
+    }
+
+    public void increaseStock()
+    {
+        this.stock++;
+    }
+
+    public void decreaseStock()
+    {
+        this.stock--;
+    }
+
+
+    public bool isAvailable()
+    {
+        return getStock() > 0;
+    }
+
     public bool getIsNewly()
     {
         return this.isNewly;
@@ -46,4 +67,12 @@ public class Film
         return new Film("default", Genre.ACCION, 0, false);
     }
 
+    public override string ToString()
+    {
+        string price = getIsNewly() ? "5" : "3";
+
+        string outMsj = $"Price: ${price}.00 Title: {getTitle()} Genre: {getGenre()} ";
+
+        return outMsj;
+    }
 }

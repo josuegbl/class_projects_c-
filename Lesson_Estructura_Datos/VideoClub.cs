@@ -53,7 +53,7 @@ public class VideoClub
     public List<Film> getFilms()
         { return this.movies; }
 
-    public static Film? GetFilmByName(List<Film> movies, string name)
+    public static Film GetFilmByName(List<Film> movies, string name)
     {
         Film movie = Film.getDefaultFilm();
 
@@ -66,6 +66,26 @@ public class VideoClub
         }
 
         return movie;
+    }
+
+    public void setFilms(List<Film> movies)
+    {
+        this.movies = movies;
+    }
+
+    public List<Film> GetFilmsByAvailability()
+    {
+        List<Film> availMovies = new List<Film>();
+        
+        foreach (Film movie in this.movies)
+        {
+            if(movie.isAvailable())
+            {
+                availMovies.Add(movie);
+            }
+        }
+
+        return availMovies;
     }
 
 }

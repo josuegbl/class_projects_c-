@@ -51,10 +51,19 @@ public class Program
         //}
 
         //Console.WriteLine(catalogo.getCatalogueStats());
-        Menu menu = new Menu();
         
-        menu.printMenu();
+        Menu menu = new Menu();
 
+        List<Film> moviesList = ReadDB.getMoviesCatalogue();
+        VideoClub club = new VideoClub(moviesList);
+
+
+        do
+        {
+            menu.printMenu();
+            menu.getSelection(club);
+
+        } while (true);
     }
 
     

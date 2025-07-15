@@ -1,0 +1,20 @@
+The Shawshank Redemption, Drama, 3, novedad
+The Godfather, Drama, 0,  
+The Dark Knight, Action, 5, 
+The Godfather Part II, Drama, 2, 
+12 Angry Men, Drama, 1, novedad
+Schindler’s List, History, 4, 
+The Return of the King, Fantasy, 2, 
+Pulp Fiction, Crime/Drama, 3, novedad
+The Fellowship of the Ring, Fantasy, 5, 
+The Good the Bad and the Ugly, Western, 1, 
+Forrest Gump, Drama, 4, 
+Fight Club, Drama, 2, 
+Inception, Sci-Fi, 1, novedad
+The Two Towers, Fantasy, 5, 
+Star Wars Episode V – The Empire Strikes Back, Action, 2, 
+The Matrix, Action, 4, 
+Goodfellas, Drama, 0,  
+One Flew Over the Cuckoo’s Nest, Drama, 5, 
+Se7en, Drama, 1, novedad
+Seven Samurai, Action, 3, 

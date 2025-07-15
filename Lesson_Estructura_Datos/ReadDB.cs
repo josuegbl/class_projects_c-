@@ -11,52 +11,57 @@ public class ReadDB
     const string RENT_FILE = "moviesRented.txt";
     const string MOVIES_FILE = "moviesList.txt" ;
 
-    public static void addMovieToDB(Film movie)
-    {
-
-    }
-
     private static Film getMovieFromDB(string line)
     {
         string[] movieLine = line.Split(',');
 
-        return new Film(movieLine[0], stringToGenre(movieLine[1]),
-                            int.Parse(movieLine[2]), bool.Parse(movieLine[3]));
+        return new Film(movieLine[0], stringToGenre(movieLine[1].Trim()),
+                            int.Parse(movieLine[2].Trim()), getNewly(movieLine[3].Trim()));
     }
 
-    private string genreToString(Genre genre)
+    private static bool getNewly(string newlyString)
     {
-        return genre.ToString();
-
+        return newlyString == "novedad" ? true : false;
     }
 
     private static Genre stringToGenre(string genreString)
     {
         Genre genre;
 
-        switch (genreString.ToUpper())
+        switch (genreString)
         {
-            case "ACCION":
+            case "Action":
                 genre = Genre.ACCION;
                 break;
-            case "THRILLER":
+
+            case "Thriller":
                 genre = Genre.THRILLER;
                 break;
-            case "FANTASTICO":
+
+            case "Fantasy":
                 genre = Genre.FANTASTICO;
                 break;
-            case "CIENCIA_FICCION":
+
+            case "Sci-Fi":
                 genre = Genre.CIENCIA_FICCION;
                 break;
-            case "BELICO":
-                genre = Genre.BELICO;
+
+            case "History":
+                genre = Genre.HISTORY;
                 break;
-            case "COMEDIA":
+
+            case "Comedy":
                 genre = Genre.COMEDIA;
                 break;
-            case "DRAMA":
+
+            case "Drama":
                 genre = Genre.DRAMA;
                 break;
+
+            case "Western":
+                genre = Genre.WESTERN;
+                break;
+
             default:
                 genre = Genre.ACCION;
                 break;
@@ -81,7 +86,7 @@ public class ReadDB
         return movies;
     }
 
-    public List<Film> getMoviesCatalogue()
+    public static List<Film> getMoviesCatalogue()
     {
         List<Film> movies = new List<Film>();
 

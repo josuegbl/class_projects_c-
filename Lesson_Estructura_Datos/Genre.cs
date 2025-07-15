@@ -12,7 +12,8 @@ public enum Genre
    THRILLER,
    FANTASTICO,
    CIENCIA_FICCION,
-   BELICO,
+   HISTORY,
    COMEDIA,
-   DRAMA
+   DRAMA,
+   WESTERN
 }
