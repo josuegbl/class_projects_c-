@@ -21,7 +21,6 @@ public class Program
         //basterds.addActor(pitt);
         //basterds.addActor(waltz);
 
-
         //Movie hollywood = new Movie("Once Upon a Time in Hollywood", 7, 146, Genre.DRAMA, quentin);
         //hollywood.addActor(pitt);
         //hollywood.addActor(dicaprio);
@@ -30,7 +29,6 @@ public class Program
         //pulp.addActor(cage);
         //pulp.addActor(samuel);
 
-
         //Catalogue catalogo = new Catalogue();
         //catalogo.addmovie(django);
         //catalogo.addmovie(basterds);
@@ -38,9 +36,8 @@ public class Program
         //catalogo.addmovie(pulp);
 
         //catalogo.getMovieInfo(hollywood.getTitle());
-
         //List<Movie> movies = catalogo.getMoviesByRating(8);
-        
+       
         //foreach(Movie movie in movies)
         //{
         //    Console.WriteLine(movie.getMovieInfo());
@@ -53,8 +50,10 @@ public class Program
         //    Console.WriteLine(movie.getMovieInfo());
         //}
 
-
         //Console.WriteLine(catalogo.getCatalogueStats());
+        Menu menu = new Menu();
+        
+        menu.printMenu();
 
     }
 

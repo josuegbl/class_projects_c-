@@ -41,4 +41,9 @@ public class Film
         return this.isNewly;
     }
 
+    public static Film getDefaultFilm()
+    {
+        return new Film("default", Genre.ACCION, 0, false);
+    }
+
 }

@@ -1,16 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\",
+  "WorkspaceRootPath": "C:\\Users\\josue\\OneDrive\\Documentos\\Josue\\Curso Dev Web C#\\PROJECTS\\Lesson8_Objetos\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson8_objetos\\grifo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|solutionrelative:grifo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|c:\\users\\josue\\onedrive\\documentos\\josue\\curso dev web c#\\projects\\lesson8_objetos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson8_objetos\\goatcheese.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|solutionrelative:goatcheese.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|c:\\users\\josue\\onedrive\\documentos\\josue\\curso dev web c#\\projects\\lesson8_objetos\\sausage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|solutionrelative:sausage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> 4b9a24e453f1c4beceb985e2de4f410b5172cc8a
     },
     {
+      "AbsoluteMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|c:\\users\\josue\\onedrive\\documentos\\josue\\curso dev web c#\\projects\\lesson8_objetos\\sale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|solutionrelative:sale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson8_objetos\\frigopie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|solutionrelative:frigopie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -49,6 +59,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson8_objetos\\ejemploherencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|solutionrelative:ejemploherencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|c:\\users\\josue\\onedrive\\documentos\\josue\\curso dev web c#\\projects\\lesson8_objetos\\ejemploclase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC1F53DD-8703-4F13-BAC5-CF2B8188635C}|Lesson8_Objetos.csproj|solutionrelative:ejemploclase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> 4b9a24e453f1c4beceb985e2de4f410b5172cc8a
     }
   ],
   "DocumentGroupContainers": [
@@ -57,14 +71,20 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
+<<<<<<< HEAD
           "DockedWidth": 292,
           "SelectedChildIndex": 1,
+=======
+          "DockedWidth": 187,
+          "SelectedChildIndex": 6,
+>>>>>>> 4b9a24e453f1c4beceb985e2de4f410b5172cc8a
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
+<<<<<<< HEAD
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Grifo.cs",
@@ -203,12 +223,43 @@
               "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\EjemploHerencia.cs",
               "RelativeToolTip": "EjemploHerencia.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAgwFgAAAAAAAAAAAAAAA==",
+=======
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\josue\\OneDrive\\Documentos\\Josue\\Curso Dev Web C#\\PROJECTS\\Lesson8_Objetos\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\josue\\OneDrive\\Documentos\\Josue\\Curso Dev Web C#\\PROJECTS\\Lesson8_Objetos\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAgwFAAAAA0AAAAAAAAAA==",
+>>>>>>> 4b9a24e453f1c4beceb985e2de4f410b5172cc8a
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-08T15:39:10.795Z",
+              "WhenOpened": "2025-07-03T19:32:58.057Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 10,
               "Title": "Lesson8_Objetos.csproj",
               "DocumentMoniker": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson8_Objetos\\Lesson8_Objetos.csproj",
@@ -219,6 +270,41 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-07-02T17:16:22.213Z",
               "EditorCaption": ""
+=======
+              "DocumentIndex": 1,
+              "Title": "Sausage.cs",
+              "DocumentMoniker": "C:\\Users\\josue\\OneDrive\\Documentos\\Josue\\Curso Dev Web C#\\PROJECTS\\Lesson8_Objetos\\Sausage.cs",
+              "RelativeDocumentMoniker": "Sausage.cs",
+              "ToolTip": "C:\\Users\\josue\\OneDrive\\Documentos\\Josue\\Curso Dev Web C#\\PROJECTS\\Lesson8_Objetos\\Sausage.cs",
+              "RelativeToolTip": "Sausage.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAIwDcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T19:33:54.914Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Sale.cs",
+              "DocumentMoniker": "C:\\Users\\josue\\OneDrive\\Documentos\\Josue\\Curso Dev Web C#\\PROJECTS\\Lesson8_Objetos\\Sale.cs",
+              "RelativeDocumentMoniker": "Sale.cs",
+              "ToolTip": "C:\\Users\\josue\\OneDrive\\Documentos\\Josue\\Curso Dev Web C#\\PROJECTS\\Lesson8_Objetos\\Sale.cs",
+              "RelativeToolTip": "Sale.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAswEkAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T07:29:30.695Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ejemploClase.cs",
+              "DocumentMoniker": "C:\\Users\\josue\\OneDrive\\Documentos\\Josue\\Curso Dev Web C#\\PROJECTS\\Lesson8_Objetos\\ejemploClase.cs",
+              "RelativeDocumentMoniker": "ejemploClase.cs",
+              "ToolTip": "C:\\Users\\josue\\OneDrive\\Documentos\\Josue\\Curso Dev Web C#\\PROJECTS\\Lesson8_Objetos\\ejemploClase.cs",
+              "RelativeToolTip": "ejemploClase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-03T15:46:49.311Z"
+>>>>>>> 4b9a24e453f1c4beceb985e2de4f410b5172cc8a
             }
           ]
         }

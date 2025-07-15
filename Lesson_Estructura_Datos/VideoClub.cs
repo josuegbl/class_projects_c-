@@ -34,7 +34,8 @@ namespace Lesson_Estructura_Datos;
 /// además al menú las opciones:
 ///   - Añadir una peli asociada y un precio.
 ///   - El precio de 3€ para pelis normales y de 5€ para novedades.
-///   - Si una peli ya está alquilada y no hay stock, no se podrá 
+/// 
+/// - Si una peli ya está alquilada y no hay stock, no se podrá 
 ///   alquilar y no se mostrará en el catálogo de disponibles (pero si 
 ///   en los alquileres).
 /// 
@@ -48,4 +49,23 @@ public class VideoClub
     {
         this.movies = movies;
     }
+
+    public List<Film> getFilms()
+        { return this.movies; }
+
+    public static Film? GetFilmByName(List<Film> movies, string name)
+    {
+        Film movie = Film.getDefaultFilm();
+
+        foreach (Film film in movies)
+        {
+            if (film.getTitle() == name)
+            {
+                movie = film;
+            }
+        }
+
+        return movie;
+    }
+
 }

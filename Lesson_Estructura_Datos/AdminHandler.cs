@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace Lesson_Estructura_Datos;
 
-public class MenuPos
+public class AdminHandler
 {
+    const string ADMIN_FILE = "adminFile.txt";
+
 }
