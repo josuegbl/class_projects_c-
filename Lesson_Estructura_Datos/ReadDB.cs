@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace Lesson_Estructura_Datos;
 
-public class DBhandling
+public class ReadDB
 {
     const string RENT_FILE = "moviesRented.txt";
-    const string ADMIN_FILE = "adminFile.txt";
     const string MOVIES_FILE = "moviesList.txt" ;
 
     public static void addMovieToDB(Film movie)
@@ -65,37 +64,33 @@ public class DBhandling
         return genre;
     }
 
-    private static List<Film> getMoviesFromDB(bool isMoviesRentedFile)
+    public List<Film> getRentedMovies()
     {
         List<Film> movies = new List<Film>();
-        string readFile;
 
-        if (isMoviesRentedFile)
+        string[] moviesList = File.ReadAllLines(RENT_FILE);
+        foreach (string line in moviesList)
         {
-            readFile = RENT_FILE;
-        }
-        else
-        {
-            readFile = MOVIES_FILE;
-        }
+            string[] movieLine = line.Split(',');
 
-        string[] moviesList = File.ReadAllLines(readFile);
-        foreach(string line in moviesList)
-        {
-            movies.Add(getMovieFromDB(line));
+            Film film = VideoClub.GetFilmByName(getMoviesCatalogue(), movieLine[0]);
+
+            movies.Add(film);
         }
 
         return movies;
     }
 
-    public List<Film> getRentedMovies()
-    {
-        return getMoviesFromDB(true);
-    }
-
     public List<Film> getMoviesCatalogue()
     {
-        return getMoviesFromDB(false);
+        List<Film> movies = new List<Film>();
+
+        string[] moviesList = File.ReadAllLines(MOVIES_FILE);
+        foreach (string line in moviesList)
+        {
+            movies.Add(getMovieFromDB(line));
+        }
+        return movies;
     }
 
 
