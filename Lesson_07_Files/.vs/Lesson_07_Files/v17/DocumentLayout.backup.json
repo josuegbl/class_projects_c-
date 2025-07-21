@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_07_Files\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9E3E07A3-A167-4C27-9CB5-616D59DCFBFF}|Lesson_07_Files.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson_07_files\\lesson_07_files_03.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E3E07A3-A167-4C27-9CB5-616D59DCFBFF}|Lesson_07_Files.csproj|solutionrelative:lesson_07_files_03.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9E3E07A3-A167-4C27-9CB5-616D59DCFBFF}|Lesson_07_Files.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson_07_files\\lesson_07_files.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{9E3E07A3-A167-4C27-9CB5-616D59DCFBFF}|Lesson_07_Files.csproj|solutionrelative:lesson_07_files.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E3E07A3-A167-4C27-9CB5-616D59DCFBFF}|Lesson_07_Files.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson_07_files\\lesson_07_files_03.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E3E07A3-A167-4C27-9CB5-616D59DCFBFF}|Lesson_07_Files.csproj|solutionrelative:lesson_07_files_03.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9E3E07A3-A167-4C27-9CB5-616D59DCFBFF}|Lesson_07_Files.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson_07_files\\ejemplo_ficheros_crud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,15 +38,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Lesson_07_Files.csproj",
               "DocumentMoniker": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_07_Files\\Lesson_07_Files.csproj",
               "RelativeDocumentMoniker": "Lesson_07_Files.csproj",
               "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_07_Files\\Lesson_07_Files.csproj",
               "RelativeToolTip": "Lesson_07_Files.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-06-26T15:43:01.889Z"
+              "WhenOpened": "2025-06-26T15:43:01.889Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -86,13 +87,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Lesson_07_Files_03.cs",
               "DocumentMoniker": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_07_Files\\Lesson_07_Files_03.cs",
               "RelativeDocumentMoniker": "Lesson_07_Files_03.cs",
               "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_07_Files\\Lesson_07_Files_03.cs",
               "RelativeToolTip": "Lesson_07_Files_03.cs",
-              "ViewState": "AgIAAHIAAAAAAAAAAAAwwKUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-30T17:13:29.077Z",
               "EditorCaption": ""

@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -9,92 +11,69 @@ namespace Lesson_Estructura_Datos;
 public class Menu
 {
     private ConsolePosition position;
+    private int option;
 
     public Menu()
     {
         this.position = new ConsolePosition();
+        this.option = 0;
+    }
+
+    public int getOption()
+    {
+        return this.option;
     }
     public void printMenu()
     {
         getMenu();
-        selector();
-    }
-
-    public void getSelection(VideoClub club)
-    {
-        int option = this.position.getPosition()[1] 
-                   - ConsolePosition.defaultConsolePosition().getPosition()[1] - 2;
-
-        switch (option)
-        {
-            case 0:
-                getMovieList(club);
-                break;
-            case 1:
-                rentMovie(club);
-                break;
-            case 2:
-                returnMovie();
-                break;
-            case 3:
-                adminMenu();
-                break;
-
-        }
+        selector(5);
     }
 
     private void getMenu()
     {
         Console.Clear();
 
-        this.position = new ConsolePosition();
-        this.position.setCursorPosition();
+        this.position = ConsolePosition.defaultConsolePosition();
         Console.Write("MENU VIDEOCLUB Blockbuster");
 
         this.position.shiftPosition(0, 2);
-        this.position.setCursorPosition();
         Console.Write("Peliculas disponibles");
 
         this.position.shiftPosition(0, 1);
-        this.position.setCursorPosition();
         Console.Write("Alquilar Películas");
 
         this.position.shiftPosition(0, 1);
-        this.position.setCursorPosition();
         Console.Write("Devolver Película");
 
         this.position.shiftPosition(0, 1);
-        this.position.setCursorPosition();
         Console.Write("ADMIN MENU (autenticacion)");
     }
-    
-    public void getMovieList(VideoClub club)
+
+    public void getHeaderMovieList(string message)
     {
-        List<Film> movies = club.GetFilmsByAvailability();
-
         Console.Clear();
-        ConsolePosition position = new ConsolePosition();
-        position.setCursorPosition();
-        Console.Write("LISTA DE PELICULAS DISPONIBLES");
-        position.shiftPosition(-20, 0);
-        int count = 0;
+        this.position = new ConsolePosition();
+        this.position.setCursorPosition();
+        Console.Write(message);
+        this.position.shiftPosition(-15, 2);
 
-        foreach (Film movie in movies)
-        {
-            position.shiftPosition(0, 1);
-            position.setCursorPosition();
-            count++;
-            Console.WriteLine($"{count}  ->  " + movie);
-        }
+    }
+
+    public void printList(string moviePrint)
+    {
+        position.shiftPosition(0, 1);
+        Console.Write(moviePrint);
+    }
+
+    public void getTailMovieList()
+    {
         position.shiftPosition(0, 2);
-        position.setCursorPosition();
         Console.Write("PULSE CUALQUIER TECLA PARA EL MENU");
         Console.ReadKey();
     }
 
-    public void rentMovie(VideoClub club)
+    public void rentMovieMenu()
     {
-        List<Film> movies = club.GetFilmsByAvailability();
         Console.Clear();
         ConsolePosition position = new ConsolePosition();
 
@@ -103,71 +82,92 @@ public class Menu
 
         position.shiftPosition(0, 2);
         position.setCursorPosition();
-        string name = Console.ReadLine().ToUpper();
-        
-        foreach (Film movie in movies)
-        {
-            if (name == movie.getTitle().ToUpper())
-            {
-                WriteDB.writeRentedMovieToDB(movie);
-                movie.decreaseStock();
-                WriteDB.writeUpdatedMovieDB(movie);
-                
-                position.shiftPosition(0, 2);
-                position.setCursorPosition();
-                Console.WriteLine($"Disfrute su película {movie.getTitle()}");
-                Thread.Sleep(2000);
-                break;
-            }
-        }
-        
-
     }
 
-    public void returnMovie(VideoClub club)
+    public void rentMovieMenuSuccess(bool isSuccess)
     {
-        List<Film> movies = club.getFilms();
-        Console.Clear();
-        ConsolePosition position = new ConsolePosition();
-
-        position.setCursorPosition();
-        Console.WriteLine("Escriba el Nombre de la Pelicula a devolver");
-
         position.shiftPosition(0, 2);
         position.setCursorPosition();
-        string name = Console.ReadLine().ToUpper();
 
-        foreach (Film movie in movies)
+        if (isSuccess)
         {
-            if (name == movie.getTitle().ToUpper())
-            {
-                WriteDB.writeRentedMovieToDB(movie);
-                movie.decreaseStock();
-                WriteDB.writeUpdatedMovieDB(movie);
-
-                position.shiftPosition(0, 2);
-                position.setCursorPosition();
-                Console.WriteLine($"Disfrute su película {movie.getTitle()}");
-                Thread.Sleep(2000);
-                break;
-            }
-
+            Console.WriteLine("Disfrute su película");
         }
+        else
+        {
+            Console.WriteLine("Lo sentimos, no hemos encontrado su película.");
+        }
+        Thread.Sleep(2000);
+    }
+
+    public void returnMovieMenu()
+    {
+        Console.Clear();
+        ConsolePosition position = new ConsolePosition();
+        Console.WriteLine("Escriba el Nombre de la Pelicula a devolver");
+        position.shiftPosition(0, 2);
+    }
+
+    public void returnMovieMenuSuccess(bool isSuccess)
+    {
+        position.shiftPosition(0, 2);
+
+        if (isSuccess)
+        {
+            Console.WriteLine("Gracias por devolver la película");
+        }
+        else
+        {
+            Console.WriteLine("Lo sentimos, esa peli no la tenemos en nuestras bases como alquilada.");
+        }
+        Thread.Sleep(2000);
+    }
 
     public void adminMenu()
     {
+        Console.Clear();
+
+        this.position = new ConsolePosition();
+        Console.Write("MENU ADMINISTRADOR");
+
+        this.position.shiftPosition(0, 2);
+        Console.Write("Añadir Película");
+
+        this.position.shiftPosition(0, 1);
+        Console.Write("Ver películas alquiladas");
+
+        selector(3);
+
     }
 
-    public void selector()
+    public string[] menuAdminAuth()
+    {
+        Console.Clear();
+        this.position.shiftPosition(0, 0);
+        Console.WriteLine("Necesita autenticación");
+        this.position.shiftPosition(0, 2);
+        Console.Write("Usuario: ");
+        string name = Console.ReadLine();
+
+        Console.Clear();
+        this.position.shiftPosition(0, -2);
+        Console.WriteLine("Necesita autenticación");
+        this.position.shiftPosition(0, 2);
+        Console.Write("password: ");
+        string passwd = Console.ReadLine();
+
+        return [name, passwd];
+
+    }
+
+    public void selector(int maxTop)
     {
         ConsolePosition defaultObjPos = ConsolePosition.defaultConsolePosition();
 
-        int[] defaultPosition = defaultObjPos.getPosition();
-        int top = defaultPosition[1];
+        int top = defaultObjPos.getPosition()[1];
 
         this.position = defaultObjPos;
         this.position.shiftPosition(-2, 2);
-        this.position.setCursorPosition();
         
         Console.Write("█");
 
@@ -177,7 +177,7 @@ public class Menu
 
             if (keyInfo.Key == ConsoleKey.UpArrow)
             {
-                if (this.position.getPosition()[1] > defaultPosition[1] + 2)
+                if (this.position.getPosition()[1] > top + 2)
                 {
                     this.position.setCursorPosition();
                     Console.Write(" ");
@@ -189,7 +189,7 @@ public class Menu
             }
             else if (keyInfo.Key == ConsoleKey.DownArrow)
             {
-                if (this.position.getPosition()[1] < defaultPosition[1] + 5)
+                if (this.position.getPosition()[1] < top + maxTop)
                 {
                     this.position.setCursorPosition();
                     Console.Write(" ");
@@ -203,5 +203,6 @@ public class Menu
                 break;
             }
         } while (!Console.KeyAvailable);
+        this.option = this.position.getPosition()[1] - top - 2;
     }
 }

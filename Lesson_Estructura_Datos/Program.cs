@@ -52,18 +52,9 @@ public class Program
 
         //Console.WriteLine(catalogo.getCatalogueStats());
         
-        Menu menu = new Menu();
+        VideoClub club = new VideoClub();
 
-        List<Film> moviesList = ReadDB.getMoviesCatalogue();
-        VideoClub club = new VideoClub(moviesList);
-
-
-        do
-        {
-            menu.printMenu();
-            menu.getSelection(club);
-
-        } while (true);
+        club.Main();
     }
 
     

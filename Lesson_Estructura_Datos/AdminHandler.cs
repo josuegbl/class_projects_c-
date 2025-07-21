@@ -10,4 +10,9 @@ public class AdminHandler
 {
     const string ADMIN_FILE = "adminFile.txt";
 
+    public static string[] getCredentials()
+    {
+        return File.ReadAllLines(ADMIN_FILE);
+    }
+
 }

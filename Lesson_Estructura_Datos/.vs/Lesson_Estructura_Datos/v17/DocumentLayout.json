@@ -3,20 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_Estructura_Datos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson_estructura_datos\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|solutionrelative:menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson_estructura_datos\\videoclub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|solutionrelative:videoclub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson_estructura_datos\\writedb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|solutionrelative:writedb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson_estructura_datos\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|solutionrelative:menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson_estructura_datos\\readdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|solutionrelative:readdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson_estructura_datos\\videoclub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|solutionrelative:videoclub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson_estructura_datos\\consoleposition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|solutionrelative:consoleposition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson_estructura_datos\\writedb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|solutionrelative:writedb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson_estructura_datos\\adminhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|solutionrelative:adminhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson_estructura_datos\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|solutionrelative:user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson_estructura_datos\\film.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,14 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson_estructura_datos\\ejemploestructuradatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|solutionrelative:ejemploestructuradatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson_estructura_datos\\genre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|solutionrelative:genre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson_estructura_datos\\consoleposition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|solutionrelative:consoleposition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 353,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -69,53 +73,83 @@
               "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Genre.cs",
-              "DocumentMoniker": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_Estructura_Datos\\Genre.cs",
-              "RelativeDocumentMoniker": "Genre.cs",
-              "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_Estructura_Datos\\Genre.cs",
-              "RelativeToolTip": "Genre.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_Estructura_Datos\\User.cs",
+              "RelativeDocumentMoniker": "User.cs",
+              "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_Estructura_Datos\\User.cs",
+              "RelativeToolTip": "User.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAowBsAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T15:47:02.684Z",
+              "WhenOpened": "2025-07-21T16:19:26.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AdminHandler.cs",
+              "DocumentMoniker": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_Estructura_Datos\\AdminHandler.cs",
+              "RelativeDocumentMoniker": "AdminHandler.cs",
+              "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_Estructura_Datos\\AdminHandler.cs",
+              "RelativeToolTip": "AdminHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T14:48:53.845Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "VideoClub.cs",
+              "DocumentMoniker": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_Estructura_Datos\\VideoClub.cs",
+              "RelativeDocumentMoniker": "VideoClub.cs",
+              "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_Estructura_Datos\\VideoClub.cs",
+              "RelativeToolTip": "VideoClub.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAowFoAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T16:32:58.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Menu.cs",
               "DocumentMoniker": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_Estructura_Datos\\Menu.cs",
               "RelativeDocumentMoniker": "Menu.cs",
               "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_Estructura_Datos\\Menu.cs",
               "RelativeToolTip": "Menu.cs",
-              "ViewState": "AgIAAF4AAAAAAAAAAAA8wHYAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAADwvxYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-14T19:23:19.458Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "ConsolePosition.cs",
               "DocumentMoniker": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_Estructura_Datos\\ConsolePosition.cs",
               "RelativeDocumentMoniker": "ConsolePosition.cs",
               "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_Estructura_Datos\\ConsolePosition.cs",
               "RelativeToolTip": "ConsolePosition.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwA8AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-15T14:15:37.877Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "WriteDB.cs",
               "DocumentMoniker": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_Estructura_Datos\\WriteDB.cs",
               "RelativeDocumentMoniker": "WriteDB.cs",
               "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_Estructura_Datos\\WriteDB.cs",
               "RelativeToolTip": "WriteDB.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-15T14:15:31.333Z",
               "EditorCaption": ""
@@ -128,53 +162,40 @@
               "RelativeDocumentMoniker": "ReadDB.cs",
               "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_Estructura_Datos\\ReadDB.cs",
               "RelativeToolTip": "ReadDB.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAMwFQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAgwGAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-15T14:15:27.781Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "VideoClub.cs",
-              "DocumentMoniker": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_Estructura_Datos\\VideoClub.cs",
-              "RelativeDocumentMoniker": "VideoClub.cs",
-              "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_Estructura_Datos\\VideoClub.cs",
-              "RelativeToolTip": "VideoClub.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAqwEIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-14T16:32:58.111Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_Estructura_Datos\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_Estructura_Datos\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAgwD8AAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAACsAAAAAAAAAAAAgwDgAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-11T14:11:43.651Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Film.cs",
               "DocumentMoniker": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_Estructura_Datos\\Film.cs",
               "RelativeDocumentMoniker": "Film.cs",
               "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_Estructura_Datos\\Film.cs",
               "RelativeToolTip": "Film.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAwwDIAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAACkAAAAAAAAAAAAQwDYAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-14T16:49:48.807Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "EjemploEstructuraDatos.cs",
               "DocumentMoniker": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_Estructura_Datos\\EjemploEstructuraDatos.cs",
               "RelativeDocumentMoniker": "EjemploEstructuraDatos.cs",
@@ -182,8 +203,7 @@
               "RelativeToolTip": "EjemploEstructuraDatos.cs",
               "ViewState": "AgIAAHYAAAAAAAAAAAAgwD0AAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T15:34:29.442Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-11T15:34:29.442Z"
             }
           ]
         }

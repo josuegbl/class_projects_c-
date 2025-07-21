@@ -10,11 +10,11 @@ The Fellowship of the Ring, Fantasy, 5,
 The Good the Bad and the Ugly, Western, 1, 
 Forrest Gump, Drama, 4, 
 Fight Club, Drama, 2, 
-Inception, Sci-Fi, 1, novedad
+Inception, Sci-Fi, 3, novedad
 The Two Towers, Fantasy, 5, 
 Star Wars Episode V – The Empire Strikes Back, Action, 2, 
 The Matrix, Action, 4, 
 Goodfellas, Drama, 0,  
 One Flew Over the Cuckoo’s Nest, Drama, 5, 
-Se7en, Drama, 1, novedad
+Se7en, Drama, 0, novedad
 Seven Samurai, Action, 3, 

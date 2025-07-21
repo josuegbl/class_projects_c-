@@ -69,7 +69,7 @@ public class ReadDB
         return genre;
     }
 
-    public List<Film> getRentedMovies()
+    public static List<Film> getRentedMovies()
     {
         List<Film> movies = new List<Film>();
 
@@ -79,10 +79,19 @@ public class ReadDB
             string[] movieLine = line.Split(',');
 
             Film film = VideoClub.GetFilmByName(getMoviesCatalogue(), movieLine[0]);
+            bool isRepeated = false;
 
-            movies.Add(film);
+            if (movies.Count > 0)
+            {
+                foreach (Film movie in movies)
+                {
+                    if (movie.getTitle() == film.getTitle())
+                        isRepeated = true;
+                }
+            }
+            if (!isRepeated)
+                movies.Add(film);
         }
-
         return movies;
     }
 

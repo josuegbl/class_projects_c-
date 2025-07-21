@@ -17,11 +17,6 @@ public class WriteDB
         File.AppendAllLines(filename, [movieString]);
     }
 
-    public static void addMovieToDB(string movieString)
-    {
-        addMovieToDB(MOVIES_FILE, movieString);
-    }
-
     public static void writeRentedMovieToDB(Film movie)
     {
         string price = movie.getIsNewly() ? "5" : "3";
@@ -55,9 +50,12 @@ public class WriteDB
                 string[] movieLine = line.Split(',');
                 if (movieLine[0] != movie.getTitle())
                 {
-                    isRepeated = true;
                     index++;
                     newMoviesList[index] = line;
+                }
+                else
+                {
+                    isRepeated = true;
                 }
             }
             else

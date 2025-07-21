@@ -15,6 +15,7 @@ public class ConsolePosition
     {
         this.top = Console.WindowHeight / 6;
         this.left = Console.WindowWidth / 2 - 12;
+        this.setCursorPosition();
     }
 
     public static ConsolePosition defaultConsolePosition()
@@ -31,6 +32,7 @@ public class ConsolePosition
     {
         this.left += left;
         this.top += top;
+        this.setCursorPosition();
     }
 
     public void setPosition(int left, int top)
