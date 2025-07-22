@@ -24,7 +24,7 @@ public class ReadDB
         return newlyString == "novedad" ? true : false;
     }
 
-    private static Genre stringToGenre(string genreString)
+    public static Genre stringToGenre(string genreString)
     {
         Genre genre;
 

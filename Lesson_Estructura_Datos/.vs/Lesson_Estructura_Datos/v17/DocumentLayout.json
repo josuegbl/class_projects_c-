@@ -1,46 +1,46 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_Estructura_Datos\\",
+  "WorkspaceRootPath": "C:\\Users\\josue\\OneDrive\\Documentos\\Josue\\Curso Dev Web C#\\PROJECTS\\class_projects_c-\\Lesson_Estructura_Datos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson_estructura_datos\\videoclub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|solutionrelative:videoclub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson_estructura_datos\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|c:\\users\\josue\\onedrive\\documentos\\josue\\curso dev web c#\\projects\\class_projects_c-\\lesson_estructura_datos\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|solutionrelative:menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson_estructura_datos\\readdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|solutionrelative:readdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|c:\\users\\josue\\onedrive\\documentos\\josue\\curso dev web c#\\projects\\class_projects_c-\\lesson_estructura_datos\\videoclub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|solutionrelative:videoclub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson_estructura_datos\\consoleposition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|solutionrelative:consoleposition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson_estructura_datos\\writedb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|solutionrelative:writedb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson_estructura_datos\\adminhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|solutionrelative:adminhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson_estructura_datos\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|solutionrelative:user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson_estructura_datos\\film.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|solutionrelative:film.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson_estructura_datos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|c:\\users\\josue\\onedrive\\documentos\\josue\\curso dev web c#\\projects\\class_projects_c-\\lesson_estructura_datos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|c:\\users\\cursostardes\\documents\\projects\\lesson_estructura_datos\\ejemploestructuradatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|c:\\users\\josue\\onedrive\\documentos\\josue\\curso dev web c#\\projects\\class_projects_c-\\lesson_estructura_datos\\ejemploestructuradatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|solutionrelative:ejemploestructuradatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|c:\\users\\josue\\onedrive\\documentos\\josue\\curso dev web c#\\projects\\class_projects_c-\\lesson_estructura_datos\\adminhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|solutionrelative:adminhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|c:\\users\\josue\\onedrive\\documentos\\josue\\curso dev web c#\\projects\\class_projects_c-\\lesson_estructura_datos\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|solutionrelative:user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|c:\\users\\josue\\onedrive\\documentos\\josue\\curso dev web c#\\projects\\class_projects_c-\\lesson_estructura_datos\\consoleposition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|solutionrelative:consoleposition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|c:\\users\\josue\\onedrive\\documentos\\josue\\curso dev web c#\\projects\\class_projects_c-\\lesson_estructura_datos\\writedb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|solutionrelative:writedb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|c:\\users\\josue\\onedrive\\documentos\\josue\\curso dev web c#\\projects\\class_projects_c-\\lesson_estructura_datos\\readdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|solutionrelative:readdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|c:\\users\\josue\\onedrive\\documentos\\josue\\curso dev web c#\\projects\\class_projects_c-\\lesson_estructura_datos\\film.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D41BC259-921F-48FE-B3DE-B0835F060553}|Lesson_Estructura_Datos.csproj|solutionrelative:film.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 353,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,15 +58,19 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Bookmark",
@@ -74,28 +78,28 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_Estructura_Datos\\User.cs",
+              "DocumentMoniker": "C:\\Users\\josue\\OneDrive\\Documentos\\Josue\\Curso Dev Web C#\\PROJECTS\\class_projects_c-\\Lesson_Estructura_Datos\\User.cs",
               "RelativeDocumentMoniker": "User.cs",
-              "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_Estructura_Datos\\User.cs",
+              "ToolTip": "C:\\Users\\josue\\OneDrive\\Documentos\\Josue\\Curso Dev Web C#\\PROJECTS\\class_projects_c-\\Lesson_Estructura_Datos\\User.cs",
               "RelativeToolTip": "User.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAowBsAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwCoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-21T16:19:26.28Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "AdminHandler.cs",
-              "DocumentMoniker": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_Estructura_Datos\\AdminHandler.cs",
+              "DocumentMoniker": "C:\\Users\\josue\\OneDrive\\Documentos\\Josue\\Curso Dev Web C#\\PROJECTS\\class_projects_c-\\Lesson_Estructura_Datos\\AdminHandler.cs",
               "RelativeDocumentMoniker": "AdminHandler.cs",
-              "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_Estructura_Datos\\AdminHandler.cs",
+              "ToolTip": "C:\\Users\\josue\\OneDrive\\Documentos\\Josue\\Curso Dev Web C#\\PROJECTS\\class_projects_c-\\Lesson_Estructura_Datos\\AdminHandler.cs",
               "RelativeToolTip": "AdminHandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -104,106 +108,107 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "VideoClub.cs",
-              "DocumentMoniker": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_Estructura_Datos\\VideoClub.cs",
+              "DocumentMoniker": "C:\\Users\\josue\\OneDrive\\Documentos\\Josue\\Curso Dev Web C#\\PROJECTS\\class_projects_c-\\Lesson_Estructura_Datos\\VideoClub.cs",
               "RelativeDocumentMoniker": "VideoClub.cs",
-              "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_Estructura_Datos\\VideoClub.cs",
+              "ToolTip": "C:\\Users\\josue\\OneDrive\\Documentos\\Josue\\Curso Dev Web C#\\PROJECTS\\class_projects_c-\\Lesson_Estructura_Datos\\VideoClub.cs",
               "RelativeToolTip": "VideoClub.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAowFoAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAswD0AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-14T16:32:58.111Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Menu.cs",
-              "DocumentMoniker": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_Estructura_Datos\\Menu.cs",
+              "DocumentMoniker": "C:\\Users\\josue\\OneDrive\\Documentos\\Josue\\Curso Dev Web C#\\PROJECTS\\class_projects_c-\\Lesson_Estructura_Datos\\Menu.cs",
               "RelativeDocumentMoniker": "Menu.cs",
-              "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_Estructura_Datos\\Menu.cs",
+              "ToolTip": "C:\\Users\\josue\\OneDrive\\Documentos\\Josue\\Curso Dev Web C#\\PROJECTS\\class_projects_c-\\Lesson_Estructura_Datos\\Menu.cs",
               "RelativeToolTip": "Menu.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAADwvxYAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAowBsAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-14T19:23:19.458Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "ConsolePosition.cs",
-              "DocumentMoniker": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_Estructura_Datos\\ConsolePosition.cs",
+              "DocumentMoniker": "C:\\Users\\josue\\OneDrive\\Documentos\\Josue\\Curso Dev Web C#\\PROJECTS\\class_projects_c-\\Lesson_Estructura_Datos\\ConsolePosition.cs",
               "RelativeDocumentMoniker": "ConsolePosition.cs",
-              "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_Estructura_Datos\\ConsolePosition.cs",
+              "ToolTip": "C:\\Users\\josue\\OneDrive\\Documentos\\Josue\\Curso Dev Web C#\\PROJECTS\\class_projects_c-\\Lesson_Estructura_Datos\\ConsolePosition.cs",
               "RelativeToolTip": "ConsolePosition.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAqwA8AAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwBYAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-15T14:15:37.877Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "WriteDB.cs",
-              "DocumentMoniker": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_Estructura_Datos\\WriteDB.cs",
+              "DocumentMoniker": "C:\\Users\\josue\\OneDrive\\Documentos\\Josue\\Curso Dev Web C#\\PROJECTS\\class_projects_c-\\Lesson_Estructura_Datos\\WriteDB.cs",
               "RelativeDocumentMoniker": "WriteDB.cs",
-              "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_Estructura_Datos\\WriteDB.cs",
+              "ToolTip": "C:\\Users\\josue\\OneDrive\\Documentos\\Josue\\Curso Dev Web C#\\PROJECTS\\class_projects_c-\\Lesson_Estructura_Datos\\WriteDB.cs",
               "RelativeToolTip": "WriteDB.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAYwHMAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-15T14:15:31.333Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "ReadDB.cs",
-              "DocumentMoniker": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_Estructura_Datos\\ReadDB.cs",
+              "DocumentMoniker": "C:\\Users\\josue\\OneDrive\\Documentos\\Josue\\Curso Dev Web C#\\PROJECTS\\class_projects_c-\\Lesson_Estructura_Datos\\ReadDB.cs",
               "RelativeDocumentMoniker": "ReadDB.cs",
-              "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_Estructura_Datos\\ReadDB.cs",
+              "ToolTip": "C:\\Users\\josue\\OneDrive\\Documentos\\Josue\\Curso Dev Web C#\\PROJECTS\\class_projects_c-\\Lesson_Estructura_Datos\\ReadDB.cs",
               "RelativeToolTip": "ReadDB.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAgwGAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAA5wBoAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-15T14:15:27.781Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_Estructura_Datos\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\josue\\OneDrive\\Documentos\\Josue\\Curso Dev Web C#\\PROJECTS\\class_projects_c-\\Lesson_Estructura_Datos\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_Estructura_Datos\\Program.cs",
+              "ToolTip": "C:\\Users\\josue\\OneDrive\\Documentos\\Josue\\Curso Dev Web C#\\PROJECTS\\class_projects_c-\\Lesson_Estructura_Datos\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAgwDgAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAgwDgAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-11T14:11:43.651Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Film.cs",
-              "DocumentMoniker": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_Estructura_Datos\\Film.cs",
+              "DocumentMoniker": "C:\\Users\\josue\\OneDrive\\Documentos\\Josue\\Curso Dev Web C#\\PROJECTS\\class_projects_c-\\Lesson_Estructura_Datos\\Film.cs",
               "RelativeDocumentMoniker": "Film.cs",
-              "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_Estructura_Datos\\Film.cs",
+              "ToolTip": "C:\\Users\\josue\\OneDrive\\Documentos\\Josue\\Curso Dev Web C#\\PROJECTS\\class_projects_c-\\Lesson_Estructura_Datos\\Film.cs",
               "RelativeToolTip": "Film.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAQwDYAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-14T16:49:48.807Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 3,
               "Title": "EjemploEstructuraDatos.cs",
-              "DocumentMoniker": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_Estructura_Datos\\EjemploEstructuraDatos.cs",
+              "DocumentMoniker": "C:\\Users\\josue\\OneDrive\\Documentos\\Josue\\Curso Dev Web C#\\PROJECTS\\class_projects_c-\\Lesson_Estructura_Datos\\EjemploEstructuraDatos.cs",
               "RelativeDocumentMoniker": "EjemploEstructuraDatos.cs",
-              "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_Estructura_Datos\\EjemploEstructuraDatos.cs",
+              "ToolTip": "C:\\Users\\josue\\OneDrive\\Documentos\\Josue\\Curso Dev Web C#\\PROJECTS\\class_projects_c-\\Lesson_Estructura_Datos\\EjemploEstructuraDatos.cs",
               "RelativeToolTip": "EjemploEstructuraDatos.cs",
               "ViewState": "AgIAAHYAAAAAAAAAAAAgwD0AAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T15:34:29.442Z"
+              "WhenOpened": "2025-07-11T15:34:29.442Z",
+              "EditorCaption": ""
             }
           ]
         }

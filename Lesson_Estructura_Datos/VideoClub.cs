@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace Lesson_Estructura_Datos;
@@ -44,8 +45,8 @@ namespace Lesson_Estructura_Datos;
 
 public class VideoClub
 {
-    List<Film> movies;
-    Menu menu;
+    private List<Film> movies;
+    private Menu menu;
 
     public VideoClub()
     {
@@ -53,23 +54,20 @@ public class VideoClub
         this.menu = new Menu();
     }
 
-    public VideoClub(List<Film> movies)
-    {
-        this.movies = movies;
-    }
-
     public void Main()
     {
+        bool goOut = false;
         do
         {
             this.menu.printMenu();
-            getSelection();
+            goOut = getSelection();
 
-        } while (true);
+        } while (!goOut);
     }
 
-    public void getSelection()
+    public bool getSelection()
     {
+        bool goOut = false;
         switch (this.menu.getOption())
         {
             case 0:
@@ -84,19 +82,23 @@ public class VideoClub
             case 3:
                 adminOptions();
                 break;
-
+            case 4:
+                goOut = true;
+                break;
         }
+        return goOut;
     }
 
     public void getSelectionAdminOptions()
     {
-        if (this.menu.getOption() == 0)
+        switch (this.menu.getOption())
         {
-            addMovie();
-        }
-        else
-        {
-            getRentedMovies();
+            case 0:
+                addMovie();
+                break;
+            case 1:
+                getRentedMovies();
+                break;
         }
     }
 
@@ -175,6 +177,16 @@ public class VideoClub
 
     public void addMovie()
     {
+        string[] movieString;
+
+        movieString = menu.addMovieMenu();
+
+        Genre genre = ReadDB.stringToGenre(movieString[1]);
+
+        Film newMovie = new Film(movieString[0], genre, int.Parse(movieString[2]), bool.Parse(movieString[3]));
+        addFilm(newMovie);
+
+        WriteDB.writeMovieListToDB(this.movies);
 
     }
 
@@ -192,13 +204,15 @@ public class VideoClub
             menu.printList($"{count}  ->  " + movie.ToString());
         }
         this.menu.getTailMovieList();
-
-
     }
-
 
     public List<Film> getFilms()
         { return this.movies; }
+
+    public void addFilm(Film film)
+    {
+        this.movies.Add(film);
+    }
 
     public static Film GetFilmByName(List<Film> movies, string name)
     {
@@ -213,11 +227,6 @@ public class VideoClub
         }
 
         return movie;
-    }
-
-    public void setFilms(List<Film> movies)
-    {
-        this.movies = movies;
     }
 
     public List<Film> GetFilmsByAvailability()

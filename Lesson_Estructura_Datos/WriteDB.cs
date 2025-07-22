@@ -90,6 +90,21 @@ public class WriteDB
         File.WriteAllLines(MOVIES_FILE, newMoviesList);
     }
 
+    public static void writeMovieListToDB(List<Film> movieList)
+    {
+        string[] newMoviesList = new string[movieList.Count()];
+        int index = 0;
+
+        foreach (Film movie in movieList)
+        {
+            newMoviesList[index] = writeMovieString(movie);
+            index++;
+        }
+        File.WriteAllLines(MOVIES_FILE, newMoviesList);
+    }
+
+
+
     private static string getNewly(bool isNewly)
     {
         return isNewly ? "novedad" : " ";

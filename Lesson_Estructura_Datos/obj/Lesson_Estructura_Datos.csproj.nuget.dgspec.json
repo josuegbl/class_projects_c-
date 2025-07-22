@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_Estructura_Datos\\Lesson_Estructura_Datos.csproj": {}
+    "C:\\Users\\josue\\OneDrive\\Documentos\\Josue\\Curso Dev Web C#\\PROJECTS\\class_projects_c-\\Lesson_Estructura_Datos\\Lesson_Estructura_Datos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_Estructura_Datos\\Lesson_Estructura_Datos.csproj": {
+    "C:\\Users\\josue\\OneDrive\\Documentos\\Josue\\Curso Dev Web C#\\PROJECTS\\class_projects_c-\\Lesson_Estructura_Datos\\Lesson_Estructura_Datos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_Estructura_Datos\\Lesson_Estructura_Datos.csproj",
+        "projectUniqueName": "C:\\Users\\josue\\OneDrive\\Documentos\\Josue\\Curso Dev Web C#\\PROJECTS\\class_projects_c-\\Lesson_Estructura_Datos\\Lesson_Estructura_Datos.csproj",
         "projectName": "Lesson_Estructura_Datos",
-        "projectPath": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_Estructura_Datos\\Lesson_Estructura_Datos.csproj",
-        "packagesPath": "C:\\Users\\CursosTardes\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_Estructura_Datos\\obj\\",
+        "projectPath": "C:\\Users\\josue\\OneDrive\\Documentos\\Josue\\Curso Dev Web C#\\PROJECTS\\class_projects_c-\\Lesson_Estructura_Datos\\Lesson_Estructura_Datos.csproj",
+        "packagesPath": "C:\\Users\\josue\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\josue\\OneDrive\\Documentos\\Josue\\Curso Dev Web C#\\PROJECTS\\class_projects_c-\\Lesson_Estructura_Datos\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\CursosTardes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\josue\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -45,7 +45,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -66,7 +66,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
