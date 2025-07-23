@@ -50,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 353,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Bookmark",
@@ -75,6 +75,10 @@
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             },
             {
               "$type": "Bookmark",
@@ -134,7 +138,7 @@
               "RelativeDocumentMoniker": "Menu.cs",
               "ToolTip": "C:\\Users\\CursosTardes\\Documents\\PROJECTS\\Lesson_Estructura_Datos\\Menu.cs",
               "RelativeToolTip": "Menu.cs",
-              "ViewState": "AgIAABkBAAAAAAAAAAAwwC4BAABBAAAAAAAAAA==",
+              "ViewState": "AgIAABkBAAAAAAAAAAAwwCQBAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-14T19:23:19.458Z",
               "EditorCaption": ""
