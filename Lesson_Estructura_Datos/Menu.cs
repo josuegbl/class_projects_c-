@@ -297,6 +297,14 @@ public class Menu
         return isNewly;
     }
 
+    public void byeMsj() 
+    {
+        Console.Clear();
+        this.position = ConsolePosition.defaultConsolePosition();
+        Console.WriteLine("Thank you for visit our VideoClub. Bye!");
+        Thread.Sleep(2000);
+    }
+
     public void selector(int maxTop)
     {
         ConsolePosition defaultObjPos = ConsolePosition.defaultConsolePosition();

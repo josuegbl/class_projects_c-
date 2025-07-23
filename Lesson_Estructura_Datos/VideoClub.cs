@@ -63,6 +63,7 @@ public class VideoClub
             goOut = getSelection();
 
         } while (!goOut);
+        menu.byeMsj();
     }
 
     public bool getSelection()
@@ -184,7 +185,7 @@ public class VideoClub
         Genre genre = ReadDB.stringToGenre(movieString[1]);
 
         Film newMovie = new Film(movieString[0], genre, int.Parse(movieString[2]), bool.Parse(movieString[3]));
-        addFilm(newMovie);
+        this.movies.Add(newMovie);
 
         WriteDB.writeMovieListToDB(this.movies);
 
@@ -211,7 +212,7 @@ public class VideoClub
 
     public void addFilm(Film film)
     {
-        this.movies.Add(film);
+        
     }
 
     public static Film GetFilmByName(List<Film> movies, string name)

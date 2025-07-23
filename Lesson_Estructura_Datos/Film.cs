@@ -36,11 +36,6 @@ public class Film
         return this.stock;
     }
 
-    public void setStock(int stock)
-    {
-        this.stock = stock;
-    }
-
     public void increaseStock()
     {
         this.stock++;
