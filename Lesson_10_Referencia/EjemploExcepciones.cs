@@ -11,5 +11,29 @@ public class EjemploExcepciones
     public static void Main(string[] args)
     {
         Console.WriteLine("En Ejemplo Excepciones");
+
+        try
+        {
+            throw new ArgumentNullException("Ha petado");
+        } 
+        
+        catch(FormatException ex)
+        {
+            Console.WriteLine("FormatException");
+            Console.WriteLine("Motivo de la excepcion " + ex.Message);
+        }
+
+        catch(Exception ex)
+        {
+            Console.WriteLine("esta es la exception generica");
+            Console.WriteLine("Motivo: " + ex.Message);
+        } finally
+        {
+            Console.WriteLine("Esto se ejecuta siempre");
+        }
+
+        Console.WriteLine("HOLAAAAA");
+        Console.WriteLine("HOLAAAAA");
+        Console.WriteLine("HOLAAAAA");
     }
 }
