@@ -5,7 +5,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-	<StartupObject>Lesson_10_Referencia.GOT.ProgramGOT</StartupObject>
+	<StartupObject>Lesson_10_Referencia.MonstruoMon.VGMonstruoMon</StartupObject>
   </PropertyGroup>
 
 </Project>
