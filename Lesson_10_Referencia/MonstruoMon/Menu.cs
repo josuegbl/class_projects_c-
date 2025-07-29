@@ -19,11 +19,8 @@ public class Menu
 
     public void printMenu()
     {
-        getMenu();
-        Selector selector = new Selector();
-        selector.verticalSelector(4);
-        //setOption(selector.getOption());
-        
+        getMainMenu();
+        selector(4, -7);
     }
 
     public void setOption(int option)
@@ -31,7 +28,7 @@ public class Menu
         this.option = option;
     }
 
-    private void getMenu()
+    private void getMainMenu()
     {
         Console.Clear();
         
@@ -46,6 +43,52 @@ public class Menu
 
         this.position.shiftPosition(0, 1);
         Console.Write("Salir");
+    }
+
+    public void selector(int maxTop, int left=-2)
+    {
+        ConsolePosition defaultObjPos = ConsolePosition.defaultConsolePosition();
+
+        int top = defaultObjPos.getPosition()[1];
+
+        this.position = defaultObjPos;
+        this.position.shiftPosition(left, 2);
+
+        Console.Write("█");
+
+        do
+        {
+            ConsoleKeyInfo keyInfo = Console.ReadKey(false);
+
+            if (keyInfo.Key == ConsoleKey.UpArrow)
+            {
+                if (this.position.getPosition()[1] > top + 2)
+                {
+                    this.position.setCursorPosition();
+                    Console.Write(" ");
+                    this.position.shiftPosition(0, -1);
+                }
+                this.position.setCursorPosition();
+                Console.Write("█");
+
+            }
+            else if (keyInfo.Key == ConsoleKey.DownArrow)
+            {
+                if (this.position.getPosition()[1] < top + maxTop)
+                {
+                    this.position.setCursorPosition();
+                    Console.Write(" ");
+                    this.position.shiftPosition(0, 1);
+                }
+                this.position.setCursorPosition();
+                Console.Write("█");
+            }
+            else if (keyInfo.Key == ConsoleKey.Enter)
+            {
+                break;
+            }
+        } while (!Console.KeyAvailable);
+        this.option = this.position.getPosition()[1] - top - 2;
     }
 
     //public void getHeaderMovieList(string message)

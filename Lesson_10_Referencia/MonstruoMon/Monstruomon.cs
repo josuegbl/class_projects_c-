@@ -13,13 +13,8 @@ public abstract class Monstruomon
     protected int health;
     protected int strength;
     protected int defense;
-    protected ElemenType elemenType;
+    protected Element element;
     protected List<Attack> attacks;
-
-    public Monstruomon()
-    {
-
-    }
 
     public string getName()
     {
@@ -41,17 +36,41 @@ public abstract class Monstruomon
         return this.defense;
     }
 
+    public ElemenType getWeaknessElement()
+    {
+        return this.element.getWeakness();
+    }
+
+    public ElemenType getMightinessElement()
+    {
+        return this.element.getMightiness();
+    }
+    public abstract void setAttack(Attack attack);
+
     public List<Attack> getAttack()
     {
         return this.attacks;
     }
 
     public ElemenType getElemenType()
-    { return this.elemenType; }
+    { return this.element.getElemenType(); }
 
-    public void receiveAttack(Attack attack)
+    public void receiveAttack(int attackStrength)
     {
-        this.health -= (attack.getAttackStrength() - getDefense());
+        int netAttack = attackStrength - getDefense();
+        if (getHealth() > netAttack)
+        {
+            this.health -= netAttack;
+        }
+        else
+        {
+            this.health = 0;
+        }
+    }
+
+    public bool isDead()
+    {
+        return this.health <= 0;
     }
 
 

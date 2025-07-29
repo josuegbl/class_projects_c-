@@ -17,15 +17,29 @@ public class Combat
         this.defender = defender;
     }
 
-
     public void attack(int attackOption)
     {
-        int attackBase = this.attacker.getAttack()[attackOption].getAttackStrength() +
-                         this.attacker.getStrength();
+        Attack pickedAttack = this.attacker.getAttack()[attackOption];
+
+        float attackBase = (float)pickedAttack.getAttackStrength() + this.attacker.getStrength();
+        int attackStrength = (int)Math.Round(attackBase * getAttckModifier(pickedAttack));
+        this.defender.receiveAttack(attackStrength);
+
+
+
     }
 
-    private float getAttckModifier(ElemenType attElement, ElemenType defElement)
+    private float getAttckModifier(Attack pickedAttack)
     {
-        if (attElement == ElemenType.Agua &&)
+        if (pickedAttack.getElemenType() == defender.getWeaknessElement())
+        {
+            return 2F;
+        }
+        else if (pickedAttack.getElemenType() == defender.getMightinessElement())
+        {
+            return 0.5F;
+        }
+        else 
+        { return 1F; }
     }
 }
