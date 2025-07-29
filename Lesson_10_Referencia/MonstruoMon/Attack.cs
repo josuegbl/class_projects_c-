@@ -10,13 +10,13 @@ public class Attack
 {
     string nameAttack;
     int attackStrength;
-    ElemenType elemenType;
+    Element element;
 
-    public Attack(string nameAttack, int attackStrength, ElemenType elemenType)
+    public Attack(string nameAttack, int attackStrength, Element element)
     {
         this.nameAttack = nameAttack;
         this.attackStrength = attackStrength;
-        this.elemenType = elemenType;
+        this.element = element;
     }
 
     public string getName()
@@ -26,7 +26,7 @@ public class Attack
 
     public ElemenType getElemenType()
     {
-        return this.elemenType;
+        return this.element.getElemenType();
     }
 
     public int getAttackStrength()

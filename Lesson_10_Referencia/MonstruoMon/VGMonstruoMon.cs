@@ -35,7 +35,7 @@ namespace Lesson_10_Referencia.MonstruoMon;
 ///     del daño base.
 ///     - Al daño se le restará la defensa del Monstruomon, lo que
 ///     dará el daño final.
-///  - Los monstruomnoes podrán combatir.
+///  - Los monstruomones podrán combatir.
 ///  - Un combate tiene dos Monstruomones participantes y un
 ///  resultado (quien gana/pierde)
 ///  - La aplicacion se iniciará y mostrará un menú principal en el
@@ -71,7 +71,15 @@ public class VGMonstruoMon
 
         menu.printMenu();
 
-        
+    }
+
+    private void combat()
+    {
+
+    }
+
+    private void aggregateMon()
+    {
 
     }
 }
