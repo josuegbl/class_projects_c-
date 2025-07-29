@@ -57,7 +57,7 @@ public abstract class Monstruomon
 
     public void receiveAttack(int attackStrength)
     {
-        int netAttack = attackStrength - getDefense()
+        int netAttack = attackStrength - getDefense();
         if (getHealth() > netAttack)
         {
             this.health -= netAttack;
