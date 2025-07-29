@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Lesson_10_Referencia.MonstruoMon;
 
-public abstract class Monstruomon
+public class Monstruomon : ICloneable
 {
     protected string name;
     protected int health;
@@ -15,6 +15,31 @@ public abstract class Monstruomon
     protected int defense;
     protected Element element;
     protected List<Attack> attacks;
+
+    public Monstruomon(string name, int health, int strength, int defense, Element element)
+    {
+        this.name = name;
+        this.health = health;
+        this.strength = strength;
+        this.defense = defense;
+        this.element = element;
+        this.attacks = new List<Attack>();
+    }
+
+    public Monstruomon(string name, int health, int strength, int defense, Element element, List<Attack> attacks)
+    {
+        this.name = name;
+        this.health = health;
+        this.strength = strength;
+        this.defense = defense;
+        this.element = element;
+        this.attacks = attacks;
+    }
+
+    public object Clone()
+    {
+        return new Monstruomon(name, health, strength, defense, element, attacks);
+    }
 
     public string getName()
     {
@@ -45,7 +70,10 @@ public abstract class Monstruomon
     {
         return this.element.getMightiness();
     }
-    public abstract void setAttack(Attack attack);
+    public virtual void setAttack(Attack attack)
+    {
+        this.attacks.Add(attack);
+    }
 
     public List<Attack> getAttack()
     {
@@ -73,8 +101,14 @@ public abstract class Monstruomon
         return this.health <= 0;
     }
 
-
-
-
+    public override string ToString()
+    {
+        string monsterString = this.getName() + " Elemento: "
+                             + this.element + " Salud: "
+                             + this.getHealth().ToString() + " Fuerza: "
+                             + this.getStrength().ToString() + " Defensa: "
+                             + this.getDefense().ToString();
+        return monsterString;
+    }
 
 }

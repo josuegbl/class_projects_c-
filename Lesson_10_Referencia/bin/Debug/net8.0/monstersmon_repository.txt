@@ -1,0 +1,12 @@
+Mizuki, 382, 70, 75, Agua, Mizuba, Kasui, Raiken  
+Hoshio, 397, 65, 80, Agua, Suiryudan, Mizuba, Shinpo  
+Ayame, 359, 68, 77, Agua, Suiryudan, Kasui, Kagefuma  
+Daigo, 393, 80, 85, Tierra, Daichigeki, Ganchiwa, Kagefuma  
+Tetsuro, 367, 75, 88, Tierra, Dokotsu, Daichigeki, Raiken  
+Kana, 356, 70, 80, Tierra, Dokotsu, Ganchiwa, Shinpo  
+Reika, 384, 78, 70, Fuego, Karyudan, Enka, Raiken  
+Juro, 399, 85, 72, Fuego, Karyudan, Hiuchi, Kagefuma  
+Akira, 362, 75, 76, Fuego, Enka, Hiuchi, Shinpo  
+Rento, 390, 82, 74, Rayo, Raishin, Kaminari, Raiken  
+Saeko, 368, 77, 78, Rayo, Denka, Raishin, Shinpo  
+Kaien, 354, 70, 80, Rayo, Kaminari, Denka, Kagefuma  

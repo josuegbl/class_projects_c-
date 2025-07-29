@@ -35,4 +35,8 @@ public class Element
             return (ElemenType)numValue+1;
     }
 
+    public override string ToString()
+    {
+        return getElemenType().ToString();
+    }
 }

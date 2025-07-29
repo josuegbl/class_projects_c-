@@ -8,13 +8,15 @@ namespace Lesson_10_Referencia.MonstruoMon;
 
 public class WaterMon : Monstruomon
 {
-    public WaterMon(string name, int health, int strength, int defense) 
+    public WaterMon(string name, int health, int strength, int defense)
+        : base(name, health, strength, defense, new Element(ElemenType.Agua))
     {
-        this.name = name;
-        this.health = health;
-        this.strength = strength;
-        this.defense = defense;
-        this.element = new Element(ElemenType.Agua);
+    }
+
+    public WaterMon(string name, int health, int strength, int defense, List<Attack> attacks)
+        : base(name, health, strength, defense, new Element(ElemenType.Agua), attacks)
+    {
+        this.attacks = attacks;
     }
 
     public override void setAttack(Attack attack)

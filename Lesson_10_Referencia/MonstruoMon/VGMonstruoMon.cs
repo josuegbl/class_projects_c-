@@ -71,14 +71,49 @@ public class VGMonstruoMon
 
         menu.printMenu();
 
+        pickOption(menu);
+
+
     }
 
-    private void combat()
+    private static void pickOption(Menu menu)
     {
-
+        if (menu.getOption() == 0)
+        {
+            combat(menu);
+        }
+        else
+        {
+            aggregateMon();
+        }
     }
 
-    private void aggregateMon()
+
+    private static void combat(Menu menu)
+    {
+        List<Monstruomon> monsters = MonstruomonService.getMonstruomonList();
+        string[] monstruomonListString = MonstruomonService.getMonsterStringList();
+        menu.printPickMonstermonMenu(monstruomonListString);
+
+        var pMonster = monsters[menu.getOption()];
+
+
+        var pMonsterClone = pMonster.Clone();
+
+        Random random = new Random();
+        Monstruomon AIMonster = monsters[random.Next(0, monsters.Count())];
+
+        var AIMonsterClone = AIMonster.Clone();
+
+        Console.Clear();
+        Console.WriteLine(AIMonsterClone.ToString());
+
+        Console.ReadKey();
+
+        menu.printBattleMenu();
+    }
+
+    private static void aggregateMon()
     {
 
     }

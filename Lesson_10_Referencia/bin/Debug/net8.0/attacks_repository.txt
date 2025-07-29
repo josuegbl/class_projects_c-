@@ -1,0 +1,15 @@
+Kagefuma, 48, Neutral
+Shinpo, 45, Neutral
+Raiken, 52, Neutral
+Mizuba, 46, Agua
+Suiryudan, 54, Agua
+Kasui, 50, Agua
+Dokotsu, 45, Tierra
+Ganchiwa, 50, Tierra
+Daichigeki, 55, Tierra
+Hiuchi, 47, Fuego
+Karyudan, 55, Fuego
+Enka, 50, Fuego
+Denka, 45, Rayo
+Raishin, 53, Rayo
+Kaminari, 50, Rayo

@@ -22,10 +22,34 @@ public class Menu
         getMainMenu();
         selector(4, -7);
     }
+    public void printPickMonstermonMenu(string[] monsterList)
+    {
+        getPickMonstermonMenu(monsterList);
+        selector(13, -2);
+    }
+
+    private void getPickMonstermonMenu(string[] monsterList)
+    {
+        Console.Clear();
+        this.position = ConsolePosition.defaultConsolePosition();
+        Console.WriteLine("Seleccione su Monstruomon");
+        position.shiftPosition(0, 1);
+
+        foreach (string monsterString in monsterList)
+        {
+            position.shiftPosition(0, 1);
+            Console.Write(monsterString);
+        }
+
+    }
 
     public void setOption(int option)
     {
         this.option = option;
+    }
+    public int getOption()
+    {
+        return this.option;
     }
 
     private void getMainMenu()
@@ -44,6 +68,8 @@ public class Menu
         this.position.shiftPosition(0, 1);
         Console.Write("Salir");
     }
+
+
 
     public void selector(int maxTop, int left=-2)
     {
@@ -89,6 +115,11 @@ public class Menu
             }
         } while (!Console.KeyAvailable);
         this.option = this.position.getPosition()[1] - top - 2;
+    }
+
+    internal void printBattleMenu()
+    {
+        throw new NotImplementedException();
     }
 
     //public void getHeaderMovieList(string message)

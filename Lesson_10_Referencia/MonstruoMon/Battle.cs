@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Lesson_10_Referencia.MonstruoMon;
 
-public class Combat
+public class Battle
 {
     Monstruomon attacker;
     Monstruomon defender;
 
-    public Combat(Monstruomon attacker, Monstruomon defender)
+    public Battle(Monstruomon attacker, Monstruomon defender)
     {
         this.attacker = attacker;
         this.defender = defender;
@@ -24,9 +24,6 @@ public class Combat
         float attackBase = (float)pickedAttack.getAttackStrength() + this.attacker.getStrength();
         int attackStrength = (int)Math.Round(attackBase * getAttckModifier(pickedAttack));
         this.defender.receiveAttack(attackStrength);
-
-
-
     }
 
     private float getAttckModifier(Attack pickedAttack)
@@ -40,6 +37,8 @@ public class Combat
             return 0.5F;
         }
         else 
-        { return 1F; }
+        {
+            return 1F;
+        }
     }
 }
