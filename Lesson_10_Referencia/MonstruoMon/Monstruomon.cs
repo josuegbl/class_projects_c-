@@ -91,7 +91,9 @@ public class Monstruomon : ICloneable
         for (int i = 0; i < attackNames.Length; i++)
         {
             Attack attack = getAttacks()[i];
-            attackNames[i] = attack.getName() + " " + attack.getElemenType() + " " + attack.getAttackStrength();
+            attackNames[i] = attack.getName() 
+                + " " + attack.getElemenType() 
+                + " " + attack.getAttackStrength();
         }
         return attackNames;
     }
