@@ -10,7 +10,7 @@ public static class RepoMonsterMon
 {
     const string MONSTERS_FILE = "monstersmon_repository.txt";
 
-    private static Monstruomon? getMonstermonFromDB(string[] monsterLine)
+    private static Monstruomon getMonstermonFromDB(string[] monsterLine)
     {
 
         Console.WriteLine(monsterLine[4]);
@@ -31,28 +31,24 @@ public static class RepoMonsterMon
                                   , int.Parse(monsterLine[1])
                                   , int.Parse(monsterLine[2])
                                   , int.Parse(monsterLine[3]));
-                break;
             
             case ElemenType.Fuego:
                 return new FireMon(monsterLine[0]
                                   , int.Parse(monsterLine[1])
                                   , int.Parse(monsterLine[2])
                                   , int.Parse(monsterLine[3]));
-                break;
             
             case ElemenType.Tierra:
                 return new EarthMon(monsterLine[0]
                                   , int.Parse(monsterLine[1])
                                   , int.Parse(monsterLine[2])
                                   , int.Parse(monsterLine[3]));
-                break;
             
             case ElemenType.Rayo:
                 return new LightningMon(monsterLine[0]
                                       , int.Parse(monsterLine[1])
                                       , int.Parse(monsterLine[2])
                                       , int.Parse(monsterLine[3]));
-                break;
 
             default:
                 return new WaterMon(monsterLine[0]
@@ -69,13 +65,17 @@ public static class RepoMonsterMon
         string[] monsterLines = File.ReadAllLines(MONSTERS_FILE);
         foreach (string line in monsterLines)
         {
-            string[] monsterLine = line.Trim().Split(',');
+            string lineNoSpace = line.Replace(" ", String.Empty);
+            string[] monsterLine = lineNoSpace.Trim().Split(',');
             var monster = getMonstermonFromDB(monsterLine);
 
             List<Attack> attacks = MonstruomonService.getAttacksFromNames([monsterLine[5]
                                                                          , monsterLine[6]
                                                                          , monsterLine[7]]);
-
+            foreach (Attack attack in attacks)
+            {
+                monster.setAttack(attack);
+            }
             monsters.Add(monster);
         }
         return monsters;

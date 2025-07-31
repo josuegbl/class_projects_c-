@@ -18,6 +18,10 @@ public class WaterMon : Monstruomon
     {
         this.attacks = attacks;
     }
+    public override object Clone()
+    {
+        return new WaterMon(name, health, strength, defense, attacks);
+    }
 
     public override void setAttack(Attack attack)
     {

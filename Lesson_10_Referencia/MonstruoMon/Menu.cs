@@ -20,12 +20,12 @@ public class Menu
     public void printMenu()
     {
         getMainMenu();
-        selector(4, -7);
+        selector(3, -7);
     }
     public void printPickMonstermonMenu(string[] monsterList)
     {
         getPickMonstermonMenu(monsterList);
-        selector(13, -2);
+        selector(monsterList.Length, -2);
     }
 
     private void getPickMonstermonMenu(string[] monsterList)
@@ -55,7 +55,7 @@ public class Menu
     private void getMainMenu()
     {
         Console.Clear();
-        
+        Console.ResetColor();
         this.position = ConsolePosition.defaultConsolePosition();
         Console.Write("MONSTERMON");
 
@@ -69,26 +69,51 @@ public class Menu
         Console.Write("Salir");
     }
 
+    public void printBattleMenu(string[] pMonster, string[] AIMonster)
+    {
+        Console.Clear();
+        this.position = ConsolePosition.defaultConsolePosition();
+        Console.Write("Batalla!");
 
+        this.position.shiftPosition(-17, 0);
+        monsterScreen(pMonster);
 
-    public void selector(int maxTop, int left=-2)
+        this.position.shiftPosition(30, -11);
+        monsterScreen(AIMonster);
+    }
+
+    private void monsterScreen(string[] monster)
+    {
+        for (int i = 0; i < monster.Length; i++)
+        {
+            if (i == 5)
+            {
+                this.position.shiftPosition(0, 2);
+                Console.Write("Ataques");
+                this.position.shiftPosition(0, 1);
+            }
+            this.position.shiftPosition(0, 1);
+            Console.Write(monster[i]);
+        }
+    }
+
+    public void selector(int maxTop, int left=-2, int defTop = 1)
     {
         ConsolePosition defaultObjPos = ConsolePosition.defaultConsolePosition();
 
         int top = defaultObjPos.getPosition()[1];
 
         this.position = defaultObjPos;
-        this.position.shiftPosition(left, 2);
+        this.position.shiftPosition(left, defTop + 1);
 
         Console.Write("█");
-
         do
         {
             ConsoleKeyInfo keyInfo = Console.ReadKey(false);
 
             if (keyInfo.Key == ConsoleKey.UpArrow)
             {
-                if (this.position.getPosition()[1] > top + 2)
+                if (this.position.getPosition()[1] > top + defTop + 1)
                 {
                     this.position.setCursorPosition();
                     Console.Write(" ");
@@ -100,7 +125,8 @@ public class Menu
             }
             else if (keyInfo.Key == ConsoleKey.DownArrow)
             {
-                if (this.position.getPosition()[1] < top + maxTop)
+
+                if (this.position.getPosition()[1] < top + defTop + maxTop)
                 {
                     this.position.setCursorPosition();
                     Console.Write(" ");
@@ -114,265 +140,25 @@ public class Menu
                 break;
             }
         } while (!Console.KeyAvailable);
-        this.option = this.position.getPosition()[1] - top - 2;
+        this.option = this.position.getPosition()[1] - top - defTop - 1;
     }
 
-    internal void printBattleMenu()
+    internal void defenderLost(string defender, bool AIwon)
     {
-        throw new NotImplementedException();
+        this.position = new ConsolePosition();
+        this.position.shiftPosition(-8, 12);
+        Console.Write(defender + " ha perdido!");
+        this.position.shiftPosition(0, 1);
+        if (AIwon)
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.Write("Te ha ganado la AI");
+        }
+        else
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write("Has ganado a la AI");
+        }
+        Thread.Sleep(2000);
     }
-
-    //public void getHeaderMovieList(string message)
-    //{
-    //    Console.Clear();
-    //    this.position = new ConsolePosition();
-    //    this.position.setCursorPosition();
-    //    Console.Write(message);
-    //    this.position.shiftPosition(-15, 2);
-
-    //}
-
-    //public void printList(string moviePrint)
-    //{
-    //    position.shiftPosition(0, 1);
-    //    Console.Write(moviePrint);
-    //}
-
-    //public void getTailMovieList()
-    //{
-    //    position.shiftPosition(0, 2);
-    //    Console.Write("PULSE CUALQUIER TECLA PARA EL MENU");
-    //    Console.ReadKey();
-    //}
-
-    //public void rentMovieMenu()
-    //{
-    //    Console.Clear();
-    //    ConsolePosition position = new ConsolePosition();
-
-    //    position.setCursorPosition();
-    //    Console.WriteLine("Escriba el Nombre de la Pelicula para alquilar ");
-
-    //    position.shiftPosition(0, 2);
-    //    position.setCursorPosition();
-    //}
-
-    //public void rentMovieMenuSuccess(bool isSuccess)
-    //{
-    //    position.shiftPosition(0, 2);
-    //    position.setCursorPosition();
-
-    //    if (isSuccess)
-    //    {
-    //        Console.WriteLine("Disfrute su película");
-    //    }
-    //    else
-    //    {
-    //        Console.WriteLine("Lo sentimos, no hemos encontrado su película.");
-    //    }
-    //    Thread.Sleep(2000);
-    //}
-
-    //public void returnMovieMenu()
-    //{
-    //    Console.Clear();
-    //    ConsolePosition position = new ConsolePosition();
-    //    Console.WriteLine("Escriba el Nombre de la Pelicula a devolver");
-    //    position.shiftPosition(0, 2);
-    //}
-
-    //public void returnMovieMenuSuccess(bool isSuccess)
-    //{
-    //    position.shiftPosition(0, 2);
-
-    //    if (isSuccess)
-    //    {
-    //        Console.WriteLine("Gracias por devolver la película");
-    //    }
-    //    else
-    //    {
-    //        Console.WriteLine("Lo sentimos, esa película no consta como alquilada.");
-    //    }
-    //    Thread.Sleep(2000);
-    //}
-
-    //public void adminMenu()
-    //{
-    //    Console.Clear();
-
-    //    this.position = new ConsolePosition();
-    //    Console.Write("MENU ADMINISTRADOR");
-
-    //    this.position.shiftPosition(0, 2);
-    //    Console.Write("Añadir Película");
-
-    //    this.position.shiftPosition(0, 1);
-    //    Console.Write("Ver películas alquiladas");
-
-    //    verticalSelector(3);
-
-    //}
-
-    //public string[] menuAdminAuth()
-    //{
-    //    Console.Clear();
-    //    this.position.shiftPosition(0, 0);
-    //    Console.WriteLine("Necesita autenticación");
-    //    this.position.shiftPosition(0, 2);
-    //    Console.Write("Usuario: ");
-    //    string name = Console.ReadLine();
-
-    //    Console.Clear();
-    //    this.position.shiftPosition(0, -2);
-    //    Console.WriteLine("Necesita autenticación");
-    //    this.position.shiftPosition(0, 2);
-    //    Console.Write("password: ");
-    //    string passwd = Console.ReadLine();
-
-    //    return [name, passwd];
-
-    //}
-
-    //public string[] addMovieMenu()
-    //{
-    //    Console.Clear();
-    //    this.position.shiftPosition(0, 0);
-    //    Console.WriteLine("Por favor, entre los datos que se piden para añadir la película");
-    //    this.position.shiftPosition(0, 2);
-    //    Console.Write("Título: ");
-    //    string title = Console.ReadLine();
-
-    //    this.position.shiftPosition(0, 2);
-    //    Console.Write("Número de stock: ");
-    //    string stock = Console.ReadLine();
-
-    //    Console.Clear();
-    //    this.position = ConsolePosition.defaultConsolePosition();
-    //    Console.WriteLine("Género: ");
-    //    genreMenu();
-    //    string genreString = getGenre();
-
-    //    Console.Clear();
-    //    this.position = ConsolePosition.defaultConsolePosition();
-    //    Console.WriteLine("Por favor, entre los datos que se piden para añadir la película");
-    //    Console.WriteLine("¿Es una novedad?");
-    //    newlyMenu();
-    //    bool isNewly = getNewly();
-
-    //    return [title, genreString, stock, isNewly.ToString()];
-
-    //}
-
-    //private void genreMenu()
-    //{
-    //    this.position.shiftPosition(0, 2);
-    //    Console.Write("Action");
-
-    //    this.position.shiftPosition(0, 1);
-    //    Console.Write("Thriller");
-
-    //    this.position.shiftPosition(0, 1);
-    //    Console.Write("Fantasy");
-
-    //    this.position.shiftPosition(0, 1);
-    //    Console.Write("Sci-Fi");
-
-    //    this.position.shiftPosition(0, 1);
-    //    Console.Write("History");
-
-    //    this.position.shiftPosition(0, 1);
-    //    Console.Write("Comedy");
-
-    //    this.position.shiftPosition(0, 1);
-    //    Console.Write("Drama");
-
-    //    this.position.shiftPosition(0, 1);
-    //    Console.Write("Western");
-
-    //    verticalSelector(9);
-    //}
-
-    //private string getGenre()
-    //{
-    //    string genreString;
-    //    switch (this.getOption())
-    //    {
-    //        case 0:
-    //            genreString = "Action";
-    //            break;
-
-    //        case 1:
-    //            genreString = "Thriller";
-    //            break;
-
-    //        case 2:
-    //            genreString = "Fantasy";
-    //            break;
-
-    //        case 3:
-    //            genreString = "Sci-Fi";
-    //            break;
-
-    //        case 4:
-    //            genreString = "History";
-    //            break;
-
-    //        case 5:
-    //            genreString = "Comedy";
-    //            break;
-
-    //        case 6:
-    //            genreString = "Drama";
-    //            break;
-
-    //        case 7:
-    //            genreString = "Western";
-    //            break;
-
-    //        default:
-    //            genreString = "Action";
-    //            break;
-    //    }
-    //    return genreString;
-    //}
-
-    //private void newlyMenu()
-    //{
-    //    this.position.shiftPosition(0, 2);
-    //    Console.Write("Sí");
-
-    //    this.position.shiftPosition(0, 1);
-    //    Console.Write("No");
-
-    //    verticalSelector(3);
-    //}
-
-    //private bool getNewly()
-    //{
-    //    bool isNewly;
-    //    switch (this.getOption())
-    //    {
-    //        case 0:
-    //            isNewly = true;
-    //            break;
-
-    //        case 1:
-    //            isNewly = false;
-    //            break;
-
-    //        default:
-    //            isNewly = false;
-    //            break;
-    //    }
-    //    return isNewly;
-    //}
-
-    //public void byeMsj()
-    //{
-    //    Console.Clear();
-    //    this.position = ConsolePosition.defaultConsolePosition();
-    //    Console.WriteLine("Thank you for visit our VideoClub. Bye!");
-    //    Thread.Sleep(2000);
-    //}
-
 }

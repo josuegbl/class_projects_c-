@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -60,7 +61,7 @@ namespace Lesson_10_Referencia.MonstruoMon;
 ///  pero no podrán atacar.
 ///  EXTRA: Guardar los resultados de cada combate en un fichero y poder consultarlo.
 ///  EXTRA: Guardar cada turno de cada combate en un fichero y
-///  sacar estats (total combates, total turnos, combate con más turnos,
+///  sacar stats (total combates, total turnos, combate con más turnos,
 ///  daño total, ataque más usado, mayor daño en un ataque....)
 /// </summary>
 public class VGMonstruoMon
@@ -68,53 +69,53 @@ public class VGMonstruoMon
     public static void Main(string[] args)
     {
         Menu menu = new Menu();
+        bool exit;
 
-        menu.printMenu();
+        do
+        {
+            menu.printMenu();
 
-        pickOption(menu);
+            pickOption(menu);
+            exit = (menu.getOption() == 2) ? true : false;
 
-
+        } while (!exit);
     }
 
     private static void pickOption(Menu menu)
     {
         if (menu.getOption() == 0)
         {
-            combat(menu);
+            doBattle(menu);
         }
-        else
+        else if (menu.getOption() == 1)
         {
             aggregateMon();
         }
+        else
+        {
+            Console.WriteLine("Bye!");
+        }
     }
 
-
-    private static void combat(Menu menu)
+    private static void doBattle(Menu menu)
     {
         List<Monstruomon> monsters = MonstruomonService.getMonstruomonList();
         string[] monstruomonListString = MonstruomonService.getMonsterStringList();
         menu.printPickMonstermonMenu(monstruomonListString);
 
         var pMonster = monsters[menu.getOption()];
-
-
-        var pMonsterClone = pMonster.Clone();
+        var pMonsterClone = (Monstruomon)pMonster.Clone();
 
         Random random = new Random();
-        Monstruomon AIMonster = monsters[random.Next(0, monsters.Count())];
+        var AIMonster = monsters[random.Next(0, monsters.Count())];
+        var AIMonsterClone = (Monstruomon)AIMonster.Clone();
 
-        var AIMonsterClone = AIMonster.Clone();
-
-        Console.Clear();
-        Console.WriteLine(AIMonsterClone.ToString());
-
-        Console.ReadKey();
-
-        menu.printBattleMenu();
+        Battle battle = new Battle(pMonsterClone, AIMonsterClone);
+        battle.attack();
     }
 
     private static void aggregateMon()
     {
-
+        Console.WriteLine("To be implemented");
     }
 }

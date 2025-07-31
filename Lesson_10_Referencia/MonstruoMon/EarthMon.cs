@@ -18,10 +18,10 @@ public class EarthMon : Monstruomon
     {
     }
 
-    //public virtual object Clone()
-    //{
-    //    return new EarthMon(name, health, strength, defense, attacks);
-    //}
+    public override object Clone()
+    {
+        return new EarthMon(name, health, strength, defense, attacks);
+    }
 
     public override void setAttack(Attack attack)
     {

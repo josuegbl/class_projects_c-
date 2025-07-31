@@ -18,10 +18,10 @@ public class FireMon : Monstruomon
     {
     }
 
-    //public object Clone()
-    //{
-    //    return new FireMon(name, health, strength, defense, attacks);
-    //}
+    public override object Clone()
+    {
+        return new FireMon(name, health, strength, defense, attacks);
+    }
 
     public override void setAttack(Attack attack)
     {

@@ -14,14 +14,14 @@ public class LightningMon : Monstruomon
     }
 
     public LightningMon(string name, int health, int strength, int defense, List<Attack> attacks)
-        : base(name, health, strength, defense, new Element(ElemenType.Tierra), attacks)
+        : base(name, health, strength, defense, new Element(ElemenType.Rayo), attacks)
     {
     }
 
-    //public virtual object Clone()
-    //{
-    //    return new LightningMon(name, health, strength, defense, attacks);
-    //}
+    public override object Clone()
+    {
+        return new LightningMon(name, health, strength, defense, attacks);
+    }
 
     public override void setAttack(Attack attack)
     {

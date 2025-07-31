@@ -12,7 +12,8 @@ public static class RepoAttack
 
     private static Attack getAttackFromDB(string line)
     {
-        string[] atckLine = line.Trim().Split(',');
+        line = line.Replace(" ", String.Empty);
+        string[] atckLine = line.Split(',');
 
         Element element = new Element(Enum.Parse<ElemenType>(atckLine[2]));
 

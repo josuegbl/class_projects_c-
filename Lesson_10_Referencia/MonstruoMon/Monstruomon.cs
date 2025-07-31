@@ -36,7 +36,7 @@ public class Monstruomon : ICloneable
         this.attacks = attacks;
     }
 
-    public object Clone()
+    public virtual object Clone()
     {
         return new Monstruomon(name, health, strength, defense, element, attacks);
     }
@@ -75,10 +75,26 @@ public class Monstruomon : ICloneable
         this.attacks.Add(attack);
     }
 
-    public List<Attack> getAttack()
+    public bool hasAttacks()
+    {
+        return this.attacks.Count > 0;
+    }
+    
+    public List<Attack> getAttacks()
     {
         return this.attacks;
     }
+
+    public string[] getAttackNames()
+    {
+        String[] attackNames = new String[getAttacks().Count];
+        for (int i = 0; i < attackNames.Length; i++)
+        {
+            attackNames[i] = getAttacks()[i].getName();
+        }
+        return attackNames;
+    }
+
 
     public ElemenType getElemenType()
     { return this.element.getElemenType(); }
@@ -86,6 +102,11 @@ public class Monstruomon : ICloneable
     public void receiveAttack(int attackStrength)
     {
         int netAttack = attackStrength - getDefense();
+        if (netAttack < 0)
+        {
+            netAttack = 0;
+        }
+
         if (getHealth() > netAttack)
         {
             this.health -= netAttack;
@@ -101,6 +122,25 @@ public class Monstruomon : ICloneable
         return this.health <= 0;
     }
 
+    public string[] getObjectString()
+    {
+        string[] monsterString = new string[8];
+
+        monsterString[0] = "Nombre " + this.getName();
+        monsterString[1] = " Salud " + this.getHealth().ToString(); 
+        monsterString[2] = " Elemento " + this.element.ToString();
+        monsterString[3] = " Fuerza " + this.getStrength().ToString();
+        monsterString[4] = " Defensa " + this.getDefense().ToString();
+        string[] attackames = getAttackNames();
+        for (int i = 5; i < monsterString.Length; i++)
+        {   
+            Console.Clear();
+            Console.WriteLine("Valor: " + i + attackames[0]);
+            monsterString[i] = attackames[i-5];
+        }
+
+        return monsterString;
+    }
     public override string ToString()
     {
         string monsterString = this.getName() + " Elemento: "

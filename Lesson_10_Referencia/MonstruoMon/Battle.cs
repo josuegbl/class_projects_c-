@@ -8,37 +8,66 @@ namespace Lesson_10_Referencia.MonstruoMon;
 
 public class Battle
 {
-    Monstruomon attacker;
-    Monstruomon defender;
+    private Monstruomon pMonster;
+    private Monstruomon AIMonster;
 
-    public Battle(Monstruomon attacker, Monstruomon defender)
+    public Battle(Monstruomon pMonster, Monstruomon AIMonster)
     {
-        this.attacker = attacker;
-        this.defender = defender;
+        this.pMonster = pMonster;
+        this.AIMonster = AIMonster;
     }
 
-    public void attack(int attackOption)
-    {
-        Attack pickedAttack = this.attacker.getAttack()[attackOption];
+    public Monstruomon getPersonMon()
+        { return pMonster; }
 
-        float attackBase = (float)pickedAttack.getAttackStrength() + this.attacker.getStrength();
-        int attackStrength = (int)Math.Round(attackBase * getAttckModifier(pickedAttack));
-        this.defender.receiveAttack(attackStrength);
-    }
+    public Monstruomon getAIMon()
+        { return AIMonster; }
 
-    private float getAttckModifier(Attack pickedAttack)
+    public void attack()
     {
-        if (pickedAttack.getElemenType() == defender.getWeaknessElement())
+        Menu menu = new Menu();
+        int round = 1;
+        bool isFinished = false;
+
+        do
         {
-            return 2F;
-        }
-        else if (pickedAttack.getElemenType() == defender.getMightinessElement())
-        {
-            return 0.5F;
-        }
-        else 
-        {
-            return 1F;
-        }
+            int attackOption;
+            bool AIwon = false;
+            Monstruomon attacker;
+            Monstruomon defender;
+
+            menu.printBattleMenu(getPersonMon().getObjectString()
+                                 , getAIMon().getObjectString());
+            
+            if (round % 2 != 0)
+            {
+                attacker = getPersonMon();
+                defender = getAIMon();
+                menu.selector(3, -19, 8);
+                attackOption = menu.getOption();
+            }
+            else
+            {
+                attacker = getAIMon();
+                defender = getPersonMon();
+                AIwon = true;
+
+                int numOfAttacks = attacker.getAttacks().Count;
+                Random random = new Random();
+                attackOption = random.Next(0, numOfAttacks);
+            }
+
+            BattleRound newBattleRound = new BattleRound(attacker, defender);
+            newBattleRound.attackRound(attackOption);
+            
+            isFinished = newBattleRound.defenderIsDead();
+
+            if (isFinished)
+            {
+                menu.defenderLost(defender.getName(), AIwon);
+            }
+            round++;
+
+        } while (!isFinished);
     }
 }
