@@ -111,7 +111,7 @@ public class VGMonstruoMon
         var AIMonsterClone = (Monstruomon)AIMonster.Clone();
 
         Battle battle = new Battle(pMonsterClone, AIMonsterClone);
-        battle.attack();
+        battle.doBattle();
     }
 
     private static void aggregateMon()

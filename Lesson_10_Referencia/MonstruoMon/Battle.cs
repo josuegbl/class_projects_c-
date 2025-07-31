@@ -23,7 +23,7 @@ public class Battle
     public Monstruomon getAIMon()
         { return AIMonster; }
 
-    public void attack()
+    public void doBattle()
     {
         Menu menu = new Menu();
         int round = 1;
