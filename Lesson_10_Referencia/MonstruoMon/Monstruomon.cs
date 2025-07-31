@@ -85,12 +85,13 @@ public class Monstruomon : ICloneable
         return this.attacks;
     }
 
-    public string[] getAttackNames()
+    public string[] getAttacksString()
     {
         String[] attackNames = new String[getAttacks().Count];
         for (int i = 0; i < attackNames.Length; i++)
         {
-            attackNames[i] = getAttacks()[i].getName();
+            Attack attack = getAttacks()[i];
+            attackNames[i] = attack.getName() + " " + attack.getElemenType() + " " + attack.getAttackStrength();
         }
         return attackNames;
     }
@@ -131,7 +132,7 @@ public class Monstruomon : ICloneable
         monsterString[2] = " Elemento " + this.element.ToString();
         monsterString[3] = " Fuerza " + this.getStrength().ToString();
         monsterString[4] = " Defensa " + this.getDefense().ToString();
-        string[] attackames = getAttackNames();
+        string[] attackames = getAttacksString();
         for (int i = 5; i < monsterString.Length; i++)
         {   
             Console.Clear();
