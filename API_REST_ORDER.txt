@@ -1,0 +1,14 @@
+** Crear un nuevo recurso (order)
+
+** El recurso order contendrá una lista de platos, identificados por su id,
+y un usuario asociado. Además, tendrá un precio (calculado obtenido el plato "entero")
+
+** No se almacenará en el order el precio de cada plato. solo su id.
+
+** Crear un controlador para order y hcer al menos un listado y una creación.
+
+* Crear un servicio para cada recurso (user, dish, order)
+
+** Si se quiere profundizar, crear un objeto menu, que contenga 
+varios platos "fijos" y que se pueda "pedir a la carta" (platos "sueltos")
+o por menu en un mismo order.
