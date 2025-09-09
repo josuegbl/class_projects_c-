@@ -15,7 +15,9 @@ public class ServicesGet
         DishModel result = new DishModel();
         bool isFound = false;
 
-        foreach (DishModel dish in Program.dishes)
+        DishService dishServ = new DishService();
+
+        foreach (DishModel dish in dishServ.GetDishes())
         {
             if (dish.getId() == id)
             {

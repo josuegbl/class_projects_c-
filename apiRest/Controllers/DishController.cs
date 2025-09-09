@@ -1,4 +1,5 @@
 ﻿using apiRest.Models;
+using apiRest.Repository;
 using apiRest.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -10,13 +11,14 @@ namespace apiRest.Controllers
     public class DishController : ControllerBase
     {
         ServicesGet servicesGet = new ServicesGet();
+        DishService dishService = new DishService();
 
         [HttpGet("dishes")]
         public List<DishModel> GetDishes()
         {
             Console.WriteLine("getDishes");
 
-            return Program.dishes;
+            return dishService.GetDishes();
         }
 
         [HttpGet("dishes/{id}")]
@@ -28,7 +30,7 @@ namespace apiRest.Controllers
             DishModel result = new DishModel();
             bool isFound = false;
 
-            foreach (DishModel dish in Program.dishes)
+            foreach (DishModel dish in dishService.GetDishes())
             {
                 if (dish.getId() == id)
                 {
@@ -61,7 +63,7 @@ namespace apiRest.Controllers
             DishModel result = new DishModel();
             bool isFound = false;
 
-            foreach (DishModel dish in Program.dishes)
+            foreach (DishModel dish in dishService.GetDishes())
             {
                 string nameToCompare = dish.getName().ToLower();
                 if (name == nameToCompare)
@@ -114,7 +116,8 @@ namespace apiRest.Controllers
 
             if (foundDish.IsFound)
             {
-                Program.dishes.Remove(foundDish.Dish);
+                // reimplement this in a service. Im not sure if works right now
+                dishService.GetDishes().Remove(foundDish.Dish);
                 return Ok(foundDish.Dish);
             }
             else

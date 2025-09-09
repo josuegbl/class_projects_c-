@@ -4,7 +4,7 @@ public class DishModel
 {
     private string id;
     private string name;
-    private double price;
+    private float price;
 
     public string Id
     {
@@ -14,7 +14,7 @@ public class DishModel
     {
         get => name; set => name = value;
     }
-    public double Price
+    public float Price
     {
         get => price; set => price = value;
     }
@@ -23,7 +23,7 @@ public class DishModel
     {
     }
 
-    public DishModel(string id, string name, double price)
+    public DishModel(string id, string name, float price)
     {
         this.id = id;
         this.name = name;
@@ -38,7 +38,7 @@ public class DishModel
     {
         this.name = name;
     }
-    public void setPrice(double price)
+    public void setPrice(float price)
     {
         this.price = price;
     }
@@ -50,7 +50,7 @@ public class DishModel
     {
         return this.name;
     }
-    public double getPrice()
+    public float getPrice()
     {
         return this.price;
     }
