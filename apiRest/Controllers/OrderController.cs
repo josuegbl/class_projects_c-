@@ -10,10 +10,11 @@ public class OrderController : ControllerBase
 {
     OrderService orderService = new OrderService();
 
-    [HttpGet("order")]
+    [HttpGet("orders")]
     public IActionResult getOrder()
     {
         Console.WriteLine("getOrder");
+
 
         return Ok(new OrderModelDTO());
     }
@@ -23,8 +24,16 @@ public class OrderController : ControllerBase
     {
         Console.WriteLine("postOrder");
 
+        ObjectOrderServiceResponse objectOrderService = orderService.createOrderService(orderDTO);
 
+        if(objectOrderService.IsOk)
+        {
+            return Ok(objectOrderService);
+        }
+        else
+        {
+            return BadRequest();
+        }
 
-        return Ok(orderDTO);
     }
 }

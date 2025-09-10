@@ -27,11 +27,11 @@ namespace apiRest.Controllers
             Console.WriteLine("La id del plato a buscar es " + id);
 
             DishModel dish = DishService.getDishById(id);
-            bool isEmpty = dish.Name == null; && dish.Id == null;
+            bool isEmpty = dish.Name == null && dish.Id == null;
 
             if (!isEmpty)
             {
-                return Ok(result);
+                return Ok(dish);
             }
             else
             {
@@ -82,7 +82,7 @@ namespace apiRest.Controllers
             Console.WriteLine("La id del plato en param URL es " + id);
 
             DishModel origDish = DishService.getDishById(id);
-            bool isEmpty = dish.Name == null; && dish.Id == null;
+            bool isEmpty = dish.Name == null && dish.Id == null;
 
             if (!isEmpty)
             {
@@ -98,15 +98,15 @@ namespace apiRest.Controllers
         {
             Console.WriteLine("deleteDish");
             Console.WriteLine("La id del plato a borrar en param URL es " + id);
-            int codeResult = 404;
 
-            FoundObject foundDish = servicesGet.getById(id);
+            DishModel origDish = DishService.getDishById(id);
+            bool isEmpty = origDish.Name == null && origDish.Id == null;
 
-            if (foundDish.IsFound)
+            if (!isEmpty)
             {
                 // reimplement this in a service. Im not sure if works right now
-                dishService.GetDishes().Remove(foundDish.Dish);
-                return Ok(foundDish.Dish);
+                dishService.GetDishes().Remove(origDish);
+                return Ok(origDish);
             }
             else
                 return BadRequest();

@@ -14,7 +14,7 @@ public class DishModel
     {
         get => name; set => name = value;
     }
-    public float Price
+    public float? Price
     {
         get => price; set => price = value;
     }
@@ -50,7 +50,7 @@ public class DishModel
     {
         return this.name;
     }
-    public float getPrice()
+    public float? getPrice()
     {
         return this.price;
     }

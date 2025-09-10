@@ -22,7 +22,7 @@ public class DishService
     {
         DishModel result = new DishModel();
 
-        foreach (DishModel dish in dishServ.GetDishes())
+        foreach (DishModel dish in LoadRepository.Dishes)
         {
             if (dish.getId() == id)
             {
