@@ -2,23 +2,23 @@
 
 public class QuantityModel
 {
-    private string userId;
+    private string dishId;
     private int quantity;
 
     public QuantityModel(string id, int amount)
     {
-        this.userId = id;
+        this.dishId = id;
         this.quantity = amount;
     }
 
-    public string GetUserId()
+    public string GetDishId()
     {
-        return userId;
+        return this.dishId;
     }
 
     public void SetUserId(string value)
     {
-        userId = value;
+        dishId = value;
     }
 
     public int GetQuantity()

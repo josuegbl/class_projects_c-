@@ -10,7 +10,6 @@ namespace apiRest.Controllers
     [ApiController]
     public class DishController : ControllerBase
     {
-        ServicesGet servicesGet = new ServicesGet();
         DishService dishService = new DishService();
 
         [HttpGet("dishes")]
@@ -27,20 +26,10 @@ namespace apiRest.Controllers
             Console.WriteLine("getDishById");
             Console.WriteLine("La id del plato a buscar es " + id);
 
-            DishModel result = new DishModel();
-            bool isFound = false;
+            DishModel dish = DishService.getDishById(id);
+            bool isEmpty = dish.Name == null; && dish.Id == null;
 
-            foreach (DishModel dish in dishService.GetDishes())
-            {
-                if (dish.getId() == id)
-                {
-                    Console.WriteLine("Plato con id " + id + " encontrado");
-                    result = dish;
-                    isFound = true;
-                }
-            }
-
-            if (isFound)
+            if (!isEmpty)
             {
                 return Ok(result);
             }
@@ -92,16 +81,15 @@ namespace apiRest.Controllers
             Console.WriteLine("updateDish");
             Console.WriteLine("La id del plato en param URL es " + id);
 
-            FoundObject foundDish = servicesGet.getById(id);
+            DishModel origDish = DishService.getDishById(id);
+            bool isEmpty = dish.Name == null; && dish.Id == null;
 
-            if (foundDish.IsFound)
+            if (!isEmpty)
             {
-                return Ok(foundDish.Dish);
+                return Ok(dish);
             }
             else
                 return BadRequest();
-
-
         }
 
         [HttpDelete("dishes/{id}")]

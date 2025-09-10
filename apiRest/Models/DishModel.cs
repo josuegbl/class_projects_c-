@@ -2,9 +2,9 @@
 
 public class DishModel
 {
-    private string id;
-    private string name;
-    private float price;
+    private string? id;
+    private string? name;
+    private float?  price;
 
     public string Id
     {

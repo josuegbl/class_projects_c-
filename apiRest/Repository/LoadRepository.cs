@@ -32,8 +32,6 @@ namespace apiRest.Repository
             return result;
         }
 
-
-
         private static List<DishModel> genDishes()
         {
             List<DishModel> result = new List<DishModel>();

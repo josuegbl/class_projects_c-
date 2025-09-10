@@ -18,5 +18,21 @@ public class DishService
         return LoadRepository.Dishes;
     }
 
+    public static DishModel getDishById(string id)
+    {
+        DishModel result = new DishModel();
+
+        foreach (DishModel dish in dishServ.GetDishes())
+        {
+            if (dish.getId() == id)
+            {
+                Console.WriteLine("Plato con id " + id + " encontrado");
+                result = dish;
+                break;
+            }
+        }
+        
+        return result;
+    }
 
 }

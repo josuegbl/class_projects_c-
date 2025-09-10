@@ -8,7 +8,7 @@ namespace apiRest.Controllers;
 [ApiController]
 public class OrderController : ControllerBase
 {
-    ServicesGet servicesGet = new ServicesGet();
+    OrderService orderService = new OrderService();
 
     [HttpGet("order")]
     public IActionResult getOrder()
@@ -22,6 +22,8 @@ public class OrderController : ControllerBase
     public IActionResult postOrder([FromBody] OrderModelDTO orderDTO)
     {
         Console.WriteLine("postOrder");
+
+
 
         return Ok(orderDTO);
     }
