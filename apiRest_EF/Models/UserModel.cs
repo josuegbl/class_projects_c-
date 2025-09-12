@@ -51,11 +51,4 @@ public class UserModel
     {
         return this.age;
     }
-
-    public override string ToString()
-    {
-        return "id es " + this.id
-             + " name es " + this.name
-             + " age es " + this.age;
-    }
 }

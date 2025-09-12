@@ -54,12 +54,4 @@ public class DishModel
     {
         return this.price;
     }
-
-    public override string ToString()
-    {
-        return "id es " + this.id
-             + " name es " + this.name
-             + " precio es " + this.price;
-    }
-
 }

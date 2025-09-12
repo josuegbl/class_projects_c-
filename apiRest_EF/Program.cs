@@ -1,5 +1,4 @@
 using apiRest.Models;
-using apiRest.Repository;
 
 namespace apiRest
 {
@@ -7,9 +6,7 @@ namespace apiRest
     {
         public static void Main(string[] args)
         {
-            LoadRepository repo = new LoadRepository();
 
-            TestLINQ.testLINQ();
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.

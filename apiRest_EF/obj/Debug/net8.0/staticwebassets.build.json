@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "408Z975jcs9AtBH9WzB32gkOIdaW6DcMUAdY2ZPwCKQ=",
+  "Source": "apiRest_EF",
+  "BasePath": "_content/apiRest_EF",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
