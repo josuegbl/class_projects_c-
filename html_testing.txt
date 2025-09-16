@@ -1,0 +1,45 @@
+<header>
+</header>
+<main>
+   <div>Hola Mundo!</div> 
+  <h1> Titulo H1</h1>
+  <h3> Titulo H3</h3>
+  <h6> Titulo H6</h6>
+ <ul>
+   <li>Esto</li>
+   <li>es</li>
+   <li>una</li>
+   <li>lista</li>
+ </ul>
+  <p>
+    esto es un parrafo
+  <p>
+    <br />
+    <label for="name">Nombre</label>
+    <input id="name" type="text"></input>
+    <br />
+    <label for="surnames">Apellidos</label>
+    <input id="surnames" type="text" value="Valor">           </input>
+    <br />
+    <label>Suspenso</label>
+    <input type="checkbox" checked="true"></input>
+    <br /> 
+   <label>Suspenso</label>
+    <input type="radio" checked="true"></input>
+    <br />
+    <input type="color"></input>
+    <br /> 
+    <input type="date"></input>
+    <br /> 
+    <input type="range" min="1" max="25"></input>
+    <br /> 
+    <input type="number" min ="1"></input>
+    <br /> 
+    <button> No Pulsar</button>
+    <br /> 
+    <br /> 
+    <input type="hidden" value="cosa oculta"></input>
+
+</main>
+<footer>
+</footer>

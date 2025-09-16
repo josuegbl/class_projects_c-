@@ -5,7 +5,7 @@ y un usuario asociado. Además, tendrá un precio (calculado obtenido el plato "
 
 ** No se almacenará en el order el precio de cada plato. solo su id.
 
-** Crear un controlador para order y hcer al menos un listado y una creación.
+** Crear un controlador para order y hacer al menos un listado y una creación.
 
 * Crear un servicio para cada recurso (user, dish, order)
 
