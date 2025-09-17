@@ -1,0 +1,69 @@
+h1 {
+    color: blue;
+  }
+  
+  input, button{
+    color: green;
+  }
+  
+  fieldset label{
+    color: orange;
+  }
+
+  .mainTitle{
+    margin-top: 100px;
+  }
+  
+  #surnames{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    text-decoration: dotted;
+    padding: 0.3%;
+    border:  3px dotted red;
+    margin: 10px;
+    cursor: crosshair;
+  }
+  input[type="date"]
+  {
+        color: darkred;
+  }
+
+  .test {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 22px;
+    text-transform: capitalize;
+    text-decoration: line-through;
+    width: 40%;
+  }
+/*  #layoutTests {
+    border: 4px solid #5dd40d;
+    display: flex;
+    flex-wrap: wrap;
+
+  }*/
+
+   /* #layoutTests p{
+    border: 2px dotted red;
+    float: left;
+    position: relative;
+    top: 30px;
+    left: 40px;
+  }*/ 
+
+  #layoutTests {
+    border: 4px solid #5dd40d;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+
+  }
+
+  #layoutTests p{
+    border: 2px dotted red;
+    margin: 0px 10px;
+    flex: 3;
+
+ 
+  }
+
