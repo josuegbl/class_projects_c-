@@ -5,7 +5,7 @@ function formSendClick(event)
   console.log(event);
   console.log(event.target);
   
-  let name = document.getElementById("name").value;
+  let name = document.getElementById("formName").value;
   console.log(name);
   let surname = document.getElementById("surnames").value;
   console.log(surname);
