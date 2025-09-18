@@ -9,6 +9,7 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    
     <title>Document</title>
   </head>
   <body>
@@ -17,12 +18,14 @@
           <p id="title">User Form</p>
   
           <div class="mb-3">
-            <label for="formGroupExampleInput" class="form-label">username</label>
+            <label for="exampleInputEmail1" class="form-label"
+              >Email address</label
+            >
             <input
-              type="text"
+              type="email"
               class="form-control"
-              id="formGroupExampleInput"
-              placeholder="Name"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
             />
           </div>
           <div class="mb-3">
@@ -34,10 +37,9 @@
             />
           </div>
           <div class="buttons d-flex justify-content-between">
-            <button type="submit" class="btn btn-primary" id="submit">
-              Submit
+            <button type="login" class="btn btn-light" id="login">
+              login
             </button>
-            <button type="reset" class="btn btn-danger" id="reset">Reset</button>
           </div>
         </div>
       </form>
