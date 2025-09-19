@@ -32,3 +32,11 @@ function formSendClick(event)
 }
 
 
+function disableReady()
+{
+  let bool = true;
+  if(bool)
+    return "disabled readonly";
+  else
+    return "";
+}
