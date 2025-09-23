@@ -1,42 +1,23 @@
-function formSendClick(event)
-{
+const personHandler = (event) => {
   event.preventDefault();
   console.log("formSendClick");
   // console.log(event);
   // console.log(event.target);
   
-  let name = document.getElementById("formName").value;
-  console.log(name);
-
-  let surname = document.getElementById("surnames").value;
-  console.log(surname);
-
-  let birthdate = document.getElementById("birthDate").value;
-  console.log(birthdate);
-
-  let email = document.getElementById("formEmail").value;
-  console.log(email);
-
-  let passwd = document.getElementById("passwd").value;
-  console.log(passwd);
-
-
-  let person = {name: name
-              , surname: surname
-              , datebirth: birthdate
-              , email: email
-              , passwd: passwd}
+  let person = {name: document.getElementById("formName").value
+              , surname: document.getElementById("surnames").value
+              , datebirth: document.getElementById("birthDate").value
+              , email: document.getElementById("formEmail").value
+              , passwd: document.getElementById("passwd").value}
   console.log(person);
 
   localStorage.setItem("personJSON", JSON.stringify(person));
 }
 
-
-function disableReady()
-{
-  let bool = true;
-  if(bool)
-    return "disabled readonly";
-  else
-    return "";
+const onDOMLoad = () => {
+  document.getElementById("submit").addEventListener("click", personHandler)
 }
+
+
+
+document.addEventListener("DOMContentLoaded", onDOMLoad)
