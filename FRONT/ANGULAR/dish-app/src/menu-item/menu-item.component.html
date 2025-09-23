@@ -1,0 +1,16 @@
+<div>
+    <img src= "{{ dish.image.src }}" 
+         [alt]="dish.name"
+         width="25%">
+    <h2>{{ dish.name | uppercase }}</h2>
+    <h3>{{ dish.price }}</h3>
+    @if (dish.price <= 30) { 
+        <h4> Ocacion!</h4>
+    } @else {
+        <h4>Muy rico</h4>
+    }
+
+    <!-- <h3 (mouseleave)="showMessage(dish, $event)">  {{ dish.price }}</h3>
+    <div id="messageDiv"></div>
+    <button (click)="onSale()">Poner en oferta</button> -->
+</div>

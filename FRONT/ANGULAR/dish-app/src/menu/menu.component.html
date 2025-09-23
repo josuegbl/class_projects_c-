@@ -1,0 +1,22 @@
+<div>
+    <div>
+        <h3>
+            Menu
+        </h3>
+        @for (dish of dishes; track dish.id) {
+            <dish-menu-item [dish]="dish"></dish-menu-item>
+        }
+        <div>
+       <span>NUevo Plato</span>
+       <br>
+       <label for="dishname">Nombre</label>
+       <input id="dishName" type="text">
+       <br>
+       <label for="dishPrice">Precio</label>
+        <input id="dishPrice" type="number">
+        <br>
+        <button (click)="createDish()">Crear</button>
+        </div>
+    </div>
+    
+</div>
