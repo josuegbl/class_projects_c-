@@ -17,6 +17,10 @@
         <br>
         <button (click)="createDish()">Crear</button>
         </div>
+        <dish-dm 
+        (dishesUpdated)="dishesUpdated($event)"
+        [newDish] = "newDish">
+        </dish-dm>
     </div>
     
 </div>

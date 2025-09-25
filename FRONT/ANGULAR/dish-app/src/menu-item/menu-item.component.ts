@@ -1,11 +1,10 @@
 import { UpperCasePipe } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { IDish } from './dish.model';
-import { NgClass } from "../../node_modules/@angular/common/common_module.d-NEF7UaHr";
 
 @Component({
   selector: 'dish-menu-item',
-  imports: [UpperCasePipe, NgClass],
+  imports: [UpperCasePipe],
   templateUrl: './menu-item.component.html',
   styleUrl: './menu-item.component.css'
 })
