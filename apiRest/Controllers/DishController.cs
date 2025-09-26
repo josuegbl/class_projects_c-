@@ -21,6 +21,21 @@ namespace apiRest.Controllers
             return dishService.GetDishes();
         }
 
+        [EnableCors]
+        [HttpPost("dishes")]
+
+        public IActionResult updateDish([FromBody] DishModel dish)
+        {
+            Console.WriteLine("create dish");
+
+            dishService.createDish(dish);
+
+            bool isEmpty = dish.Name == null && dish.Id == null;
+
+            return Ok(dish);
+        }
+
+
 
         [HttpGet("dishes/{id}")]
         public IActionResult getDisById(string id)
@@ -75,7 +90,6 @@ namespace apiRest.Controllers
             }
         }
 
-        [EnableCors]
         [HttpPut("dishes/{id}")]
 
         public IActionResult updateDish([FromBody] DishModel dish, string id)

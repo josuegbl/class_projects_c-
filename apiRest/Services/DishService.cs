@@ -1,20 +1,24 @@
 ﻿using apiRest.Models;
 using apiRest.Repository;
+using Microsoft.AspNetCore.Identity;
 
 namespace apiRest.Services;
 
 public class DishService
 {
 
-    public static DishRepository dishRepo;
-
     public DishService()
     {
-        DishService.dishRepo = new DishRepository();
+        Console.WriteLine("paso por el constructor del servicio");
+        if (DishRepository.Dishes == null)
+        {
+            DishRepository.Dishes = DishRepository.genDishes();
+        }
     }
 
     public List<DishModel> GetDishes()
     {
+        Console.WriteLine("cuantos dishes: " + DishRepository.Dishes.Count());
         return DishRepository.Dishes;
     }
 
@@ -33,6 +37,11 @@ public class DishService
         }
 
         return result;
+    }
+
+    public void createDish(DishModel dish)
+    {
+        DishRepository.addDish(dish);
     }
 
 }

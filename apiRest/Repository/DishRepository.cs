@@ -4,9 +4,7 @@ namespace apiRest.Repository;
 
 public class DishRepository
 {
-    private static List<DishModel> dishes;
-
-    public static List<DishModel> Dishes { get => dishes; set => dishes = value; }
+    public static List<DishModel>? Dishes { get; set; }
 
     public DishRepository()
     {
@@ -16,9 +14,11 @@ public class DishRepository
     public static void addDish(DishModel value)
     {
         DishRepository.Dishes.Add(value);
+
+        Console.WriteLine("Agrego plato: " + DishRepository.Dishes.Count());
     }
 
-    private static List<DishModel> genDishes()
+    public static List<DishModel> genDishes()
     {
         List<DishModel> result = new List<DishModel>();
 
