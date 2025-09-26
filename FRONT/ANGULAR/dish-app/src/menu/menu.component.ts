@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, input } from '@angular/core';
 import { MenuItemComponent } from "../menu-item/menu-item.component";
 import { DmComponent } from '../dm/dm.component';
 
@@ -9,9 +9,13 @@ import { DmComponent } from '../dm/dm.component';
   styleUrl: './menu.component.css'
 })
 export class MenuComponent {
+  @Input() showDiv: any;
 
   dishes: any = [];
   newDish: any = {};
+
+
+
 
 createDish(){
   console.log("createDish");

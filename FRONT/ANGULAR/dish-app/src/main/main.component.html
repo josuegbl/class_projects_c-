@@ -1,4 +1,14 @@
 <main>
-    <h1>Main</h1>
-    <dish-menu></dish-menu>
+    <div class="container text-center">
+        <div class="row">
+          <div class="col menu">
+            <h2 (click)="showMenu($event)">Menu</h2>
+          </div>
+          <div class="col createDish">
+            <h2 (click)="showCreateDish($event)">Insert dish</h2>
+          </div>
+        </div>
+    </div>
+    <dish-menu [showDiv]="showDiv"></dish-menu>
+
 </main>
