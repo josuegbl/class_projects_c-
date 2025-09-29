@@ -13,6 +13,7 @@ export class MenuComponent {
 
   dishes: any = [];
   newDish: any = {};
+  dishId: string = "";
 
   constructor()  {
     console.log("constructor en MENU Component")
@@ -28,6 +29,15 @@ createDish(){
   let dishPrice = (<HTMLInputElement>document.getElementById("dishPrice"))!.value;
   console.log("precio: " + dishPrice);
 
+  let newDish: any = 
+  {
+    id: (this.dishes.length + 1).toString()
+  , name: dishName
+  , price: Number.parseFloat(dishPrice)
+  }
+  this.newDish = newDish;
+  
+  window.location.reload();
 
   // this.dishes = [
   //   ...this.dishes // spread syntax
@@ -53,14 +63,6 @@ createDish(){
 //     }
 // )
 
-  let newDish: any = {
-    id: (this.dishes.length + 1).toString()
-  , name: dishName
-  , price: Number.parseFloat(dishPrice)
-  }
-  this.newDish = newDish;
-
-  window.location.reload();
 
   // this.dishes.push(
   //   {
@@ -73,6 +75,11 @@ createDish(){
   //   }
 // )
 
+}
+
+remove(event: any)
+{
+  this.dishId = event;
 }
 
 dishesUpdated(event: any) {

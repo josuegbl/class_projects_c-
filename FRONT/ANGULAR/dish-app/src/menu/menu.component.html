@@ -1,10 +1,13 @@
 <div>
     @if (isMenu) 
     {
-        @for (dish of dishes; track dish.id)
-        {
-            <dish-menu-item [dish]="dish"></dish-menu-item>
-        }
+        <div>
+            @for (dish of dishes; track dish.id)
+            {
+                <dish-menu-item (removeDish)="remove($event)"
+                                [dish]="dish"></dish-menu-item>
+            }
+        </div>
     }
     
     @else 
@@ -18,11 +21,14 @@
             <input id="dishPrice" type="number">
             <br>
             <button (click)="createDish()">Crear</button>
+
         }
         
-    </div>
     <dish-dm 
+
     (dishesUpdated)="dishesUpdated($event)"
-    [newDish] = "newDish">
+    [newDish] = "newDish" 
+    [dishId]="dishId">
     </dish-dm>
+    </div>
 

@@ -9,6 +9,7 @@ import { Component, EventEmitter, Input, OnChanges, Output, SimpleChanges } from
 export class DmComponent implements OnChanges{
   @Output() dishesUpdated = new EventEmitter();
   @Input() newDish: object = {};
+  @Input() dishId: string = "";
   
   dishes: any = [];
   constructor()  {
@@ -58,11 +59,15 @@ export class DmComponent implements OnChanges{
     console.log("ngOnchanges en el DM")
     console.log(changes);
 
-    if(changes['newDish'].previousValue !== undefined)
+    if(changes['newDish']?.previousValue !== undefined)
     {
       this.createDish(changes['newDish'].currentValue);
     }
-  }
+    if(changes['dishId']?.previousValue !== undefined)
+      {
+        this.createDish(changes['dishId'].currentValue);
+      }
+    }
 
 
   createDish(dish: any)
@@ -73,16 +78,16 @@ export class DmComponent implements OnChanges{
     let xhr = new XMLHttpRequest();
 
     xhr.addEventListener("readystatechange",
-       (event) => {
-        let xhrResponse = <XMLHttpRequest>event.target;
-        if (xhrResponse.readyState === 4 && xhrResponse.status === 200)
+       (event) => 
         {
-          console.log("created Dish")
-          console.log(xhrResponse.responseText);
-          this.fetchDishes();
+          let xhrResponse = <XMLHttpRequest>event.target;
+          if (xhrResponse.readyState === 4 && xhrResponse.status === 200)
+          {
+            console.log("created Dish")
+            console.log(xhrResponse.responseText);
+            this.fetchDishes();
+          }
         }
-        
-       }
   )
 
     xhr.open("POST", "http://localhost:5227/api/dishes");
@@ -91,7 +96,34 @@ export class DmComponent implements OnChanges{
 
   }
 
+  remove(id: string)
+  {
+    console.log("remove Dish");
+    console.log(id);
+
+    let xhr = new XMLHttpRequest();
+
+    xhr.addEventListener("readystatechange",
+       (event) => 
+        {
+          let xhrResponse = <XMLHttpRequest>event.target;
+          if (xhrResponse.readyState === 4 && xhrResponse.status === 200)
+          {
+            console.log("created Dish")
+            console.log(xhrResponse.responseText);
+            this.fetchDishes();
+          }
+        }
+  )
+
+    xhr.open("DELETE", `http://localhost:5227/api/dishes/${id}`);
+    xhr.send();
+
+  }
+
 }
+
+
 //  dishes: any = [];
 
 //   constructor() {

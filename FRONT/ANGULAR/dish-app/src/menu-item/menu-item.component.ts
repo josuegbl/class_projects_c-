@@ -1,6 +1,5 @@
 import { UpperCasePipe } from '@angular/common';
-import { Component, Input } from '@angular/core';
-import { IDish } from './dish.model';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'dish-menu-item',
@@ -10,6 +9,7 @@ import { IDish } from './dish.model';
 })
 
 export class MenuItemComponent {
+  @Output() removeDish = new EventEmitter();
   @Input({required: true}) dish: any;
 
 
@@ -27,5 +27,16 @@ export class MenuItemComponent {
 //     console.log("On Sale")
 //     this.dish.price = 14;
 //   }
+
+remove()
+{
+  let id = this.dish.id;
+  console.log("borrando " + this.dish.id)
+  // this.dish
+  // window.location.reload();
+
+  this.removeDish.emit(id);
+}
+
 }
 

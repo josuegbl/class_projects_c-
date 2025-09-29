@@ -1,16 +1,25 @@
-<div>
-    <img src= "{{ dish.image.src }}" 
-         [alt]="dish.name"
-         width="25%">
-    <h2>{{ dish.name | uppercase }}</h2>
-    <h3>{{ dish.price }}</h3>
-    @if (dish.price <= 30) { 
-        <h4> Ocacion!</h4>
-    } @else {
-        <h4>Muy rico</h4>
-    }
+    <div>
+        <img src= "{{ dish.image.src }}" 
+                [alt]="dish.name"
+                width="20%">
+
+        <button class="btn btn-danger" (click)="remove()">DELETE</button>
+
+        <div class="row">
+            <div class="col-2">
+                <h5>{{ dish.name | uppercase }}</h5>
+            </div>
+            <div class="col">
+                <h4>{{ dish.price }} €</h4>
+            </div>
+        </div>
+        @if (dish.price <= 30) { 
+            <h4> Ocacion!</h4>
+        } @else {
+            <h4>Muy rico</h4>
+        }
+    </div>
 
     <!-- <h3 (mouseleave)="showMessage(dish, $event)">  {{ dish.price }}</h3>
     <div id="messageDiv"></div>
     <button (click)="onSale()">Poner en oferta</button> -->
-</div>
