@@ -1,7 +1,6 @@
 import { Component, Input, input } from '@angular/core';
 import { MenuItemComponent } from "../menu-item/menu-item.component";
 import { DmComponent } from '../dm/dm.component';
-import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'dish-menu',
@@ -19,8 +18,6 @@ export class MenuComponent {
     console.log("constructor en MENU Component")
     // this.showDiv = {menu: true};
   }
-
-
 
 createDish(){
   console.log("createDish");
