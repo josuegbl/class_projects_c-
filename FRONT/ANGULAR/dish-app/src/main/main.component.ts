@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { MenuComponent } from "../menu/menu.component";
+import { DmComponent } from '../dm/dm.component';
 
 @Component({
   selector: 'dish-main',
@@ -8,37 +9,24 @@ import { MenuComponent } from "../menu/menu.component";
   styleUrl: './main.component.css'
 })
 export class MainComponent {
-  showDiv: any = 
-  {
-    menu: true
-  , create: false
-  };
-
+  isMenu: boolean = true 
+  dishes: any = [];
 
   constructor() 
   {
-    console.log("Esto es su valor: " + this.showDiv.menu)
+    console.log("COnstructor MAIN Esto es su valor: " + this.isMenu)
   }
 
   showMenu(event: any) {
    console.log("showMenu");
    console.log(event);
-   this.showDiv = 
-   {
-    menu: true
-  , create: false
-   };
+   window.location.reload();
 
   }
 
   showCreateDish(event: any) {
     console.log("showCreateDish");
    console.log(event);
-   this.showDiv = 
-   {
-    menu: false
-  , create: true
+   this.isMenu = false
    };
-  }
-
 }

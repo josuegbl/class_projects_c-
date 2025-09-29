@@ -1,6 +1,7 @@
 import { Component, Input, input } from '@angular/core';
 import { MenuItemComponent } from "../menu-item/menu-item.component";
 import { DmComponent } from '../dm/dm.component';
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'dish-menu',
@@ -9,11 +10,15 @@ import { DmComponent } from '../dm/dm.component';
   styleUrl: './menu.component.css'
 })
 export class MenuComponent {
-  @Input() showDiv: any;
+  @Input() isMenu: boolean = true;
 
   dishes: any = [];
   newDish: any = {};
 
+  constructor()  {
+    console.log("constructor en MENU Component")
+    // this.showDiv = {menu: true};
+  }
 
 
 
@@ -25,6 +30,7 @@ createDish(){
 
   let dishPrice = (<HTMLInputElement>document.getElementById("dishPrice"))!.value;
   console.log("precio: " + dishPrice);
+
 
   // this.dishes = [
   //   ...this.dishes // spread syntax
@@ -57,6 +63,7 @@ createDish(){
   }
   this.newDish = newDish;
 
+  window.location.reload();
 
   // this.dishes.push(
   //   {
