@@ -108,6 +108,7 @@ namespace apiRest.Controllers
                 return BadRequest();
         }
 
+        [EnableCors]
         [HttpDelete("dishes/{id}")]
 
         public IActionResult deleteDish(string id)
