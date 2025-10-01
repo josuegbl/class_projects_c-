@@ -5,6 +5,12 @@ export default
         , props: {
             dish: Object
         }
+      , methods:
+        {
+            remove
+        }
+        , emits: ["removeDish"]
+        
         // , data() 
         // {
         //     return  {
@@ -13,11 +19,7 @@ export default
         //             , price: 20
         //         }
              
-        //     }
-        // } , methods:
-        //     {
-        //         showMessage, onSale
-            // }
+        //     } }
         
     };
 
@@ -39,21 +41,34 @@ export default
         this.dish.price = 5;
 
     }
+    function remove()
+    {
+        console.log("Borrar plato en Menu Item " + JSON.stringify(this.dish) );
+        this.$emit("removeDish", {dishId: this.dish.id});
+    }
 
 </script>
 
 <template>
-    <img 
-        src="../assets/chuleton-de-ternera.jpg" 
-        v-bind:alt="dish.name"
-        width="250em"></img>
-    <h2>{{ dish.name }}</h2>
-    <h3>{{ dish.price }}</h3>
-    <h4 v-if="dish.price <=30">¡Ocasion!</h4>
-    <h4 v-else>Muy rico</h4>
-    <!-- <h3 v-on:mouseleave="showMessage(dish, $event)">{{ dish.price }}</h3> -->
-    <!-- <div id="messageDiv"></div>
+    <br>
+    <div>
+        <img 
+            src="../assets/chuleton-de-ternera.jpg" 
+            v-bind:alt="dish.name"
+            width="250em"></img>
+        <h3>{{ dish.name }}</h3>
+        <h3>{{ dish.price }}</h3>
+        <h4 v-if="dish.price <=30">¡Ocasion!</h4>
+        <h4 v-else>Muy rico</h4>
+    </div>
+    <br>
+    <!-- <h3 v-on:mouseleave="showMessage(dish, $event)">{{ dish.price }}</h3>
+    <div id="messageDiv"></div>
     <button v-on:click="onSale()">Poner en Oferta</button> -->
+    <div class="col">
+        <button v-on:click="remove">Borrar Plato</button>
+
+    </div>
 </template>
 
 <style></style>

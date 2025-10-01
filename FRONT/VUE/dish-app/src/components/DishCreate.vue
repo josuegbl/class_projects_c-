@@ -8,14 +8,14 @@ export default
         }
       , methods: 
         {
-            createDish
+            create
         }
-      , emits: ["dishCreated"]
+        , emits: ["storeNewDish"]
     }
 
-    function createDish(event)
+    function create()
     {
-        console.log("create Dish in CreateDsh")
+        console.log("create Dish in DIshCreate.vue")
         let nameDish = document.getElementById("dishName").value;
         console.log(nameDish)
         let priceDish = document.getElementById("dishPrice").value;
@@ -27,7 +27,7 @@ export default
             price: priceDish
         }
 
-        this.emits(event, {dish: this.mutDish})
+        this.$emit("storeNewDish", {dish: this.mutDish})
 
     }
 </script>
@@ -42,7 +42,7 @@ export default
         <label for="dishPrice">Precio</label>
         <input type="number" id="dishPrice">
         <br>
-        <button v-on:click="createDish($event)"> Crear Plato</button>
+        <button v-on:click="create"> Crear Plato</button>
 
     </div>
 
