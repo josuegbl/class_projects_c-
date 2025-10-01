@@ -28,17 +28,7 @@ export default
             }
             , dishId: String
         }
-        , data()
-          {
-            return {
-                    mutableDishes: {
-                        type: Array
-                        , default: []
-                    }
-                   }
-          }
-
-
+   
         , emits: [
             "dishesUpdated"
         ]
